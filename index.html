@@ -780,21 +780,43 @@ var SEED_AQUA=[
 "SASHA — Tu veux que je te fasse ça matin, midi et soir ?",
 "FRED — Matin, midi, et pour ton quatre-heures. Ça remplacera ton choco-BN. Allez, prends ta journée."
 ].join('\n');
-var SEED_HUGO=[
-"Demain, dès l'aube, à l'heure où blanchit la campagne,",
-"Je partirai. Vois-tu, je sais que tu m'attends.",
-"J'irai par la forêt, j'irai par la montagne.",
-"Je ne puis demeurer loin de toi plus longtemps.",
-"",
-"Je marcherai les yeux fixés sur mes pensées,",
-"Sans rien voir au dehors, sans entendre aucun bruit,",
-"Seul, inconnu, le dos courbé, les mains croisées,",
-"Triste, et le jour pour moi sera comme la nuit.",
-"",
-"Je ne regarderai ni l'or du soir qui tombe,",
-"Ni les voiles au loin descendant vers Harfleur,",
-"Et quand j'arriverai, je mettrai sur ta tombe",
-"Un bouquet de houx vert et de bruyère en fleur."
+var SEED_SERVEUSE=[
+"(﻿LA SERVEUSE)",
+"(Intérieur café. Une serveuse range la salle. C’est la fin de son service. Un dernier patient est assis à une table, un verre à moitié plein. Sur la table, quatre euros en petite monnaie. Il observe la serveuse avec insistance, pendant un long moment.)",
+"ELLE — Ça va ?",
+"LUI — Oui, oui, merci...",
+"ELLE — Je ne vous dérange pas ?",
+"LUI — Pardon ?",
+"ELLE — Vous voyez bien ou vous voulez que je me penche un peu plus ?",
+"LUI — J’comprends pas !",
+"ELLE — Faites pas semblant de ne pas comprendre !",
+"LUI — Excusez-moi, non, j’comprends pas.",
+"ELLE — Hypocrite ! (Elle continue le rangement.) Bon, ça suffit maintenant ! Vous me prenez pour quoi ?",
+"LUI — Non mais attendez, j’ai rien fait, je vous regarde, c’est tout, je vous regarde travailler. Je suis assis là et vous rangez votre salle en face de moi, je regarde, c’est tout.",
+"ELLE — Vous ne regardez pas, vous reluquez !",
+"LUI — Écoutez, mademoiselle, vous êtes mignonne, mais je ne vous reluque pas !",
+"ELLE — Espèce de pervers ! (Il tente de détourner son regard, sans vraiment y parvenir.) Croyez pas que je ne vous vois pas ! Ça se fait pas ce que vous faites ! On vous l’a jamais dit ? Vous êtes dégueulasse !",
+"LUI — Si je vous dis pourquoi je vous regarde, vous allez pas m’croire.",
+"ELLE — Y a des chances !",
+"LUI — Et vous voulez pas savoir ?",
+"ELLE — Pour quoi faire ?",
+"LUI — Pour que je m’explique !",
+"ELLE — Je m’en fous de vos explications ! Moi, la seule chose que je vois, c’est un mec en train de boire sa bière et de me mater le cul dès qu’il peut ! Allez voir ailleurs, on n’est pas dans un bordel ici !",
+"LUI (s’apprêtant à régler) — Vous me faites penser à ma sœur.",
+"ELLE — Bien sûr, et elle me ressemble, elle a l’âge que je dois avoir ou que vous aimeriez que j’aie, et elle vous servait votre bière en rentrant de votre boulot.",
+"LUI — Vous êtes son sosie, j’vous jure !",
+"ELLE — Et c’est à quel moment que je vous fais le plus penser à votre sœur : quand je suis de dos ou quand je me penche pour essuyer les tables ? Parce que je suis serveuse, je suis à votre dispo, c’est ça ?",
+"LUI — Mais pas du tout ! Pourquoi vous me croyez pas ?",
+"ELLE — Parce que si vous regardez votre sœur comme vous me regardez, alors vous êtes pire que ce que je pense. Vaut mieux pour vous que je ne vous croie pas !",
+"LUI — Elle est partie il y a huit ans, à Moscou. Enfin, c’est ce qu’elle nous a dit. Depuis, plus de nouvelles. Portée disparue. Enlèvement ? droguée ? assassinée ? On ne sait même pas. Et puis, avec la guerre...",
+"ELLE — C’est quatre euros cinquante, pas quatre.",
+"LUI — C’est bon, vous pourriez être gentille au moins. Avoir un peu de compassion.",
+"ELLE — Quatre euros cinquante ou j’appelle la sécurité.",
+"(Il sort un billet de cinquante euros et reprend ses quatre euros.)",
+"LUI — J’ai pas de monnaie. (Elle prend le billet et cherche la monnaie dans une sacoche.) Je vous parle de ma sœur, et...",
+"ELLE — Tenez ! (Elle lui balance sa monnaie, puis sort. En off.) Fait chier, tiens !",
+"(Il termine son verre. Son téléphone sonne. Il décroche.)",
+"LUI — Salut, ma gueule !... Ouais, tranquille, et toi ?... Je bois un coup... Bah, tu sais bien, là où y a la petite serveuse qu’on avait repérée... Non, c’est mort, laisse tomber. Je lui ai dit qu’elle ressemblait à ma sœur. J’sais pas c’qui m’a pris !... T’es où ?... Attends, bouge pas, je te rejoins. À toute."
 ].join('\n');
 var SEED_PITCH=[
 "Bonjour à tous — je m'appelle Fred, et je viens vous parler de mon club de dragon boat.",
@@ -810,7 +832,7 @@ var SEED_PITCH=[
 "Alors si vous voulez troquer votre écran contre une pagaie, venez nous rejoindre samedi matin au lever du soleil. La première séance est offerte — et le café aussi."
 ].join('\n');
 
-var DLG=/^([A-ZÀ-ÖØ-ÞŸ][A-ZÀ-ÖØ-ÞŸ0-9'’.\- ]{0,28}?)\s*(?:—|–|:| - )\s*(.+)$/;
+var DLG=/^([A-ZÀ-ÖØ-ÞŸ][A-ZÀ-ÖØ-ÞŸ0-9'’.\- ]{0,28}?)(?:\s*(\([^)]*\)))?\s*(?:—|–|:| - )\s*(.+)$/;
 function parseSource(src,mode){
   src=String(src||'');
   var raw=src.replace(/\r/g,'').split('\n').map(function(s){return s.trim();}).filter(Boolean);
@@ -834,8 +856,8 @@ function parseSource(src,mode){
         return;
       }
       var m=matches[idx];
-      if(m){var c=cleanLine(m[1]).toUpperCase(),t=cleanLine(m[2]);if(!t)return;last={c:c,t:t};lines.push(last);if(roles.indexOf(c)<0)roles.push(c);}
-      else{var t2=cleanLine(l);if(!t2)return;if(last)last.t+=' '+t2;else{last={c:'NARRATEUR',t:t2};lines.push(last);if(roles.indexOf('NARRATEUR')<0)roles.push('NARRATEUR');}}
+      if(m){var c=cleanLine(m[1]).toUpperCase(), inlineDid=m[2]?cleanLine(m[2])+' ':'', t=inlineDid+cleanLine(m[3]);if(!t.trim())return;last={c:c,t:t.trim()};lines.push(last);if(roles.indexOf(c)<0)roles.push(c);}
+      else{var t2=cleanLine(l);if(!t2)return;if(last)last.t+=' '+t2;else{last={c:'DIDASCALIE',t:t2};lines.push(last);}}
     });
   }else{
     roles=['TEXTE'];
@@ -901,7 +923,7 @@ function roleColor(name){return PALETTE[Math.max(0,(active?active.roles.indexOf(
 function estMs(t){var sp=stripDidascalies(t);return sp?wordCount(sp)*420/cfg.rate+900:500;}
 function persist(){clearTimeout(saveT);saveT=setTimeout(function(){try{localStorage.setItem(KEY,JSON.stringify({lib:lib,prefs:prefs,cfg:cfg,lastId:active?active.id:null}));}catch(e){}},200);}
 function seedLibrary(){
-  lib=[makeText('Aquaplaning — Scène 6',SEED_AQUA,'dialogue','SASHA'),makeText('Demain, dès l’aube… — Victor Hugo',SEED_HUGO,'vers','TEXTE'),makeText('Pitch — mon club de dragon boat',SEED_PITCH,'paragraphes','TEXTE')];
+  lib=[makeText('Aquaplaning — Scène 6',SEED_AQUA,'dialogue','SASHA'),makeText('La Serveuse',SEED_SERVEUSE,'dialogue','LUI'),makeText('Pitch — mon club de dragon boat',SEED_PITCH,'paragraphes','TEXTE')];
 }
 function loadAll(){
   var last=null;
@@ -924,6 +946,8 @@ function loadAll(){
         t.st=Array.isArray(t.st)?t.st:[];t.lines.forEach(function(_,i){if(!t.st[i])t.st[i]={peeks:0,reads:0,lastVisit:null};});
         return t;
       });
+      var hugoIdx=lib.findIndex(function(t){return /^Demain,\s*d[eè]s\s*l/i.test(t.title||'');});
+      if(hugoIdx>=0){lib[hugoIdx]=makeText('La Serveuse',SEED_SERVEUSE,'dialogue','LUI');}
       Object.assign(prefs,d.prefs||{});Object.assign(cfg,d.cfg||{});cfg.voiceMap=cfg.voiceMap||{};last=d.lastId||null;
     }
   }catch(e){}
