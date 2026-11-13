@@ -251,6 +251,7 @@ textarea{font-family:var(--fs);font-size:14px;line-height:1.6;min-height:340px;r
 .mini button svg{width:14px;height:14px}
 .text-wrap{position:relative;margin-top:9px}
 .text{font-family:var(--fs);font-size:17px;line-height:1.62;color:#e9f0fa;transition:filter .45s,opacity .45s;overflow-wrap:break-word}
+.text .didascalie{font-style:italic;color:var(--dim);opacity:.85}
 .line.masked .text{user-select:none;-webkit-user-select:none}
 #lines.mask-flou .line.masked .text{filter:blur(9px) saturate(.5);opacity:.5}
 #lines.mask-redact .line.masked .text span{background:#2c3d5e;color:transparent;border-radius:3px;box-shadow:inset 0 0 0 1px rgba(65,196,255,.14)}
@@ -626,8 +627,19 @@ var KEY='souffleur-studio-v1';
 var PALETTE=['#ffb02e','#41c4ff','#3ddc84','#ff5da2','#8b7bff','#ff8a1e','#4dd0e1','#ffd166'];
 var PITCHES=[0.85,1.08,0.95,1.18,0.8,1.0,1.12,0.9];
 var rgba=function(hex,a){var n=parseInt(hex.slice(1),16);return 'rgba('+((n>>16)&255)+','+((n>>8)&255)+','+(n&255)+','+a+')';};
-var wordsHTML=function(t){return t.split(/(\s+)/).map(function(w){return /^\s+$/.test(w)||w===''?w:'<span>'+esc(w)+'</span>';}).join('');};
-var initials=function(t){return t.split(/\s+/).map(function(w){var m=w.match(/[.!?…]+$/);return (w[0]||'')+(m?m[0]:'');}).join(' ');};
+var stripDidascalies=function(t){return String(t||'').replace(/\([^()]*\)/g,' ').replace(/\([^()]*\)/g,' ').replace(/\([^)]*$/g,' ').replace(/\s+([,.;:!?…])/g,'$1').replace(/\s+/g,' ').trim();};
+var wordsHTML=function(t){
+  return String(t||'').split(/(\([^)]*\))/g).map(function(part){
+    if(/^\([^)]*\)$/.test(part))return '<em class="didascalie">'+esc(part)+'</em>';
+    return part.split(/(\s+)/).map(function(w){return /^\s+$/.test(w)||w===''?w:'<span>'+esc(w)+'</span>';}).join('');
+  }).join('');
+};
+var initials=function(t){
+  return String(t||'').split(/(\([^)]*\))/g).map(function(part){
+    if(/^\([^)]*\)$/.test(part))return part;
+    return part.trim().split(/\s+/).filter(Boolean).map(function(w){var m=w.match(/[.!?…]+$/);return (w[0]||'')+(m?m[0]:'');}).join(' ');
+  }).filter(Boolean).join(' ');
+};
 var cleanLine=function(t){return t.replace(/\*\*/g,'').replace(/\s+([,.;:!?…])/g,'$1').replace(/\s+/g,' ').trim();};
 var wordCount=function(t){return (String(t).trim().match(/\S+/g)||[]).length;};
 var fmtDate=function(ts){if(!ts)return 'jamais révisé';var d=Date.now()-ts;if(d<6e4)return 'à l’instant';if(d<36e5)return 'il y a '+Math.floor(d/6e4)+' min';if(d<864e5)return 'il y a '+Math.floor(d/36e5)+' h';if(d<7*864e5)return 'il y a '+Math.floor(d/864e5)+' j';return new Date(ts).toLocaleDateString('fr-FR');};
@@ -886,7 +898,7 @@ function mine(i){return S.role==='*'||active.lines[i].c===S.role;}
 function mineTotal(){return active?active.lines.reduce(function(n,_,i){return n+(mine(i)?1:0);},0):0;}
 function roleLabel(){return S.role==='*'?'TOUS LES RÔLES':S.role;}
 function roleColor(name){return PALETTE[Math.max(0,(active?active.roles.indexOf(name):0))%PALETTE.length];}
-function estMs(t){return wordCount(t)*420/cfg.rate+900;}
+function estMs(t){var sp=stripDidascalies(t);return sp?wordCount(sp)*420/cfg.rate+900:500;}
 function persist(){clearTimeout(saveT);saveT=setTimeout(function(){try{localStorage.setItem(KEY,JSON.stringify({lib:lib,prefs:prefs,cfg:cfg,lastId:active?active.id:null}));}catch(e){}},200);}
 function seedLibrary(){
   lib=[makeText('Aquaplaning — Scène 6',SEED_AQUA,'dialogue','SASHA'),makeText('Demain, dès l’aube… — Victor Hugo',SEED_HUGO,'vers','TEXTE'),makeText('Pitch — mon club de dragon boat',SEED_PITCH,'paragraphes','TEXTE')];
@@ -1281,19 +1293,21 @@ function buildVoicePanel(){
     sel.onchange=function(){v.uri=sel.value;persist();};
     range.oninput=function(){v.pitch=parseFloat(range.value);val.textContent='×'+v.pitch.toFixed(2);range.style.setProperty('--val',((v.pitch-.5)/1)*100+'%');persist();};
     range.style.setProperty('--val',((v.pitch-.5)/1)*100+'%');
-    test.onclick=function(){var sample=active.lines.find(function(l){return l.c===role;});speakRaw(sample?sample.t:'Bonjour, je suis '+role+'.',role,null,-1);};
+    test.onclick=function(){var sample=active.lines.find(function(l){return l.c===role&&stripDidascalies(l.t);});speakRaw(sample?sample.t:'Bonjour, je suis '+role+'.',role,null,-1);};
     wrap.appendChild(block);
   });
 }
 function stopSpeech(){speechToken++;if(synth){try{synth.cancel();}catch(e){}}clearInterval(keepAlive);clearTimeout(safety);keepAlive=safety=null;if(speakingI>=0&&els[speakingI]){els[speakingI].root.classList.remove('speaking');els[speakingI].root.classList.remove('auto-reveal');if(active)renderLine(speakingI);speakingI=-1;}setStatus();}
 function speakRaw(text,role,onend,cardI){
   stopSpeech();var token=speechToken,idx=active?active.roles.indexOf(role):0,v=ensureVoice(role,Math.max(0,idx));
+  var spokenText=stripDidascalies(text);
   if(cardI!=null&&cardI>=0){speakingI=cardI;els[cardI].root.classList.add('speaking');}
   setStatus(role);
   var finish=function(){if(token!==speechToken)return;clearInterval(keepAlive);clearTimeout(safety);keepAlive=safety=null;if(cardI!=null&&cardI>=0){els[cardI].root.classList.remove('speaking','auto-reveal');renderLine(cardI);speakingI=-1;}setStatus();if(onend)onend();};
-  if(cfg.muted||!synth||cfg.volume===0){safety=setTimeout(finish,Math.min(estMs(text),6000));return;}
+  if(!spokenText){safety=setTimeout(finish,450);return;}
+  if(cfg.muted||!synth||cfg.volume===0){safety=setTimeout(finish,Math.min(estMs(spokenText),6000));return;}
   if(!voices.length&&!voiceWarned){voiceWarned=true;toast('Voix par défaut utilisée — ajoute des voix système fr pour un meilleur rendu.',null,6000);}
-  var parts=text.replace(/\bBN\b/g,'B N').match(/[^.!?…]+[.!?…]+|[^.!?…]+$/g)||[text];
+  var parts=spokenText.replace(/\bBN\b/g,'B N').match(/[^.!?…]+[.!?…]+|[^.!?…]+$/g)||[spokenText];
   try{
     parts.forEach(function(p,i){var u=new SpeechSynthesisUtterance(p.trim());var vo=voices.find(function(x){return x.voiceURI===v.uri;});if(vo)u.voice=vo;u.lang=vo?vo.lang:'fr-FR';u.rate=cfg.rate;u.pitch=v.pitch;u.volume=cfg.volume;if(i===parts.length-1){u.onend=finish;u.onerror=finish;}synth.speak(u);});
     keepAlive=setInterval(function(){try{synth.resume();}catch(e){}},9000);
