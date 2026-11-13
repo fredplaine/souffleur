@@ -72,41 +72,52 @@ header{
 .icon-btn svg{width:19px;height:19px}
 .icon-btn.muted{color:var(--red);border-color:rgba(255,77,94,.55)}
 
-.home-btn,.head-title,.role-wrap,.modes,.study-break{display:none}
-.home-btn{align-items:center;gap:7px;border:1px solid var(--line2);background:rgba(17,26,41,.86);color:var(--dim);border-radius:999px;padding:8px 13px;font-size:12.5px;font-weight:700;transition:.22s;flex:none}
-.home-btn svg{width:17px;height:17px}
+.home-btn,.head-title,.role-wrap,.scene-wrap,.modes,.study-break{display:none}
+.home-btn{align-items:center;gap:7px;border:1px solid var(--line2);background:rgba(17,26,41,.86);color:var(--dim);border-radius:999px;padding:7px 12px;font-size:12px;font-weight:700;transition:.22s;flex:none}
+.home-btn svg{width:16px;height:16px}
 .home-btn:hover{color:var(--cyan);border-color:var(--cyan);transform:translateY(-1px)}
-.head-title{font-family:var(--fd);font-size:24px;letter-spacing:2px;color:var(--ink);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.role-wrap{align-items:center;gap:7px;background:rgba(12,18,30,.82);border:1px solid rgba(65,196,255,.5);border-radius:999px;padding:4px 7px 4px 12px}
-.role-wrap label{font-size:9.5px;font-weight:700;letter-spacing:1.7px;color:var(--faint);text-transform:uppercase;white-space:nowrap}
-.role-select{width:auto!important;margin:0!important;border:0!important;background:transparent!important;color:var(--cyan)!important;font-weight:700!important;font-size:12.5px!important;padding:5px 4px!important;max-width:210px}
+.head-title{font-family:var(--fd);font-size:22px;letter-spacing:1.6px;color:var(--ink);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.role-wrap{align-items:center;gap:5px;background:rgba(12,18,30,.82);border:1px solid rgba(65,196,255,.5);border-radius:999px;padding:3px 9px}
+.role-select{width:auto!important;margin:0!important;border:0!important;background:transparent!important;color:var(--cyan)!important;font-weight:700!important;font-size:12px!important;padding:4px 2px!important;max-width:165px;cursor:pointer}
 .role-select option{background:#101a2b;color:var(--ink)}
+.scene-wrap{border-color:rgba(255,176,46,.55)}
+.scene-select{color:var(--amber)!important;max-width:140px}
 .modes{border:1px solid var(--line2);border-radius:999px;overflow:hidden;background:rgba(12,18,30,.72)}
-.chip{border:0;background:transparent;color:var(--dim);font-weight:700;font-size:12px;padding:8px 13px;display:flex;align-items:center;gap:6px;transition:.22s;white-space:nowrap}
+.chip{border:0;background:transparent;color:var(--dim);font-weight:700;font-size:12px;padding:7px 11px;display:flex;align-items:center;gap:5px;transition:.22s;white-space:nowrap}
 .chip:hover{color:var(--ink)}
 .chip.active{background:linear-gradient(90deg,rgba(65,196,255,.22),rgba(47,123,255,.22));color:var(--cyan)}
-.chip .n{background:var(--orange);color:#190d02;font-size:10px;border-radius:999px;padding:1px 7px}
-body[data-view="study"] header{padding:7px 14px;gap:10px}
-body[data-view="study"] .brand,body[data-view="study"] #navLibrary,body[data-view="study"] #navNew{display:none}
+.chip .n{background:var(--orange);color:#190d02;font-size:10px;border-radius:999px;padding:1px 6px}
+body[data-view="study"] header{padding:7px 12px;gap:8px;flex-wrap:nowrap}
+body[data-view="study"] .brand,body[data-view="study"] #navLibrary,body[data-view="study"] #navNew,body[data-view="study"] .study-break{display:none!important}
 body[data-view="study"] .home-btn{display:inline-flex}
-body[data-view="study"] .head-title{display:block;flex:1 1 auto}
-body[data-view="study"] .role-wrap{display:flex;flex:none}
+body[data-view="study"] .head-title{display:block;flex:1 1 60px}
+body[data-view="study"] .role-wrap:not(.scene-wrap){display:flex;flex:none}
+body[data-view="study"] .scene-wrap.has-scenes{display:flex;flex:none}
 body[data-view="study"] .modes{display:flex;flex:none}
 body[data-view="study"] .head-right{margin-left:0;flex:none}
-body[data-view="study"] #soundBtn{width:38px;height:38px}
-@media(max-width:700px){
-  body[data-view="study"] header{row-gap:7px}
-  body[data-view="study"] .home-btn{order:1;width:38px;height:38px;padding:0;border-radius:50%;justify-content:center}
+body[data-view="study"] #soundBtn{width:36px;height:36px}
+@media(max-width:760px){
+  body[data-view="study"] header{gap:6px;padding:6px 10px}
+  body[data-view="study"] .home-btn{width:34px;height:34px;padding:0;border-radius:50%;justify-content:center}
   body[data-view="study"] .home-btn span{display:none}
-  body[data-view="study"] .head-title{order:2;flex:1 1 auto;font-size:20px}
-  body[data-view="study"] .head-right{order:3}
-  body[data-view="study"] .study-break{display:block;order:4;flex-basis:100%;height:0}
-  body[data-view="study"] .role-wrap{order:5;flex:1 1 auto;min-width:0}
-  body[data-view="study"] .modes{order:6;flex:none}
+  body[data-view="study"] .head-title{font-size:18px;flex:1 1 40px}
   body[data-view="study"] .chip-word{display:none}
-  body[data-view="study"] .chip{padding:7px 10px;font-size:11.5px}
-  body[data-view="study"] .role-select{max-width:130px}
+  body[data-view="study"] .chip{padding:6px 8px;font-size:11px}
+  body[data-view="study"] .role-wrap{padding:2px 7px}
+  body[data-view="study"] .role-select{max-width:115px;font-size:11.5px!important}
+  body[data-view="study"] .scene-select{max-width:98px}
+  body[data-view="study"] #soundBtn{width:34px;height:34px}
 }
+
+.scene-divider{
+  display:flex;align-items:center;gap:12px;margin:14px 0 4px;
+  font-family:var(--fd);font-size:20px;letter-spacing:2.5px;color:var(--amber);
+}
+.scene-divider:first-child{margin-top:2px}
+.scene-divider::before,.scene-divider::after{content:'';height:1px;background:linear-gradient(90deg,rgba(255,176,46,.45),rgba(36,52,80,.2));flex:1}
+.scene-divider::before{flex:0 0 18px}
+.scene-divider span{padding:3px 12px;border-radius:999px;border:1px solid rgba(255,176,46,.4);background:rgba(255,176,46,.09);white-space:nowrap}
+.scene-divider small{font-family:var(--fu);font-size:11.5px;font-weight:600;letter-spacing:.6px;color:var(--dim);margin-left:6px}
 
 main{position:relative;z-index:2;max-width:1240px;margin:0 auto;padding:24px 20px 60px}
 .view{display:none}.view.active{display:block}
@@ -362,6 +373,18 @@ body[data-view=study] .transport{display:block}
 .drawer pre{font-family:var(--fs);font-size:12.5px;line-height:1.6;color:var(--dim);white-space:pre-wrap;border:1px solid var(--line);border-radius:12px;padding:14px;background:#0b1220;max-height:50vh;overflow:auto}
 .drawer-actions{padding:16px 18px;border-top:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap}
 
+.modal-scrim{position:fixed;inset:0;z-index:85;background:rgba(4,7,12,.72);backdrop-filter:blur(5px);display:none;place-items:center;padding:18px;animation:fadeIn .2s ease}
+.modal-scrim.show{display:grid}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.modal-box{width:min(440px,100%);background:linear-gradient(160deg,#152236,#0c1422);border:1px solid rgba(255,77,94,.45);border-radius:18px;padding:22px;box-shadow:0 24px 64px -16px rgba(0,0,0,.85);animation:cardIn .25s ease}
+.modal-head{display:flex;align-items:center;gap:11px;margin-bottom:10px}
+.modal-icon{width:38px;height:38px;border-radius:11px;background:rgba(255,77,94,.14);border:1px solid rgba(255,77,94,.4);color:var(--red);display:grid;place-items:center;flex:none}
+.modal-icon svg{width:20px;height:20px}
+.modal-head h3{font-family:var(--fd);font-size:26px;letter-spacing:2px;color:var(--ink);line-height:1}
+.modal-body{font-size:13.5px;color:var(--dim);line-height:1.55;margin-bottom:18px}
+.modal-body b{color:var(--ink)}
+.modal-actions{display:flex;justify-content:flex-end;gap:9px;flex-wrap:wrap}
+
 .toasts{position:fixed;top:calc(var(--header-h) + 12px);right:16px;z-index:90;display:flex;flex-direction:column;gap:8px;max-width:min(390px,calc(100vw - 32px))}
 .toast{position:relative;overflow:hidden;display:flex;align-items:center;gap:12px;background:rgba(16,24,39,.97);border:1px solid var(--line2);border-radius:12px;padding:11px 14px;font-size:13px;box-shadow:0 12px 34px -10px rgba(0,0,0,.7);animation:toastIn .3s ease}
 @keyframes toastIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:none}}
@@ -373,7 +396,7 @@ body[data-view=study] .transport{display:block}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}html{scroll-behavior:auto}.line{opacity:1;transform:none}}
 @media print{
   body{background:#fff;color:#111}
-  header,.transport,.banner,.regie,.toasts,#atmosphere,.beam,.grain,.legend,.bilan,.mini,.status,.eq,.mask-hint,.drawer,.drawer-scrim{display:none!important}
+  header,.transport,.banner,.regie,.toasts,#atmosphere,.beam,.grain,.legend,.bilan,.mini,.status,.eq,.mask-hint,.drawer,.drawer-scrim,.modal-scrim{display:none!important}
   main{display:block;max-width:100%;padding:0}
   #view-library,#view-import{display:none!important}
   #view-study{display:block!important}
@@ -407,7 +430,8 @@ body[data-view=study] .transport{display:block}
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></svg><span>Accueil</span>
   </button>
   <span class="head-title" id="studyTitle"></span>
-  <div class="role-wrap"><label for="roleSelect">Je révise</label><select id="roleSelect" class="role-select" aria-label="Rôle à réviser"></select></div>
+  <div class="role-wrap"><select id="roleSelect" class="role-select" aria-label="Personnage à réviser" title="Personnage"></select></div>
+  <div class="role-wrap scene-wrap" id="sceneWrap"><select id="sceneSelect" class="role-select scene-select" aria-label="Sélectionner une scène" title="Scène (point de départ)"></select></div>
   <div class="modes" role="group" aria-label="Mode de travail">
     <button class="chip active" id="modeFull" aria-pressed="true">Complet</button>
     <button class="chip" id="modeReview" aria-pressed="false" aria-label="Mode révision"> <span class="chip-word">Révision</span> <span class="n" id="reviewCount">0</span></button>
@@ -429,7 +453,7 @@ body[data-view=study] .transport{display:block}
       <div class="hero-card">
         <span class="eyebrow">Studio universel de mémorisation</span>
         <h1>COLLE TON TEXTE.<br>LE SOUFFLEUR FAIT LE RESTE.</h1>
-        <p>Scène de théâtre, poème, discours, pitch, dialogue de film… Le Souffleur détecte les rôles, masque ce que tu dois dire, te donne la réplique, te souffle quand tu sèches, et suit ta progression phrase par phrase.</p>
+        <p>Scène de théâtre, poème, discours, pitch, dialogue de film… Le Souffleur détecte les rôles et les scènes, masque ce que tu dois dire, te donne la réplique, te souffle quand tu sèches, et suit ta progression phrase par phrase.</p>
         <div class="hero-actions">
           <button class="btn primary" id="heroNew">＋ Importer un texte</button>
           <button class="btn ghost" id="heroResume">▶ Reprendre le dernier</button>
@@ -466,7 +490,7 @@ body[data-view=study] .transport{display:block}
     <div class="import-grid">
       <div class="panel">
         <div class="form-title" id="importTitle">NOUVEAU TEXTE</div>
-        <div class="form-sub">Colle n'importe quel texte. Détection automatique des rôles, ou découpage en phrases / paragraphes / vers.</div>
+        <div class="form-sub">Colle n'importe quel texte. Détection automatique des rôles et des scènes (<code># SCÈNE UN</code>, <code># SCÈNE 26</code>, <code># Scène IV</code>…), ou découpage en phrases / paragraphes / vers.</div>
         <div class="field"><label for="titleInput">Titre</label><input type="text" id="titleInput" placeholder="Ex. Aquaplaning — scène 6, Poème de Hugo, Pitch club…"></div>
         <div class="field"><label for="parseMode">Découpage</label>
           <select id="parseMode">
@@ -479,7 +503,7 @@ body[data-view=study] .transport{display:block}
         </div>
         <div class="field"><label for="sourceInput">Texte source</label>
           <div class="dropzone" id="dropzone">
-            <textarea id="sourceInput" placeholder="FRED — Qu'est-ce qui s'est passé, cette fois ?&#10;SASHA — Rien. Le feu est passé à l'orange…&#10;&#10;…ou colle un poème, un discours, un pitch. Glisse aussi un fichier .txt / .md ici."></textarea>
+            <textarea id="sourceInput" placeholder="# SCÈNE UN&#10;FRED — Qu'est-ce qui s'est passé, cette fois ?&#10;SASHA — Rien. Le feu est passé à l'orange…&#10;&#10;…ou colle un poème, un discours, un pitch. Glisse aussi un fichier .txt / .md ici."></textarea>
             <div class="drop-hint">Dépose ton fichier texte ici</div>
           </div>
         </div>
@@ -489,7 +513,7 @@ body[data-view=study] .transport{display:block}
           <button class="btn primary" id="saveText">💾 Enregistrer & réviser</button>
           <button class="btn ghost" id="cancelImport">Annuler</button>
         </div>
-        <div class="format-help"><b>Formats reconnus :</b> <code>FRED — texte</code> · <code>SASHA: texte</code> · <code>LE RENARD - texte</code>. Une réplique peut continuer sur plusieurs lignes. Sans noms de personnages, le texte est découpé en phrases, paragraphes ou vers — parfait pour poésie, discours et pitchs.</div>
+        <div class="format-help"><b>Formats reconnus :</b> <code>FRED — texte</code> · <code>SASHA: texte</code> · <code>LE RENARD - texte</code>. Scènes : <code># SCÈNE UN</code>, <code># SCÈNE VINGT-SIX</code>, <code># Scène 4</code>, <code># SCENE XIX</code> (converties en chiffres romains). Sans noms de personnages, le texte est découpé en phrases, paragraphes ou vers.</div>
       </div>
       <div class="panel">
         <div class="preview-head"><b>APERÇU</b><span class="badge libre" id="previewBadge">—</span></div>
@@ -576,6 +600,19 @@ body[data-view=study] .transport{display:block}
   <div class="drawer-body"><div class="drawer-meta" id="drawerMeta"></div><div class="mini-progress" style="margin-bottom:14px"><div class="lbl"><span>Progression</span><span id="drawerProgTxt">0/0</span></div><div class="bar"><i id="drawerProg"></i></div></div><pre id="drawerSource"></pre></div>
   <div class="drawer-actions"><button class="btn primary" id="drawerStudy">▶ Réviser</button><button class="btn ghost" id="drawerEdit">✎ Éditer</button><button class="btn ghost" id="drawerDup">⧉ Dupliquer</button><button class="btn danger" id="drawerDelete">🗑</button></div>
 </aside>
+<div class="modal-scrim" id="confirmModalScrim" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+  <div class="modal-box" id="confirmModalBox">
+    <div class="modal-head">
+      <span class="modal-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></span>
+      <h3 id="confirmTitle">CONFIRMER LA SUPPRESSION</h3>
+    </div>
+    <p class="modal-body" id="confirmMsg">Voulez-vous vraiment supprimer ce texte de la bibliothèque ?</p>
+    <div class="modal-actions">
+      <button class="btn ghost" id="confirmCancelBtn" type="button">Annuler</button>
+      <button class="btn danger" id="confirmOkBtn" type="button">🗑 Supprimer</button>
+    </div>
+  </div>
+</div>
 <div class="toasts" id="toasts" aria-live="polite"></div>
 
 <script>
@@ -595,8 +632,102 @@ var cleanLine=function(t){return t.replace(/\*\*/g,'').replace(/\s+([,.;:!?…])
 var wordCount=function(t){return (String(t).trim().match(/\S+/g)||[]).length;};
 var fmtDate=function(ts){if(!ts)return 'jamais révisé';var d=Date.now()-ts;if(d<6e4)return 'à l’instant';if(d<36e5)return 'il y a '+Math.floor(d/6e4)+' min';if(d<864e5)return 'il y a '+Math.floor(d/36e5)+' h';if(d<7*864e5)return 'il y a '+Math.floor(d/864e5)+' j';return new Date(ts).toLocaleDateString('fr-FR');};
 
+// Conversion et analyse des numéros de scènes (lettres françaises, chiffres arabes, chiffres romains -> Chiffres Romains)
+function toRoman(num){
+  var n=parseInt(num,10);
+  if(!n||n<1)return String(num||'I');
+  var map=[[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']],out='';
+  for(var i=0;i<map.length;i++){while(n>=map[i][0]){out+=map[i][1];n-=map[i][0];}}
+  return out;
+}
+function fromRoman(str){
+  var s=String(str||'').trim().toUpperCase();
+  if(!/^[MDCLXVI]+$/.test(s))return null;
+  var val={M:1000,D:500,C:100,L:50,X:10,V:5,I:1},total=0;
+  for(var i=0;i<s.length;i++){
+    var c=val[s[i]],nx=val[s[i+1]]||0;
+    if(c<nx)total-=c;else total+=c;
+  }
+  return total>0?total:null;
+}
+var FR_NUM_WORDS={
+  un:1,une:1,premier:1,premiere:1,
+  deux:2,second:2,seconde:2,deuxieme:2,
+  trois:3,troisieme:3,
+  quatre:4,quatrieme:4,
+  cinq:5,cinquieme:5,
+  six:6,sixieme:6,
+  sept:7,septieme:7,
+  huit:8,huitieme:8,
+  neuf:9,neuvieme:9,
+  dix:10,dixieme:10,
+  onze:11,onzieme:11,
+  douze:12,douzieme:12,
+  treize:13,treizieme:13,
+  quatorze:14,quatorzieme:14,
+  quinze:15,quinzieme:15,
+  seize:16,seizieme:16,
+  vingt:20,vingts:20,vingtieme:20,
+  trente:30,trentieme:30,
+  quarante:40,quarantieme:40,
+  cinquante:50,cinquantieme:50,
+  soixante:60,soixantieme:60,
+  septante:70,septantieme:70,
+  huitante:80,octante:80,
+  nonante:90,nonantieme:90,
+  cent:100,cents:100,centieme:100
+};
+function parseFrenchWordsNumber(raw){
+  var norm=String(raw||'').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/[-'’.]/g,' ').trim();
+  if(!norm)return null;
+  var tokens=norm.split(/\s+/).filter(function(w){return w&&w!=='et';});
+  if(!tokens.length)return null;
+  var total=0,i=0;
+  while(i<tokens.length){
+    var t=tokens[i];
+    if(t==='quatre'&&(tokens[i+1]==='vingt'||tokens[i+1]==='vingts'||tokens[i+1]==='vingtieme')){
+      total+=80;i+=2;continue;
+    }
+    var v=FR_NUM_WORDS[t];
+    if(v==null)return null;
+    total+=v;i++;
+  }
+  return total>0?total:null;
+}
+function parseSceneNumberToken(raw){
+  var s=String(raw||'').trim().replace(/[.:!]+$/,'').trim();
+  if(!s)return null;
+  var mArab=s.match(/^(\d+)(?:\s*(?:er|ère|ere|e|ème|eme))?$/i);
+  if(mArab)return parseInt(mArab[1],10);
+  // Vérifier les nombres en lettres françaises AVANT les chiffres romains (ex: "DIX" = 10, pas D+IX=509)
+  var frVal=parseFrenchWordsNumber(s);
+  if(frVal!=null)return frVal;
+  var romVal=fromRoman(s);
+  if(romVal!=null)return romVal;
+  return null;
+}
+function parseSceneHeader(line){
+  var clean=String(line||'').replace(/\*\*/g,'').trim();
+  if(!clean)return null;
+  var m=clean.match(/^(?:#+\s*)?(?:ACTE\s+[^\s,:;—–-]+\s*[,:;—–-]\s*)?SC[ÈEÊË]NES?\s+(.+)$/i);
+  if(!m)return null;
+  var rest=m[1].replace(/\s*#+\s*$/,'').trim();
+  var wholeNum=parseSceneNumberToken(rest);
+  if(wholeNum!=null)return {num:wholeNum,roman:toRoman(wholeNum),subtitle:''};
+  var parts=rest.split(/\s*(?:—|–|:|\.| - )\s*/);
+  if(parts.length>1){
+    var firstNum=parseSceneNumberToken(parts[0]);
+    if(firstNum!=null){
+      return {num:firstNum,roman:toRoman(firstNum),subtitle:parts.slice(1).join(' — ').trim()};
+    }
+  }
+  return null;
+}
+
 var SEED_AQUA=[
-"6. AQUAPLANING",
+"# SCÈNE UN",
 "FRED — Qu'est-ce qui s'est passé, cette fois ?",
 "SASHA — Rien. Le feu est passé à l'orange, j'ai freiné, mais avec la pluie je suis parti en aquaplaning et j'ai perdu le contrôle. Je me suis retrouvé au milieu du carrefour et y avait des voitures qui étaient déjà engagées. Je me suis fait cartonner, c'est tout.",
 "FRED — C'est tout ? Sasha, merde ! Ça fait le troisième camion que tu me cartonnes !",
@@ -609,6 +740,7 @@ var SEED_AQUA=[
 "SASHA — Ouais, je me rends compte.",
 "FRED — Je sais pas si je vais pouvoir te garder.",
 "SASHA — Tu veux me virer ?",
+"# SCÈNE DEUX",
 "FRED — Tu roulais à combien ?",
 "SASHA — Je sais pas.",
 "FRED — Comment ça, tu sais pas ?",
@@ -621,6 +753,7 @@ var SEED_AQUA=[
 "SASHA — Non, mais on voit quand on roule vite, quand même.",
 "FRED — Pour partir en aquaplaning, faut un bon coup de frein, non ?",
 "SASHA — Le feu est passé à l'orange. J'ai freiné. Je roulais pas vite, mais je roulais. C'est parti en couille, mais pas parce que je roulais vite.",
+"# SCÈNE TROIS",
 "FRED — T'admettras que pour un ancien alcoolique, l'aquaplaning, c'est quand même pas de bol.",
 "SASHA — C'est pas drôle.",
 "FRED — Là-dessus, on est d'accord. C'est pas drôle. Tu avais bu ?",
@@ -669,33 +802,79 @@ var DLG=/^([A-ZÀ-ÖØ-ÞŸ][A-ZÀ-ÖØ-ÞŸ0-9'’.\- ]{0,28}?)\s*(?:—|–|:|
 function parseSource(src,mode){
   src=String(src||'');
   var raw=src.replace(/\r/g,'').split('\n').map(function(s){return s.trim();}).filter(Boolean);
-  var matches=raw.map(function(l){return l.replace(/\*\*/g,'').match(DLG);});
+  var sceneMatches=raw.map(parseSceneHeader);
+  var matches=raw.map(function(l,idx){return sceneMatches[idx]?null:l.replace(/\*\*/g,'').match(DLG);});
+  var nonSceneCount=raw.filter(function(_,idx){return !sceneMatches[idx];}).length;
   var nMatch=matches.filter(Boolean).length,chosen=mode;
   if(mode==='auto'){
-    if(nMatch>=2&&raw.length&&nMatch/raw.length>=.45)chosen='dialogue';
+    if(nMatch>=2&&nonSceneCount&&nMatch/nonSceneCount>=.45)chosen='dialogue';
     else if(/\n\s*\n/.test(src))chosen='paragraphes';
-    else if(raw.length>=3)chosen='vers';
+    else if(nonSceneCount>=3)chosen='vers';
     else chosen='phrases';
   }
-  var lines=[],roles=[],last=null;
+  var lines=[],roles=[],scenes=[],last=null;
   if(chosen==='dialogue'){
     raw.forEach(function(l,idx){
+      var sc=sceneMatches[idx];
+      if(sc){
+        scenes.push({num:sc.num,roman:sc.roman,subtitle:sc.subtitle,lineIdx:lines.length});
+        last=null;
+        return;
+      }
       var m=matches[idx];
       if(m){var c=cleanLine(m[1]).toUpperCase(),t=cleanLine(m[2]);if(!t)return;last={c:c,t:t};lines.push(last);if(roles.indexOf(c)<0)roles.push(c);}
-      else{var t2=cleanLine(l);if(!t2)return;if(last)last.t+=' '+t2;else{last={c:'NARRATEUR',t:t2};lines.push(last);roles.push('NARRATEUR');}}
+      else{var t2=cleanLine(l);if(!t2)return;if(last)last.t+=' '+t2;else{last={c:'NARRATEUR',t:t2};lines.push(last);if(roles.indexOf('NARRATEUR')<0)roles.push('NARRATEUR');}}
     });
   }else{
-    var chunks=[];
-    if(chosen==='paragraphes')chunks=src.replace(/\r/g,'').split(/\n\s*\n/).map(cleanLine).filter(Boolean);
-    else if(chosen==='vers')chunks=raw.map(cleanLine).filter(Boolean);
-    else chunks=src.replace(/\r/g,'').split(/\n\s*\n/).reduce(function(a,p){var m=cleanLine(p).match(/[^.!?…]+[.!?…]+|[^.!?…]+$/g)||[];return a.concat(m);},[]).map(cleanLine).filter(Boolean);
-    roles=['TEXTE'];lines=chunks.map(function(t){return {c:'TEXTE',t:t};});
+    roles=['TEXTE'];
+    if(chosen==='paragraphes'){
+      var blocks=src.replace(/\r/g,'').split(/\n\s*\n/);
+      blocks.forEach(function(block){
+        var bLines=block.split('\n').map(function(s){return s.trim();}).filter(Boolean);
+        var buf=[];
+        bLines.forEach(function(bl){
+          var sc=parseSceneHeader(bl);
+          if(sc){
+            if(buf.length){var txt=cleanLine(buf.join(' '));if(txt)lines.push({c:'TEXTE',t:txt});buf=[];}
+            scenes.push({num:sc.num,roman:sc.roman,subtitle:sc.subtitle,lineIdx:lines.length});
+          }else buf.push(bl);
+        });
+        if(buf.length){var txt2=cleanLine(buf.join(' '));if(txt2)lines.push({c:'TEXTE',t:txt2});}
+      });
+    }else if(chosen==='vers'){
+      raw.forEach(function(l,idx){
+        var sc=sceneMatches[idx];
+        if(sc){scenes.push({num:sc.num,roman:sc.roman,subtitle:sc.subtitle,lineIdx:lines.length});return;}
+        var t=cleanLine(l);if(t)lines.push({c:'TEXTE',t:t});
+      });
+    }else{
+      var blocksP=src.replace(/\r/g,'').split(/\n\s*\n/);
+      blocksP.forEach(function(block){
+        var bLines=block.split('\n').map(function(s){return s.trim();}).filter(Boolean);
+        var buf=[];
+        var flushSentences=function(){
+          if(!buf.length)return;
+          var joined=cleanLine(buf.join(' '));
+          var sents=joined.match(/[^.!?…]+[.!?…]+|[^.!?…]+$/g)||[];
+          sents.map(cleanLine).filter(Boolean).forEach(function(st){lines.push({c:'TEXTE',t:st});});
+          buf=[];
+        };
+        bLines.forEach(function(bl){
+          var sc=parseSceneHeader(bl);
+          if(sc){flushSentences();scenes.push({num:sc.num,roman:sc.roman,subtitle:sc.subtitle,lineIdx:lines.length});}
+          else buf.push(bl);
+        });
+        flushSentences();
+      });
+    }
   }
-  return {mode:chosen,type:chosen==='dialogue'?'dialogue':'libre',lines:lines,roles:roles};
+  // Clamp scene lineIdx if a scene header appeared at the very end of the text
+  scenes.forEach(function(s){if(lines.length&&s.lineIdx>=lines.length)s.lineIdx=lines.length-1;});
+  return {mode:chosen,type:chosen==='dialogue'?'dialogue':'libre',lines:lines,roles:roles,scenes:scenes};
 }
 function makeText(title,src,mode,role){
   var p=parseSource(src,mode);
-  return {id:uid(),title:title||'Texte sans titre',source:src,parseMode:mode,mode:p.mode,type:p.type,lines:p.lines,roles:p.roles,createdAt:Date.now(),updatedAt:Date.now(),lastStudyAt:null,study:{role:role||(p.roles.length>1?'*':p.roles[0]),mode:'full',idx:0},st:p.lines.map(function(){return {peeks:0,reads:0,lastVisit:null};})};
+  return {id:uid(),title:title||'Texte sans titre',source:src,parseMode:mode,mode:p.mode,type:p.type,lines:p.lines,roles:p.roles,scenes:p.scenes||[],createdAt:Date.now(),updatedAt:Date.now(),lastStudyAt:null,study:{role:role||(p.roles.length>1?'*':p.roles[0]),mode:'full',idx:0},st:p.lines.map(function(){return {peeks:0,reads:0,lastVisit:null};})};
 }
 
 var lib=[],prefs={filter:'all',sort:'manual',search:''},editingId=null,drawerId=null,selected=new Set(),dragId=null;
@@ -720,6 +899,14 @@ function loadAll(){
       lib=d.lib.filter(function(t){return t&&Array.isArray(t.lines)&&Array.isArray(t.roles)&&t.lines.length;}).map(function(t){
         t.title=t.title||'Texte sans titre';t.source=t.source||t.lines.map(function(l){return l.c+' — '+l.t;}).join('\n');
         t.parseMode=t.parseMode||'auto';t.mode=t.mode||(t.type==='dialogue'?'dialogue':'phrases');t.type=t.type||(t.roles.length>1?'dialogue':'libre');
+        // Si le texte source contient des scènes pas encore extraites, on ré-analyse proprement
+        var reparsed=parseSource(t.source,t.parseMode);
+        if(!Array.isArray(t.scenes)||(reparsed.scenes.length&&t.scenes.length!==reparsed.scenes.length)){
+          var oldSt=Array.isArray(t.st)?t.st:[];
+          t.lines=reparsed.lines;t.roles=reparsed.roles;t.scenes=reparsed.scenes;
+          t.st=t.lines.map(function(_,i){return oldSt[i]||{peeks:0,reads:0,lastVisit:null};});
+        }
+        t.scenes=Array.isArray(t.scenes)?t.scenes:[];
         t.createdAt=t.createdAt||Date.now();t.updatedAt=t.updatedAt||t.createdAt;t.lastStudyAt=t.lastStudyAt||null;
         t.study=Object.assign({role:t.roles.length>1?'*':t.roles[0],mode:'full',idx:0},t.study||{});
         t.st=Array.isArray(t.st)?t.st:[];t.lines.forEach(function(_,i){if(!t.st[i])t.st[i]={peeks:0,reads:0,lastVisit:null};});
@@ -778,9 +965,10 @@ function renderLibrary(){
     card.className='card'+(selected.has(t.id)?' selected':'');card.style.animationDelay=Math.min(idx*40,240)+'ms';
     card.draggable=prefs.sort==='manual';card.dataset.id=t.id;
     var roles=t.roles.slice(0,4).map(function(r,i){return '<span class="role-pill" style="color:'+PALETTE[i%8]+';border-color:'+rgba(PALETTE[i%8],.4)+';background:'+rgba(PALETTE[i%8],.08)+'">'+esc(r)+'</span>';}).join('')+(t.roles.length>4?'<span class="role-pill" style="color:var(--faint);border-color:var(--line2)">+'+(t.roles.length-4)+'</span>':'');
+    var scCount=(t.scenes&&t.scenes.length)?' · '+t.scenes.length+' scène'+(t.scenes.length>1?'s':''):'';
     card.innerHTML='<div class="card-top"><input type="checkbox" class="card-check" '+(selected.has(t.id)?'checked':'')+' aria-label="Sélectionner"><span class="drag-handle" title="Glisser pour réordonner">⠿</span><div class="card-title">'+esc(t.title)+'</div></div>'+
       '<span class="badge '+t.type+'">'+(t.type==='dialogue'?'🎭 Dialogue':'📄 Texte libre')+'</span>'+
-      '<div class="card-meta">'+t.lines.length+' réplique'+(t.lines.length>1?'s':'')+' · '+t.roles.length+' rôle'+(t.roles.length>1?'s':'')+' · '+wordCount(t.source)+' mots</div>'+
+      '<div class="card-meta">'+t.lines.length+' réplique'+(t.lines.length>1?'s':'')+' · '+t.roles.length+' rôle'+(t.roles.length>1?'s':'')+scCount+' · '+wordCount(t.source)+' mots</div>'+
       '<div class="card-roles">'+roles+'</div>'+
       '<div class="mini-progress"><div class="lbl"><span>Progression</span><span>'+p.acq+'/'+p.total+'</span></div><div class="bar"><i style="width:'+(p.pct*100)+'%"></i></div></div>'+
       '<div class="card-date">'+(t.lastStudyAt?'Révisé '+fmtDate(t.lastStudyAt):'Ajouté '+fmtDate(t.createdAt))+'</div>'+
@@ -808,7 +996,12 @@ $('filters').onclick=function(e){var b=e.target.closest('.fchip');if(!b)return;p
 $('bulkClear').onclick=function(){selected.clear();renderLibrary();};
 $('bulkDelete').onclick=function(){deleteTexts(Array.from(selected));};
 function duplicateText(id){var i=lib.findIndex(function(t){return t.id===id;});if(i<0)return;var t=lib[i],c=JSON.parse(JSON.stringify(t));c.id=uid();c.title=t.title+' (copie)';c.createdAt=c.updatedAt=Date.now();c.lastStudyAt=null;c.st=t.lines.map(function(){return {peeks:0,reads:0,lastVisit:null};});c.study.idx=0;lib.splice(i+1,0,c);persist();renderLibrary();toast('Texte dupliqué.',null,2500);}
-function deleteTexts(ids){
+var pendingDeleteIds=null;
+function closeConfirmModal(){
+  pendingDeleteIds=null;
+  $('confirmModalScrim').classList.remove('show');
+}
+function performDeleteTexts(ids){
   var snap=ids.map(function(id){return {item:lib.find(function(t){return t.id===id;}),index:lib.findIndex(function(t){return t.id===id;})};}).filter(function(x){return x.item;}).sort(function(a,b){return a.index-b.index;});
   if(!snap.length)return;
   lib=lib.filter(function(t){return ids.indexOf(t.id)<0;});ids.forEach(function(id){selected.delete(id);});
@@ -817,8 +1010,37 @@ function deleteTexts(ids){
   persist();renderLibrary();
   toast(snap.length+' texte(s) supprimé(s).',{label:'Annuler',fn:function(){snap.forEach(function(x){lib.splice(Math.min(x.index,lib.length),0,x.item);});persist();renderLibrary();toast('Restauration effectuée.',null,2200);}},6500);
 }
+function deleteTexts(ids){
+  var items=ids.map(function(id){return lib.find(function(t){return t.id===id;});}).filter(Boolean);
+  if(!items.length)return;
+  pendingDeleteIds=ids.slice();
+  if(items.length===1){
+    $('confirmTitle').textContent='SUPPRIMER CE TEXTE ?';
+    $('confirmMsg').innerHTML='Voulez-vous vraiment supprimer <b>« '+esc(items[0].title)+' »</b> de votre bibliothèque ?';
+  }else{
+    $('confirmTitle').textContent='SUPPRIMER '+items.length+' TEXTES ?';
+    var names=items.slice(0,3).map(function(t){return '« '+esc(t.title)+' »';}).join(', ')+(items.length>3?'…':'');
+    $('confirmMsg').innerHTML='Voulez-vous vraiment supprimer ces <b>'+items.length+' textes</b> ('+names+') de votre bibliothèque ?';
+  }
+  $('confirmModalScrim').classList.add('show');
+  $('confirmCancelBtn').focus();
+}
+$('confirmCancelBtn').onclick=closeConfirmModal;
+$('confirmModalScrim').onclick=function(e){if(e.target===$('confirmModalScrim'))closeConfirmModal();};
+$('confirmOkBtn').onclick=function(){
+  if(!pendingDeleteIds)return;
+  var ids=pendingDeleteIds;
+  closeConfirmModal();
+  performDeleteTexts(ids);
+};
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'&&$('confirmModalScrim').classList.contains('show')){
+    e.preventDefault();
+    closeConfirmModal();
+  }
+});
 
-function openDrawer(id){var t=lib.find(function(x){return x.id===id;});if(!t)return;drawerId=id;var p=progressOf(t);$('drawerTitle').textContent=t.title;$('drawerMeta').innerHTML='<span class="badge '+t.type+'">'+(t.type==='dialogue'?'🎭 Dialogue':' Texte libre')+'</span><span class="badge libre">'+t.lines.length+' répliques</span><span class="badge libre">'+t.roles.length+' rôles</span>';$('drawerProgTxt').textContent=p.acq+'/'+p.total;$('drawerProg').style.width=(p.pct*100)+'%';$('drawerSource').textContent=t.source;$('drawerScrim').classList.add('show');$('drawer').classList.add('show');}
+function openDrawer(id){var t=lib.find(function(x){return x.id===id;});if(!t)return;drawerId=id;var p=progressOf(t);$('drawerTitle').textContent=t.title;var scBadge=(t.scenes&&t.scenes.length)?'<span class="badge dialogue">'+t.scenes.length+' scènes (I–'+t.scenes[t.scenes.length-1].roman+')</span>':'';$('drawerMeta').innerHTML='<span class="badge '+t.type+'">'+(t.type==='dialogue'?'🎭 Dialogue':' Texte libre')+'</span><span class="badge libre">'+t.lines.length+' répliques</span><span class="badge libre">'+t.roles.length+' rôles</span>'+scBadge;$('drawerProgTxt').textContent=p.acq+'/'+p.total;$('drawerProg').style.width=(p.pct*100)+'%';$('drawerSource').textContent=t.source;$('drawerScrim').classList.add('show');$('drawer').classList.add('show');}
 function closeDrawer(){drawerId=null;$('drawerScrim').classList.remove('show');$('drawer').classList.remove('show');}
 $('drawerClose').onclick=closeDrawer;$('drawerScrim').onclick=closeDrawer;
 $('drawerStudy').onclick=function(){var id=drawerId;closeDrawer();openStudy(id);};
@@ -842,16 +1064,25 @@ dz.addEventListener('drop',function(e){var f=e.dataTransfer.files[0];if(!f)retur
 $('titleInput').oninput=updatePreview;
 $('sourceInput').oninput=function(){clearTimeout(previewT);previewT=setTimeout(updatePreview,180);};
 $('parseMode').onchange=updatePreview;
-function autoTitle(src){var first=src.split('\n').map(function(s){return s.trim();}).find(Boolean)||'';if(first&&!DLG.test(first)&&first.length<70)return first.replace(/^\d+[.)]\s*/,'');return 'Nouveau texte';}
+function autoTitle(src){var first=src.split('\n').map(function(s){return s.trim();}).find(function(s){return s&&!parseSceneHeader(s);})||'';if(first&&!DLG.test(first)&&first.length<70)return first.replace(/^\d+[.)]\s*/,'');return 'Nouveau texte';}
 function updatePreview(){
   var src=$('sourceInput').value,p=parseSource(src,$('parseMode').value);
   $('pvLines').textContent=p.lines.length;$('pvRoles').textContent=p.roles.length;$('pvWords').textContent=wordCount(src);
   $('previewBadge').className='badge '+(p.type==='dialogue'?'dialogue':'libre');
-  $('previewBadge').textContent=p.type==='dialogue'?'🎭 Dialogue · '+p.mode:'📄 Texte libre · '+p.mode;
-  $('pvRolesList').innerHTML=p.roles.map(function(r,i){return '<span class="role-pill" style="color:'+PALETTE[i%8]+';border-color:'+rgba(PALETTE[i%8],.4)+';background:'+rgba(PALETTE[i%8],.08)+'">'+esc(r)+' · '+p.lines.filter(function(l){return l.c===r;}).length+'</span>';}).join('');
+  var scInfo=p.scenes&&p.scenes.length?' · '+p.scenes.length+' scène'+(p.scenes.length>1?'s':'')+' (I–'+p.scenes[p.scenes.length-1].roman+')':'';
+  $('previewBadge').textContent=(p.type==='dialogue'?'🎭 Dialogue · ':'📄 Texte libre · ')+p.mode+scInfo;
+  var rolesHTML=p.roles.map(function(r,i){return '<span class="role-pill" style="color:'+PALETTE[i%8]+';border-color:'+rgba(PALETTE[i%8],.4)+';background:'+rgba(PALETTE[i%8],.08)+'">'+esc(r)+' · '+p.lines.filter(function(l){return l.c===r;}).length+'</span>';}).join('');
+  if(p.scenes&&p.scenes.length){
+    rolesHTML+=p.scenes.slice(0,8).map(function(s){return '<span class="role-pill" style="color:var(--amber);border-color:rgba(255,176,46,.4);background:rgba(255,176,46,.08)">Scène '+esc(s.roman)+'</span>';}).join('')+(p.scenes.length>8?'<span class="role-pill" style="color:var(--faint);border-color:var(--line2)">+'+(p.scenes.length-8)+' scènes</span>':'');
+  }
+  $('pvRolesList').innerHTML=rolesHTML;
   var wrap=$('previewLines');wrap.innerHTML='';
   if(!p.lines.length)wrap.innerHTML='<div class="preview-empty">Ton aperçu apparaîtra ici dès que tu colleras un texte.</div>';
-  else p.lines.slice(0,14).forEach(function(l){var c=PALETTE[p.roles.indexOf(l.c)%8],d=document.createElement('div');d.className='pline';d.style.setProperty('--rc',c);d.innerHTML='<div class="ptag">'+esc(l.c)+'</div><div class="ptext">'+esc(l.t)+'</div>';wrap.appendChild(d);});
+  else p.lines.slice(0,14).forEach(function(l,idx){
+    var scHere=(p.scenes||[]).filter(function(s){return s.lineIdx===idx;});
+    scHere.forEach(function(s){var sd=document.createElement('div');sd.className='ptag';sd.style.color='var(--amber)';sd.style.padding='4px 2px 0';sd.textContent='— SCÈNE '+s.roman+(s.subtitle?' · '+s.subtitle:'')+' —';wrap.appendChild(sd);});
+    var c=PALETTE[p.roles.indexOf(l.c)%8],d=document.createElement('div');d.className='pline';d.style.setProperty('--rc',c);d.innerHTML='<div class="ptag">'+esc(l.c)+'</div><div class="ptext">'+esc(l.t)+'</div>';wrap.appendChild(d);
+  });
   $('saveText').disabled=!p.lines.length;
 }
 $('saveText').onclick=function(){
@@ -861,13 +1092,13 @@ $('saveText').onclick=function(){
   if(editingId){
     var t=lib.find(function(x){return x.id===editingId;});if(!t)return;
     var same=t.lines.length===p.lines.length;
-    Object.assign(t,{title:title,source:src,parseMode:mode,mode:p.mode,type:p.type,lines:p.lines,roles:p.roles,updatedAt:Date.now()});
+    Object.assign(t,{title:title,source:src,parseMode:mode,mode:p.mode,type:p.type,lines:p.lines,roles:p.roles,scenes:p.scenes||[],updatedAt:Date.now()});
     if(!same){t.st=p.lines.map(function(){return {peeks:0,reads:0,lastVisit:null};});t.study.idx=0;t.study.role=p.roles.length>1?'*':p.roles[0];toast('Texte modifié — progression réinitialisée (découpage changé).',null,4200);}
     else toast('Texte mis à jour.',null,2500);
     if(t.roles.indexOf(t.study.role)<0&&t.study.role!=='*')t.study.role=p.roles.length>1?'*':p.roles[0];
     persist();openStudy(t.id);
   }else{
-    var nt=makeText(title,src,mode);lib.unshift(nt);persist();toast('Texte importé — '+nt.lines.length+' répliques, '+nt.roles.length+' rôle(s).',null,3500);openStudy(nt.id);
+    var nt=makeText(title,src,mode);lib.unshift(nt);persist();toast('Texte importé — '+nt.lines.length+' répliques, '+nt.roles.length+' rôle(s)'+(nt.scenes.length?', '+nt.scenes.length+' scène(s)':'')+'.',null,3500);openStudy(nt.id);
   }
 };
 
@@ -877,8 +1108,9 @@ function openStudy(id){
   S.role=t.study.role||(t.roles.length>1?'*':t.roles[0]);S.mode=t.study.mode||'full';S.qpos=0;S.finished=false;
   if(S.role!=='*'&&t.roles.indexOf(S.role)<0)S.role=t.roles.length>1?'*':t.roles[0];
   $('studyTitle').textContent=t.title;$('studyTitle').title=t.title;$('printTitle').textContent=t.title.toUpperCase();
-  $('studySynopsis').textContent=t.type==='dialogue'?'Dialogue — '+t.roles.join(' · '):'Texte libre — découpage par '+t.mode+'.';
-  buildLines();buildRoleSelect();buildVoicePanel();rebuildQueue();
+  var scNote=(t.scenes&&t.scenes.length)?' · '+t.scenes.length+' scène'+(t.scenes.length>1?'s':'')+' (I–'+t.scenes[t.scenes.length-1].roman+')':'';
+  $('studySynopsis').textContent=(t.type==='dialogue'?'Dialogue — '+t.roles.join(' · '):'Texte libre — découpage par '+t.mode)+scNote+'.';
+  buildLines();buildRoleSelect();buildSceneSelect();buildVoicePanel();rebuildQueue();
   var p=S.queue.indexOf(Math.min(t.study.idx||0,t.lines.length-1));S.qpos=p>=0?p:0;
   renderAll();updateRoleUI();updateBilan();updateCursor(false);updatePlayBtn();setTraffic('paused');
   showView('study');setTimeout(function(){updateCursor(true);},120);
@@ -897,6 +1129,61 @@ function buildRoleSelect(){
   });
   s.value=S.role;
 }
+function buildSceneSelect(){
+  var wrap=$('sceneWrap'),sel=$('sceneSelect');
+  sel.innerHTML='';
+  var scenes=(active&&Array.isArray(active.scenes))?active.scenes:[];
+  if(!scenes.length){
+    wrap.classList.remove('has-scenes');
+    wrap.style.display='none';
+    return;
+  }
+  wrap.classList.add('has-scenes');
+  wrap.style.display='';
+  scenes.forEach(function(sc,idx){
+    var o=document.createElement('option');
+    o.value=String(idx);
+    o.textContent='Scène '+sc.roman;
+    o.title='Scène '+sc.roman+(sc.subtitle?' — '+sc.subtitle:'')+' (réplique '+(sc.lineIdx+1)+')';
+    sel.appendChild(o);
+  });
+  syncScenePointer(cur()||0);
+}
+function currentSceneIndexForLine(lineIdx){
+  if(!active||!Array.isArray(active.scenes)||!active.scenes.length)return -1;
+  var chosen=0;
+  for(var i=0;i<active.scenes.length;i++){
+    if(active.scenes[i].lineIdx<=lineIdx)chosen=i;
+    else break;
+  }
+  return chosen;
+}
+function syncScenePointer(lineIdx){
+  var sel=$('sceneSelect');
+  if(!sel||!active||!Array.isArray(active.scenes)||!active.scenes.length)return;
+  var scIdx=currentSceneIndexForLine(lineIdx);
+  if(scIdx>=0)sel.value=String(scIdx);
+}
+$('sceneSelect').onchange=function(e){
+  if(!active||!Array.isArray(active.scenes)||!active.scenes.length)return;
+  var scIdx=parseInt(e.target.value,10);
+  var sc=active.scenes[scIdx];
+  if(!sc)return;
+  var targetLine=Math.min(Math.max(0,sc.lineIdx),active.lines.length-1);
+  // Si en mode révision, trouver la première réplique de la file >= targetLine, ou repasser en mode complet
+  if(S.mode==='review'){
+    var posInReview=S.queue.findIndex(function(qIdx){return qIdx>=targetLine;});
+    if(posInReview>=0){
+      stopSpeech();clearTimers();hideBanner();S.awaiting=false;S.finished=false;
+      S.qpos=posInReview;active.study.idx=cur();persist();
+      if(S.playing)step();else{updateCursor(true);setTraffic('paused');}
+      toast('Départ : Scène '+sc.roman+(sc.subtitle?' · '+sc.subtitle:''),null,2400);
+      return;
+    }
+  }
+  jumpTo(targetLine,true);
+  toast('Départ : Scène '+sc.roman+(sc.subtitle?' · '+sc.subtitle:''),null,2400);
+};
 function setRole(r){
   if(r===S.role)return;pause();S.role=r;active.study.role=r;R.forEach(function(x){x.revealed=false;x.visitRevealed=false;});
   if(S.mode==='review'&&!difficultIdx().length)S.mode='full';
@@ -915,7 +1202,14 @@ var svgEyeOff='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
 var svgSpk='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor" stroke="none"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg>';
 function buildLines(){
   var wrap=$('lines');wrap.innerHTML='';els=[];
+  var scenes=(active&&Array.isArray(active.scenes))?active.scenes:[];
   active.lines.forEach(function(l,i){
+    scenes.filter(function(sc){return sc.lineIdx===i;}).forEach(function(sc){
+      var div=document.createElement('div');
+      div.className='scene-divider';
+      div.innerHTML='<span>SCÈNE '+esc(sc.roman)+(sc.subtitle?'<small>· '+esc(sc.subtitle)+'</small>':'')+'</span>';
+      wrap.appendChild(div);
+    });
     var c=roleColor(l.c),a=document.createElement('article');
     a.className='line';a.tabIndex=0;a.style.setProperty('--rc',c);a.style.setProperty('--rcs',rgba(c,.1));a.style.setProperty('--rcb',rgba(c,.42));a.style.setProperty('--rcg',rgba(c,.45));
     a.innerHTML='<div class="tag-row"><span class="num">'+String(i+1).padStart(2,'0')+'</span><span class="tag">'+esc(l.c)+' <span class="toi">TOI</span></span><span class="eq"><i></i><i></i><i></i><i></i></span><span class="status new">à travailler</span><span class="mini"><button class="m-eye" title="Masquer / révéler">'+svgEyeOff+'</button><button class="m-spk" title="Écouter">'+svgSpk+'</button></span></div><div class="text-wrap"><div class="text">'+wordsHTML(l.t)+'</div><div class="mask-hint"><span>'+svgEye+' Clique pour révéler</span></div></div>';
@@ -1031,7 +1325,22 @@ window.addEventListener('resize',function(){sizeCanvas();targetParts();measure()
 function setTraffic(s){document.body.dataset.state=s;setStatus();}
 function setStatus(role){var el=$('statusTxt');if(role){el.className='t-status playing';el.textContent='🔊 '+role;return;}if(speakingI>=0&&active){el.className='t-status playing';el.textContent='🔊 '+active.lines[speakingI].c;return;}if(S.awaiting){el.className='t-status await';el.textContent='À TOI !';}else if(S.playing){el.className='t-status playing';el.textContent=cfg.runMode==='listen'?'LECTURE':'ÇA ROULE';}else{el.className='t-status paused';el.textContent='EN PAUSE';}}
 function updatePlayBtn(){$('btnPlay').classList.toggle('is-playing',S.playing);$('lines').classList.toggle('playing',S.playing);}
-function updateCursor(scroll){if(!active)return;var i=cur();els.forEach(function(e,k){e.root.classList.toggle('current',k===i);});$('counter').textContent=(i+1)+' / '+active.lines.length;var w=$('whoTag');w.textContent=active.lines[i].c+(mine(i)?' · TOI':'');w.style.setProperty('--rc',roleColor(active.lines[i].c));$('modeBadge').textContent=S.mode==='review'?'· RÉVISION '+(S.qpos+1)+'/'+S.queue.length:'';$('progFill').style.width=((S.qpos+1)/S.queue.length*100)+'%';$('btnBack').disabled=S.qpos===0;if(scroll)els[i].root.scrollIntoView({behavior:reduced?'auto':'smooth',block:'center'});}
+function updateCursor(scroll){
+  if(!active)return;
+  var i=cur();
+  els.forEach(function(e,k){e.root.classList.toggle('current',k===i);});
+  syncScenePointer(i);
+  var scIdx=currentSceneIndexForLine(i);
+  var scLabel=(scIdx>=0&&active.scenes[scIdx])?' · Scène '+active.scenes[scIdx].roman:'';
+  $('counter').textContent=(i+1)+' / '+active.lines.length;
+  var w=$('whoTag');
+  w.textContent=active.lines[i].c+(mine(i)?' · TOI':'')+scLabel;
+  w.style.setProperty('--rc',roleColor(active.lines[i].c));
+  $('modeBadge').textContent=S.mode==='review'?'· RÉVISION '+(S.qpos+1)+'/'+S.queue.length:'';
+  $('progFill').style.width=((S.qpos+1)/S.queue.length*100)+'%';
+  $('btnBack').disabled=S.qpos===0;
+  if(scroll)els[i].root.scrollIntoView({behavior:reduced?'auto':'smooth',block:'center'});
+}
 function showBanner(i){$('banner').classList.add('show');$('bTitle').textContent='À TOI — '+active.lines[i].c;$('bSub').textContent='Réplique '+(i+1)+' — dis-la à voix haute, puis « ✓ Dite ! »';$('btnSouffle').disabled=false;$('cdWrap').style.display='none';}
 function bannerRevealed(){$('bTitle').textContent='RÉPLIQUE RÉVÉLÉE';$('bSub').textContent='Clique-la encore pour l’écouter, ou continue avec ▶ / « ✓ Dite ! »';$('btnSouffle').disabled=true;$('cdWrap').style.display='none';}
 function hideBanner(){$('banner').classList.remove('show');}
