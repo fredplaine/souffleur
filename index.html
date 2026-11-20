@@ -510,7 +510,7 @@ body[data-view=study] .transport{display:block}
     <div class="import-grid">
       <div class="panel">
         <div class="form-title" id="importTitle">NOUVEAU TEXTE</div>
-        <div class="form-sub">Colle n'importe quel texte. Détection automatique des rôles et des scènes (<code># SCÈNE UN</code>, <code>Scène 1 : Titre</code>, <code># Scène IV</code>…), ou découpage en phrases / paragraphes / vers.</div>
+        <div class="form-sub">Colle n'importe quel texte. Détection automatique des rôles (majuscules ou casse mixte) et des scènes (<code># SCÈNE UN</code>, <code>Scène 1 : Titre</code>, <code># Scène IV</code>…), ou découpage en phrases / paragraphes / vers.</div>
         <div class="field"><label for="titleInput">Titre</label><input type="text" id="titleInput" placeholder="Ex. Aquaplaning, Le Petit Prince, Antigone…"></div>
         <div class="field"><label for="parseMode">Découpage</label>
           <select id="parseMode">
@@ -533,7 +533,7 @@ body[data-view=study] .transport{display:block}
           <button class="btn primary" id="saveText">💾 Enregistrer & réviser</button>
           <button class="btn ghost" id="cancelImport">Annuler</button>
         </div>
-        <div class="format-help"><b>Formats reconnus :</b> <code>FRED — texte</code> · <code>SASHA: texte</code> · <code>LE RENARD - texte</code>. Scènes : <code># SCÈNE UN</code>, <code>Scène 2 : Titre</code>, <code># Scène IV</code> (converties en chiffres romains). Sans noms de personnages, le texte est découpé en phrases, paragraphes ou vers.</div>
+        <div class="format-help"><b>Formats reconnus :</b> <code>FRED — texte</code> · <code>Fred — texte</code> · <code>Le Garde : texte</code> · <code>SASHA - texte</code> (tirets longs <code>—</code>, <code>–</code>, <code>―</code>, deux-points <code>:</code> ou tiret <code> - </code>). Scènes : <code># SCÈNE UN</code>, <code>Scène 2 : Titre</code>, <code># Scène IV</code> (converties en chiffres romains). Sans noms de personnages, le texte est découpé en phrases, paragraphes ou vers.</div>
       </div>
       <div class="panel">
         <div class="preview-head"><b>APERÇU</b><span class="badge libre" id="previewBadge">—</span></div>
@@ -620,7 +620,7 @@ body[data-view=study] .transport{display:block}
 <aside class="drawer" id="drawer" aria-label="Détails du texte">
   <div class="drawer-head"><h3 id="drawerTitle"></h3><button class="icon-btn" id="drawerClose" aria-label="Fermer">✕</button></div>
   <div class="drawer-body"><div class="drawer-meta" id="drawerMeta"></div><div class="mini-progress" style="margin-bottom:14px"><div class="lbl"><span>Progression</span><span id="drawerProgTxt">0/0</span></div><div class="bar"><i id="drawerProg"></i></div></div><pre id="drawerSource"></pre></div>
-  <div class="drawer-actions"><button class="btn primary" id="drawerStudy">▶ Réviser</button><button class="btn ghost" id="drawerEdit">✎ Éditer</button><button class="btn ghost" id="drawerDup">⧉ Dupliquer</button><button class="btn danger" id="drawerDelete">🗑</button></div>
+  <div class="drawer-actions"><button class="btn primary" id="drawerStudy">▶ Réviser</button><button class="btn ghost" id="drawerEdit">✎ Éditer</button><button class="btn ghost" id="drawerExport">📥 Exporter .txt</button><button class="btn ghost" id="drawerDup">⧉ Dupliquer</button><button class="btn danger" id="drawerDelete">🗑</button></div>
 </aside>
 <div class="modal-scrim" id="confirmModalScrim" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
   <div class="modal-box" id="confirmModalBox">
@@ -1584,7 +1584,7 @@ var SEED_SERVEUSE=[
 "LUI — Salut, ma gueule !... Ouais, tranquille, et toi ?... Je bois un coup... Bah, tu sais bien, là où y a la petite serveuse qu’on avait repérée... Non, c’est mort, laisse tomber. Je lui ai dit qu’elle ressemblait à ma sœur. J’sais pas c’qui m’a pris !... T’es où ?... Attends, bouge pas, je te rejoins. À toute."
 ].join('\n');
 
-var DLG=/^([A-ZÀ-ÖØ-ÞŸ][A-ZÀ-ÖØ-ÞŸ0-9'’.\- ]{0,28}?)(?:\s*(\([^)]*\)))?\s*(?:—|–|:| - )\s*(.+)$/;
+var DLG=/^([A-Za-zÀ-ÖØ-öø-ÿŒœŸ][A-Za-zÀ-ÖØ-öø-ÿŒœŸ0-9'’.\- ]{0,28}?)(?:\s*(\([^)]*\)))?\s*(?:—|–|―|−|:| - )\s*(.+)$/;
 function parseSource(src,mode){
   src=String(src||'');
   var raw=src.replace(/\r/g,'').split('\n').map(function(s){return s.trim();}).filter(Boolean);
@@ -1850,10 +1850,11 @@ function renderLibrary(){
       '<div class="card-roles">'+roles+'</div>'+
       '<div class="mini-progress"><div class="lbl"><span>Progression</span><span>'+p.acq+'/'+p.total+'</span></div><div class="bar"><i style="width:'+(p.pct*100)+'%"></i></div></div>'+
       '<div class="card-date">'+(t.lastStudyAt?'Révisé '+fmtDate(t.lastStudyAt):'Ajouté '+fmtDate(t.createdAt))+'</div>'+
-      '<div class="card-foot"><button class="btn primary act-study">▶ Réviser</button><button class="mini-icon act-info" title="Détails"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></button><span class="spacer"></span><button class="mini-icon act-edit" title="Éditer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></button><button class="mini-icon act-dup" title="Dupliquer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="mini-icon danger act-del" title="Supprimer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15"/></svg></button></div>';
+      '<div class="card-foot"><button class="btn primary act-study">▶ Réviser</button><button class="mini-icon act-info" title="Détails"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></button><span class="spacer"></span><button class="mini-icon act-export" title="Exporter en .txt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></button><button class="mini-icon act-edit" title="Éditer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></button><button class="mini-icon act-dup" title="Dupliquer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="mini-icon danger act-del" title="Supprimer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15"/></svg></button></div>';
     card.querySelector('.card-check').onchange=function(e){e.stopPropagation();if(e.target.checked)selected.add(t.id);else selected.delete(t.id);renderBulk();card.classList.toggle('selected',e.target.checked);};
     card.querySelector('.act-study').onclick=function(e){e.stopPropagation();openStudy(t.id);};
     card.querySelector('.act-info').onclick=function(e){e.stopPropagation();openDrawer(t.id);};
+    card.querySelector('.act-export').onclick=function(e){e.stopPropagation();exportText(t.id);};
     card.querySelector('.act-edit').onclick=function(e){e.stopPropagation();openImport(t.id);};
     card.querySelector('.act-dup').onclick=function(e){e.stopPropagation();duplicateText(t.id);};
     card.querySelector('.act-del').onclick=function(e){e.stopPropagation();deleteTexts([t.id]);};
@@ -1874,6 +1875,26 @@ $('filters').onclick=function(e){var b=e.target.closest('.fchip');if(!b)return;p
 $('bulkClear').onclick=function(){selected.clear();renderLibrary();};
 $('bulkDelete').onclick=function(){deleteTexts(Array.from(selected));};
 function duplicateText(id){var i=lib.findIndex(function(t){return t.id===id;});if(i<0)return;var t=lib[i],c=JSON.parse(JSON.stringify(t));c.id=uid();c.title=t.title+' (copie)';c.createdAt=c.updatedAt=Date.now();c.lastStudyAt=null;c.st=t.lines.map(function(){return {peeks:0,reads:0,lastVisit:null};});c.study.idx=0;lib.splice(i+1,0,c);persist();renderLibrary();toast('Texte dupliqué.',null,2500);}
+function exportText(id){
+  var t=lib.find(function(x){return x.id===id;});
+  if(!t)return;
+  if(Array.isArray(t.lines)&&t.lines.length)rebuildSourceFromLines(t);
+  var slug=String(t.title||'texte').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'')||'texte';
+  var filename=slug+'.txt';
+  var content=String(t.source||'').replace(/\r?\n/g,'\r\n');
+  var blob=new Blob([content],{type:'text/plain;charset=utf-8'});
+  var url=URL.createObjectURL(blob);
+  var a=document.createElement('a');
+  a.href=url;
+  a.download=filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(function(){URL.revokeObjectURL(url);},1500);
+  toast('📥 Fichier « '+filename+' » téléchargé.',null,3000);
+}
 var pendingDeleteIds=null;
 function closeConfirmModal(){pendingDeleteIds=null;$('confirmModalScrim').classList.remove('show');}
 function performDeleteTexts(ids){
@@ -1909,6 +1930,7 @@ function closeDrawer(){drawerId=null;$('drawerScrim').classList.remove('show');$
 $('drawerClose').onclick=closeDrawer;$('drawerScrim').onclick=closeDrawer;
 $('drawerStudy').onclick=function(){var id=drawerId;closeDrawer();openStudy(id);};
 $('drawerEdit').onclick=function(){var id=drawerId;closeDrawer();openImport(id);};
+$('drawerExport').onclick=function(){exportText(drawerId);};
 $('drawerDup').onclick=function(){duplicateText(drawerId);closeDrawer();};
 $('drawerDelete').onclick=function(){var id=drawerId;closeDrawer();deleteTexts([id]);};
 
