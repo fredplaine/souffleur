@@ -64,7 +64,7 @@ VOIX — (Elles haussent les épaules) Tu es un enfant!
 L'AVIATEUR — Mais si vous leur dites: “La planète d'où il venait est l'astéroïde B 612.»
 VOIX — (Elles sont convaincues) Oui!
 L'AVIATEUR — Elles sont comme ça, il ne faut pas leur en vouloir. Les enfants doivent être très indulgents envers les grandes personnes. (Sortie des grandes personnes) // J'aurais aimé commencer cette histoire à la façon des contes de fées. J’aurais aimé dire: «Il était une fois un petit prince qui habitait une planète à peine plus grande que lui et qui avait besoin d’un ami…». Car je n’aime pas qu’on écoute mon récit (lise mon livre) à la légère. J'éprouve tant de chagrin à raconter ces souvenirs. // Il y a six ans déjà que mon ami s’en est allé avec son mouton. Si j’essaie de le décrire, c'est afin de ne pas l’oublier. C'est triste d’oublier un ami. Tout le monde n’a pas eu un ami. Et je peux devenir (puis devenir) comme les grandes personnes qui ne s'intéressent plus qu’aux chiffres. J’essaierai, bien sûr, de faire des portraits le plus ressemblants possible. Je me tromperai enfin sur certains détails plus importants. Mais ça, il faudra me le pardonner. Mon ami ne me donnait jamais d’explications. Il me croyait peut-être semblable à lui. Mais moi, malheureusement, je ne sais pas voir les moutons à travers les caisses. Je suis peut-être un peu comme les grandes personnes. J’ai dû vieillir.
-# SCÈNE V
+# SCÈNE V - Troisième jour - le drame des baobabs 
 L'AVIATEUR — Chaque jour j’apprenais quelque chose sur la planète, sur le départ, sur le voyage. C’est ainsi que le troisième jour, je connus le drame des baobabs.
 LE PETIT PRINCE — C’est bien vrai, n’est-ce pas, que les moutons mangent des arbustes?
 L'AVIATEUR — Oui, c’est vrai
@@ -74,9 +74,9 @@ LE PETIT PRINCE — (sagement) Les baobabs avant de grandir, ça commence par ê
 L'AVIATEUR — C’est exact! Mais pourquoi veux-tu que tes moutons mangent les petits baobabs?
 LE PETIT PRINCE — Ben! Voyons! Les graines de baobab sont terribles. Le sol de ma planète en est infesté. Un baobab, si l’on s’y prend trop tard, on ne peut plus jamais s’en débarrasser, il encombre toute la planète. Il la perfore de ses racines. Et si la planète est trop petite, et si les baobabs sont trop nombreux, ils la font éclater!
 L'AVIATEUR — (hoche la tête)
-LE PETIT PRINCE — C’est une question de discipline.Quand on a terminé sa toilette du matin, il faut faire soigneusement la toilette de la planète. C’est un travail très ennuyeux, mais très facile.
+LE PETIT PRINCE — C’est une question de discipline. Quand on a terminé sa toilette du matin, il faut faire soigneusement la toilette de la planète. C’est un travail très ennuyeux, mais très facile.
 L'AVIATEUR — Les enfants! (Faites attention) Prenez garde aux baobabs!
-# SCÈNE VI
+# SCÈNE VI - Les couchers de soleil
 LE PETIT PRINCE — J'aime bien les couchers de soleil. Allons voir un coucher de soleil?
 L'AVIATEUR — Mais il faut attendre.
 LE PETIT PRINCE — (surpris) Attendre quoi?
@@ -85,7 +85,7 @@ LE PETIT PRINCE — (sourire) Je me crois toujours chez moi!
 L'AVIATEUR — Sur sa si petite planète, il lui suffisait de tirer sa chaise de quelques pas. Et il regardait le crépuscule chaque fois qu'il le désirait.
 LE PETIT PRINCE — (s'éloigne et s’assoit mélancolique) Un jour, j'ai vu le soleil se coucher quarante-quatre fois! (pause) Tu sais. quand on est tellement triste, on aime les couchers de soleil
 L'AVIATEUR — Le jour des quarante-quatre fois, tu étais donc tellement triste?
-# SCÈNE VII
+# SCÈNE VII - Le cinquième jour
 (L’aviateur répare son avion)
 L'AVIATEUR — Le cinquième jour, toujours grâce au mouton, ce secret de la vie du petit prince me fut révélé.
 LE PETIT PRINCE — (brusquement, sans preambule) Un mouton s’il mange les arbustes, il mange aussi les fleurs?
