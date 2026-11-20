@@ -789,7 +789,145 @@ var FALLBACK_SAMPLE=[
 ].join('\n');
 
 var DLG=/^([A-Za-zÀ-ÖØ-öø-ÿŒœŸ][A-Za-zÀ-ÖØ-öø-ÿŒœŸ0-9'’.\- ]{0,28}?)(?:\s*(\([^)]*\)))?\s*(?:—|–|―|−|:| - )\s*(.+)$/;
-// ... existing code ... -->
+function parseSource(src,mode){
+  var raw=String(src||'').replace(/\r/g,'').split('\n').map(function(s){return s.trim();});
+  var nonEmpty=raw.filter(Boolean);
+  var sceneMatches=raw.map(parseSceneHeader);
+  var nonSceneLines=raw.filter(function(l,idx){return l&&!sceneMatches[idx];});
+  var matches=raw.map(function(l,idx){return sceneMatches[idx]?null:l.match(DLG);});
+  var hit=matches.filter(Boolean).length;
+  var chosen=mode==='auto'?(hit>=2||(hit>=1&&nonSceneLines.length<=3)?'dialogue':'phrases'):mode;
+  var lines=[],roles=[],scenes=[],last=null;
+  if(chosen==='dialogue'){
+    raw.forEach(function(l,idx){
+      var sc=sceneMatches[idx];
+      if(sc){
+        scenes.push({num:sc.num,roman:sc.roman,subtitle:sc.subtitle,lineIdx:lines.length});
+        last=null;
+        return;
+      }
+      var m=matches[idx];
+      if(m){var c=cleanLine(m[1]).toUpperCase(), inlineDid=m[2]?cleanLine(m[2])+' ':'', t=inlineDid+cleanLine(m[3]);if(!t.trim())return;last={c:c,t:t.trim()};lines.push(last);if(roles.indexOf(c)<0)roles.push(c);}
+      else{var t2=cleanLine(l);if(!t2)return;if(last)last.t+=' '+t2;else{last={c:'DIDASCALIE',t:t2};lines.push(last);}}
+    });
+  }else{
+    roles=['TEXTE'];
+    if(chosen==='paragraphes'){
+      var blocks=src.replace(/\r/g,'').split(/\n\s*\n/);
+      blocks.forEach(function(block){
+        var bLines=block.split('\n').map(function(s){return s.trim();}).filter(Boolean);
+        var buf=[];
+        bLines.forEach(function(bl){
+          var sc=parseSceneHeader(bl);
+          if(sc){
+            if(buf.length){var txt=cleanLine(buf.join(' '));if(txt)lines.push({c:'TEXTE',t:txt});buf=[];}
+            scenes.push({num:sc.num,roman:sc.roman,subtitle:sc.subtitle,lineIdx:lines.length});
+          }else buf.push(bl);
+        });
+        if(buf.length){var txt2=cleanLine(buf.join(' '));if(txt2)lines.push({c:'TEXTE',t:txt2});}
+      });
+    }else if(chosen==='vers'){
+      raw.forEach(function(l,idx){
+        var sc=sceneMatches[idx];
+        if(sc){scenes.push({num:sc.num,roman:sc.roman,subtitle:sc.subtitle,lineIdx:lines.length});return;}
+        var t=cleanLine(l);if(t)lines.push({c:'TEXTE',t:t});
+      });
+    }else{
+      var blocksP=src.replace(/\r/g,'').split(/\n\s*\n/);
+      blocksP.forEach(function(block){
+        var bLines=block.split('\n').map(function(s){return s.trim();}).filter(Boolean);
+        var buf=[];
+        var flushSentences=function(){
+          if(!buf.length)return;
+          var joined=cleanLine(buf.join(' '));
+          var sents=joined.match(/[^.!?…]+[.!?…]+|[^.!?…]+$/g)||[];
+          sents.map(cleanLine).filter(Boolean).forEach(function(st){lines.push({c:'TEXTE',t:st});});
+          buf=[];
+        };
+        bLines.forEach(function(bl){
+          var sc=parseSceneHeader(bl);
+          if(sc){flushSentences();scenes.push({num:sc.num,roman:sc.roman,subtitle:sc.subtitle,lineIdx:lines.length});}
+          else buf.push(bl);
+        });
+        flushSentences();
+      });
+    }
+  }
+  scenes.forEach(function(s){if(lines.length&&s.lineIdx>=lines.length)s.lineIdx=lines.length-1;});
+  return {mode:chosen,type:chosen==='dialogue'?'dialogue':'libre',lines:lines,roles:roles,scenes:scenes};
+}
+
+function defaultRegieForTitle(title){
+  var t=String(title||'').toLowerCase();
+  var base={rate:1,volume:1,gap:.7,readPartner:true,turbo:false,autoPrompt:true,delay:4,readAfter:true,mask:'flou',theme:'pluie',particles:55,ambience:false,runMode:'recite',voiceMap:{}};
+  if(/petit\s*prince/.test(t)){base.theme='sahara';base.delay=4;}
+  else if(/garde.*antigone|antigone/.test(t)){base.theme='velours';base.delay=4;}
+  else if(/aquaplan/.test(t)){base.theme='pluie';base.delay=3;}
+  else if(/serveuse/.test(t)){base.theme='bistrot';base.delay=3;}
+  return base;
+}
+
+function makeText(title,src,mode,role,regieOverrides){
+  var p=parseSource(src,mode);
+  var regie=Object.assign(defaultRegieForTitle(title),regieOverrides||{});
+  return {
+    id:uid(),
+    title:title||'Texte sans titre',
+    source:src,
+    parseMode:mode,
+    mode:p.mode,
+    type:p.type,
+    lines:p.lines,
+    roles:p.roles,
+    scenes:p.scenes||[],
+    regie:regie,
+    createdAt:Date.now(),
+    updatedAt:Date.now(),
+    lastStudyAt:null,
+    study:{role:role||(p.roles.length>1?'*':p.roles[0]),mode:'full',idx:0},
+    st:p.lines.map(function(){return {peeks:0,reads:0,lastVisit:null};})
+  };
+}
+
+var lib=[],prefs={filter:'all',sort:'manual',search:''},editingId=null,drawerId=null,selected=new Set(),dragId=null;
+var cfg={rate:1,volume:1,gap:.7,readPartner:true,turbo:false,autoPrompt:true,delay:4,readAfter:true,mask:'flou',theme:'pluie',particles:55,ambience:false,muted:false,runMode:'recite',voiceMap:{}};
+var active=null,R=[],els=[],S={role:'*',mode:'full',queue:[],qpos:0,playing:false,awaiting:false,finished:false};
+var printing=false,advTimer=null,cdTimer=null,cdLeft=0,saveT=null,previewT=null;
+function cur(){return S.queue[S.qpos];}
+function mine(i){return S.role==='*'||(active&&active.lines[i]&&active.lines[i].c===S.role);}
+function mineTotal(){return active?active.lines.reduce(function(n,_,i){return n+(mine(i)?1:0);},0):0;}
+function roleLabel(){return S.role==='*'?'TOUS LES RÔLES':S.role;}
+function roleColor(name){return PALETTE[Math.max(0,(active?active.roles.indexOf(name):0))%PALETTE.length];}
+function estMs(t){var sp=stripDidascalies(t);return sp?wordCount(sp)*420/cfg.rate+900:500;}
+// Calibré pour que la 1re réplique du Petit Prince (39 mots hors didascalies) donne 14 secondes à ×1.00
+function reciteSec(t){
+  var sp=stripDidascalies(t);
+  var wc=wordCount(sp);
+  if(!wc)return 2;
+  return Math.max(2,Math.round((wc*(14/39))/cfg.rate));
+}
+function isTurboCue(i){
+  return !!(cfg.turbo && S.role!=='*' && cfg.runMode==='recite' && active && active.lines[i] && !mine(i) && i+1<active.lines.length && mine(i+1));
+}
+function saveActiveRegie(){
+  if(!active)return;
+  active.regie=Object.assign({},active.regie||defaultRegieForTitle(active.title),{
+    rate:cfg.rate,
+    volume:cfg.volume,
+    gap:cfg.gap,
+    readPartner:cfg.readPartner,
+    turbo:cfg.turbo,
+    autoPrompt:cfg.autoPrompt,
+    delay:cfg.delay,
+    readAfter:cfg.readAfter,
+    mask:cfg.mask,
+    theme:cfg.theme,
+    particles:cfg.particles,
+    ambience:cfg.ambience,
+    runMode:cfg.runMode,
+    voiceMap:JSON.parse(JSON.stringify(cfg.voiceMap||{}))
+  });
+}
 function persist(){
   saveActiveRegie();
   clearTimeout(saveT);
@@ -945,205 +1083,6 @@ function syncExternalCatalog(){
     });
   });
 }
-  var lines=[],roles=[],scenes=[],last=null;
-  if(chosen==='dialogue'){
-    raw.forEach(function(l,idx){
-      var sc=sceneMatches[idx];
-      if(sc){
-        scenes.push({num:sc.num,roman:sc.roman,subtitle:sc.subtitle,lineIdx:lines.length});
-        last=null;
-        return;
-      }
-      var m=matches[idx];
-      if(m){var c=cleanLine(m[1]).toUpperCase(), inlineDid=m[2]?cleanLine(m[2])+' ':'', t=inlineDid+cleanLine(m[3]);if(!t.trim())return;last={c:c,t:t.trim()};lines.push(last);if(roles.indexOf(c)<0)roles.push(c);}
-      else{var t2=cleanLine(l);if(!t2)return;if(last)last.t+=' '+t2;else{last={c:'DIDASCALIE',t:t2};lines.push(last);}}
-    });
-  }else{
-    roles=['TEXTE'];
-    if(chosen==='paragraphes'){
-      var blocks=src.replace(/\r/g,'').split(/\n\s*\n/);
-      blocks.forEach(function(block){
-        var bLines=block.split('\n').map(function(s){return s.trim();}).filter(Boolean);
-        var buf=[];
-        bLines.forEach(function(bl){
-          var sc=parseSceneHeader(bl);
-          if(sc){
-            if(buf.length){var txt=cleanLine(buf.join(' '));if(txt)lines.push({c:'TEXTE',t:txt});buf=[];}
-            scenes.push({num:sc.num,roman:sc.roman,subtitle:sc.subtitle,lineIdx:lines.length});
-          }else buf.push(bl);
-        });
-        if(buf.length){var txt2=cleanLine(buf.join(' '));if(txt2)lines.push({c:'TEXTE',t:txt2});}
-      });
-    }else if(chosen==='vers'){
-      raw.forEach(function(l,idx){
-        var sc=sceneMatches[idx];
-        if(sc){scenes.push({num:sc.num,roman:sc.roman,subtitle:sc.subtitle,lineIdx:lines.length});return;}
-        var t=cleanLine(l);if(t)lines.push({c:'TEXTE',t:t});
-      });
-    }else{
-      var blocksP=src.replace(/\r/g,'').split(/\n\s*\n/);
-      blocksP.forEach(function(block){
-        var bLines=block.split('\n').map(function(s){return s.trim();}).filter(Boolean);
-        var buf=[];
-        var flushSentences=function(){
-          if(!buf.length)return;
-          var joined=cleanLine(buf.join(' '));
-          var sents=joined.match(/[^.!?…]+[.!?…]+|[^.!?…]+$/g)||[];
-          sents.map(cleanLine).filter(Boolean).forEach(function(st){lines.push({c:'TEXTE',t:st});});
-          buf=[];
-        };
-        bLines.forEach(function(bl){
-          var sc=parseSceneHeader(bl);
-          if(sc){flushSentences();scenes.push({num:sc.num,roman:sc.roman,subtitle:sc.subtitle,lineIdx:lines.length});}
-          else buf.push(bl);
-        });
-        flushSentences();
-      });
-    }
-  }
-  scenes.forEach(function(s){if(lines.length&&s.lineIdx>=lines.length)s.lineIdx=lines.length-1;});
-  return {mode:chosen,type:chosen==='dialogue'?'dialogue':'libre',lines:lines,roles:roles,scenes:scenes};
-}
-
-function defaultRegieForTitle(title){
-  var t=String(title||'').toLowerCase();
-  var base={rate:1,volume:1,gap:.7,readPartner:true,turbo:false,autoPrompt:true,delay:4,readAfter:true,mask:'flou',theme:'pluie',particles:55,ambience:false,runMode:'recite',voiceMap:{}};
-  if(/petit\s*prince/.test(t)){base.theme='sahara';base.delay=4;}
-  else if(/garde.*antigone|antigone/.test(t)){base.theme='velours';base.delay=4;}
-  else if(/aquaplan/.test(t)){base.theme='pluie';base.delay=3;}
-  else if(/serveuse/.test(t)){base.theme='bistrot';base.delay=3;}
-  return base;
-}
-
-function makeText(title,src,mode,role,regieOverrides){
-  var p=parseSource(src,mode);
-  var regie=Object.assign(defaultRegieForTitle(title),regieOverrides||{});
-  return {
-    id:uid(),
-    title:title||'Texte sans titre',
-    source:src,
-    parseMode:mode,
-    mode:p.mode,
-    type:p.type,
-    lines:p.lines,
-    roles:p.roles,
-    scenes:p.scenes||[],
-    regie:regie,
-    createdAt:Date.now(),
-    updatedAt:Date.now(),
-    lastStudyAt:null,
-    study:{role:role||(p.roles.length>1?'*':p.roles[0]),mode:'full',idx:0},
-    st:p.lines.map(function(){return {peeks:0,reads:0,lastVisit:null};})
-  };
-}
-
-var lib=[],prefs={filter:'all',sort:'manual',search:''},editingId=null,drawerId=null,selected=new Set(),dragId=null;
-var cfg={rate:1,volume:1,gap:.7,readPartner:true,turbo:false,autoPrompt:true,delay:4,readAfter:true,mask:'flou',theme:'pluie',particles:55,ambience:false,muted:false,runMode:'recite',voiceMap:{}};
-var active=null,R=[],els=[],S={role:'*',mode:'full',queue:[],qpos:0,playing:false,awaiting:false,finished:false};
-var printing=false,advTimer=null,cdTimer=null,cdLeft=0,saveT=null,previewT=null;
-function cur(){return S.queue[S.qpos];}
-function mine(i){return S.role==='*'||(active&&active.lines[i]&&active.lines[i].c===S.role);}
-function mineTotal(){return active?active.lines.reduce(function(n,_,i){return n+(mine(i)?1:0);},0):0;}
-function roleLabel(){return S.role==='*'?'TOUS LES RÔLES':S.role;}
-function roleColor(name){return PALETTE[Math.max(0,(active?active.roles.indexOf(name):0))%PALETTE.length];}
-function estMs(t){var sp=stripDidascalies(t);return sp?wordCount(sp)*420/cfg.rate+900:500;}
-// Calibré pour que la 1re réplique du Petit Prince (39 mots hors didascalies) donne 14 secondes à ×1.00
-function reciteSec(t){
-  var sp=stripDidascalies(t);
-  var wc=wordCount(sp);
-  if(!wc)return 2;
-  return Math.max(2,Math.round((wc*(14/39))/cfg.rate));
-}
-function isTurboCue(i){
-  return !!(cfg.turbo && S.role!=='*' && cfg.runMode==='recite' && active && active.lines[i] && !mine(i) && i+1<active.lines.length && mine(i+1));
-}
-function saveActiveRegie(){
-  if(!active)return;
-  active.regie=Object.assign({},active.regie||defaultRegieForTitle(active.title),{
-    rate:cfg.rate,
-    volume:cfg.volume,
-    gap:cfg.gap,
-    readPartner:cfg.readPartner,
-    turbo:cfg.turbo,
-    autoPrompt:cfg.autoPrompt,
-    delay:cfg.delay,
-    readAfter:cfg.readAfter,
-    mask:cfg.mask,
-    theme:cfg.theme,
-    particles:cfg.particles,
-    ambience:cfg.ambience,
-    runMode:cfg.runMode,
-    voiceMap:JSON.parse(JSON.stringify(cfg.voiceMap||{}))
-  });
-}
-function persist(){
-  saveActiveRegie();
-  clearTimeout(saveT);
-  saveT=setTimeout(function(){
-    try{localStorage.setItem(KEY,JSON.stringify({lib:lib,prefs:prefs,cfg:cfg,lastId:active?active.id:null}));}catch(e){}
-  },200);
-}
-function seedLibrary(){
-  lib=[
-    makeText('Le Petit Prince',SEED_PETIT_PRINCE,'dialogue',"L'AVIATEUR",{theme:'sahara',delay:4,mask:'flou',rate:1}),
-    makeText('Le Garde — Antigone',SEED_GARDE_ANTIGONE,'dialogue','LE GARDE',{theme:'velours',delay:4,mask:'flou',rate:1}),
-    makeText('Aquaplaning',SEED_AQUA,'dialogue','SASHA',{theme:'pluie',delay:3,mask:'flou',rate:1}),
-    makeText('La Serveuse',SEED_SERVEUSE,'dialogue','LUI',{theme:'bistrot',delay:3,mask:'flou',rate:1})
-  ];
-}
-function loadAll(){
-  var last=null;
-  try{
-    var d=JSON.parse(localStorage.getItem(KEY));
-    if(d&&Array.isArray(d.lib)){
-      lib=d.lib.filter(function(t){return t&&Array.isArray(t.lines)&&Array.isArray(t.roles)&&t.lines.length;}).map(function(t){
-        t.title=t.title||'Texte sans titre';t.source=t.source||t.lines.map(function(l){return l.c+' — '+l.t;}).join('\n');
-        t.parseMode=t.parseMode||'auto';t.mode=t.mode||(t.type==='dialogue'?'dialogue':'phrases');t.type=t.type||(t.roles.length>1?'dialogue':'libre');
-        var reparsed=parseSource(t.source,t.parseMode);
-        if(!Array.isArray(t.scenes)||(reparsed.scenes.length&&t.scenes.length!==reparsed.scenes.length)){
-          var oldSt=Array.isArray(t.st)?t.st:[];
-          t.lines=reparsed.lines;t.roles=reparsed.roles;t.scenes=reparsed.scenes;
-          t.st=t.lines.map(function(_,i){return oldSt[i]||{peeks:0,reads:0,lastVisit:null};});
-        }
-        t.scenes=Array.isArray(t.scenes)?t.scenes:[];
-        t.regie=Object.assign(defaultRegieForTitle(t.title),t.regie||{});
-        if(typeof t.regie.delay!=='number'||t.regie.delay>12)t.regie.delay=defaultRegieForTitle(t.title).delay;
-        t.createdAt=t.createdAt||Date.now();t.updatedAt=t.updatedAt||t.createdAt;t.lastStudyAt=t.lastStudyAt||null;
-        t.study=Object.assign({role:t.roles.length>1?'*':t.roles[0],mode:'full',idx:0},t.study||{});
-        t.st=Array.isArray(t.st)?t.st:[];t.lines.forEach(function(_,i){if(!t.st[i])t.st[i]={peeks:0,reads:0,lastVisit:null};});
-        return t;
-      });
-      var hugoIdx=lib.findIndex(function(t){return /^Demain,\s*d[eè]s\s*l/i.test(t.title||'');});
-      if(hugoIdx>=0){lib[hugoIdx]=makeText('La Serveuse',SEED_SERVEUSE,'dialogue','LUI',{theme:'bistrot',delay:3});}
-      lib=lib.filter(function(t){return !/^Pitch\s*—\s*mon club de dragon boat/i.test(t.title||'');});
-      lib.forEach(function(t){
-        if(/^Aquaplaning/i.test(t.title||'')){
-          t.title='Aquaplaning';
-          if(t.scenes&&t.scenes.length){
-            t.source=SEED_AQUA;
-            var rp=parseSource(t.source,'dialogue');
-            var oldSt=Array.isArray(t.st)?t.st:[];
-            t.lines=rp.lines;t.roles=rp.roles;t.scenes=[];
-            t.st=t.lines.map(function(_,i){return oldSt[i]||{peeks:0,reads:0,lastVisit:null};});
-          }
-        }
-      });
-      if(!lib.some(function(t){return /^Le Petit Prince$/i.test(t.title||'');})){
-        lib.unshift(makeText('Le Petit Prince',SEED_PETIT_PRINCE,'dialogue',"L'AVIATEUR",{theme:'sahara',delay:4}));
-      }
-      if(!lib.some(function(t){return /Antigone/i.test(t.title||'');})){
-        var ppIdx=lib.findIndex(function(t){return /^Le Petit Prince$/i.test(t.title||'');});
-        lib.splice(ppIdx>=0?ppIdx+1:0,0,makeText('Le Garde — Antigone',SEED_GARDE_ANTIGONE,'dialogue','LE GARDE',{theme:'velours',delay:4}));
-      }
-      Object.assign(prefs,d.prefs||{});Object.assign(cfg,d.cfg||{});cfg.voiceMap=cfg.voiceMap||{};
-      if(typeof cfg.delay!=='number'||cfg.delay>12)cfg.delay=4;
-      last=d.lastId||null;
-    }
-  }catch(e){}
-  if(!lib.length){seedLibrary();last=lib[0].id;}
-  return last;
-}
-var lastIdOnLoad=loadAll();
 
 function showView(v){
   if(v!=='study'){pause();closeInlineEditor(false);}
@@ -1273,7 +1212,7 @@ $('confirmModalScrim').onclick=function(e){if(e.target===$('confirmModalScrim'))
 $('confirmOkBtn').onclick=function(){if(!pendingDeleteIds)return;var ids=pendingDeleteIds;closeConfirmModal();performDeleteTexts(ids);};
 
 function openDrawer(id){var t=lib.find(function(x){return x.id===id;});if(!t)return;drawerId=id;var p=progressOf(t);$('drawerTitle').textContent=t.title;var scBadge=(t.scenes&&t.scenes.length)?'<span class="badge dialogue">'+t.scenes.length+' scènes (I–'+t.scenes[t.scenes.length-1].roman+')</span>':'';$('drawerMeta').innerHTML='<span class="badge '+t.type+'">'+(t.type==='dialogue'?'🎭 Dialogue':'📄 Texte libre')+'</span><span class="badge libre">'+t.lines.length+' répliques</span><span class="badge libre">'+t.roles.length+' rôles</span>'+scBadge;$('drawerProgTxt').textContent=p.acq+'/'+p.total;$('drawerProg').style.width=(p.pct*100)+'%';$('drawerSource').textContent=t.source;$('drawerScrim').classList.add('show');$('drawer').classList.add('show');}
-function closeDrawer(){drawerId=null;$('drawerScrim').classList.remove('show');$('drawer').classList.add('show');$('drawer').classList.remove('show');}
+function closeDrawer(){drawerId=null;$('drawerScrim').classList.remove('show');$('drawer').classList.remove('show');}
 $('drawerClose').onclick=closeDrawer;$('drawerScrim').onclick=closeDrawer;
 $('drawerStudy').onclick=function(){var id=drawerId;closeDrawer();openStudy(id);};
 $('drawerEdit').onclick=function(){var id=drawerId;closeDrawer();openImport(id);};
