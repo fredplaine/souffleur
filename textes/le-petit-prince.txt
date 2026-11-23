@@ -1,15 +1,15 @@
-# SCÈNE I
+# SCÈNE I — Introduction
 L'AVIATEUR — Une fois, lorsque j’avais six ans, j’ai vu une magnifique image, dans un livre sur la forêt vierge qui s’appelait Histoires vécues. (le dessin apparaît à l'écran) On disait dans le livre: Les serpents boas avalent leur proie toute entière, sans la mâcher.
 L'AVIATEUR — J'ai alors beaucoup réfléchi sur les aventures de la jungle et, à mon tour, j'ai réussi, avec un crayon de couleur, à tracer mon premier dessin. Mon dessin numero 1. Il était comme ça: (le dessin apparaît à l'écran)
 L'AVIATEUR — (aux grandes personnes) Mon dessin vous fait peur?
 VOIX — Pourquoi un chapeau ferait-il peur?
 L'AVIATEUR — Mon dessin ne représentait pas un chapeau. Il représentait un serpent boa qui digérait un éléphant. J’ai alors dessiné l’intérieur du serpent boa, afin que les grandes personnes puissent comprendre. Elles ont toujours besoin d’explications. Mon dessin numéro 2 était comme ca: (sur l'écran, il apparaît en fondu sur le dessin précédent)
-VOIX — (Seynete) Laisse de côté tes dessins de serpents boas ouverts ou fermes!
+VOIX — (Seynete) Laisse de côté tes dessins de serpents boas ouverts ou fermés!
 L'AVIATEUR — C’est ainsi que j'ai abandonné, à l'âge de six ans, une magnifique carrière de peintre. J'ai ainsi eu au cours de ma vie, des tas de contacts avec des tas de gens sérieux. J'ai beaucoup vécu chez les grandes personnes. Je les ai vues de très près. Ça n'a pas trop amélioré mon opinion. Quand j’en rencontrais une qui me paraissait un peu lucide, je faisais l'expérience de mon dessin numéro 1 que j'ai toujours conservé. Je voulais savoir si elle était vraiment compréhensive. Mais, toujours elle me répondait:
 VOIX — C'est un chapeau.
-L'AVIATEUR — J'ai donc dû choisir un autre métier et j'ai appris à piloter des avions. J'ai volé un peu partout dans le monde. Et la géographie, c'est exact, m'a beaucoup servi. J'ai ainsi vécu seul, sans personne avec qui parler véritablement, jusqu’à une panne dans le désert du Sahara, il y a six ans. Quelque chose s'était cassé dans mon moteur. Et comme je n’avais avec moi ni mécanicien ni passagers, je me préparai à essayer de reussir, tout seul, une réparation difficile. C'était pour moi une question de vie ou de mort. J'avais à peine de l'eau à boire pour huit jours.
-# SCÈNE II
-L'AVIATEUR — Le premier soir je me suis donc endormi sur le sable à milles milles de toute terre habitée. (Il s'allonge sur lee sable)
+L'AVIATEUR — J'ai donc dû choisir un autre métier et j'ai appris à piloter des avions. J'ai volé un peu partout dans le monde. Et la géographie, c'est exact, m'a beaucoup servi. J'ai ainsi vécu seul, sans personne avec qui parler véritablement, jusqu’à une panne dans le désert du Sahara, il y a six ans. Quelque chose s'était cassé dans mon moteur. Et comme je n’avais avec moi ni mécanicien ni passagers, je me préparai à essayer de reussir, tout seul, une réparation difficile. C'était pour moi une question de vie ou de mort. J'avais à peine de l'eau à boire pour huit jours...
+# SCÈNE II — Premier matin
+L'AVIATEUR — Le premier soir je me suis donc endormi sur le sable à milles milles de toute terre habitée. (Il s'allonge sur le sable)
 LE PETIT PRINCE — S'il vous plaît, dessine-moi un mouton!
 L'AVIATEUR — (Il saute sur ses pieds comme s’il avait été frappé par la foudre. Il se frotte les yeux plusieurs fois en regardant attentivement autour de lui. Il voit une petite personne extraordinaire qui l’examine avec beaucoup de sérieux.) Vous imaginez ma surprise au lever du jour, quand cette drôle de petite voix m'a réveillé. Hein!
 LE PETIT PRINCE — (Il est très sûr de lui. Il ne semble pas perdu au milieu des sables, ni mortifié par la fatigue, ni la faim, ni la soif, ni la peur. Rien à son sujet ne doit donner l'impression d’un enfant perdu dans le désert, à des milliers de kilomètres de toute habitation humaine.) Dessine-moi un mouton.
@@ -63,7 +63,7 @@ VOIX — (Elles haussent les épaules) Tu es un enfant!
 L'AVIATEUR — Mais si vous leur dites: “La planète d'où il venait est l'astéroïde B 612.»
 VOIX — (Elles sont convaincues) Oui!
 L'AVIATEUR — Elles sont comme ça, il ne faut pas leur en vouloir. Les enfants doivent être très indulgents envers les grandes personnes. (Sortie des grandes personnes) // J'aurais aimé commencer cette histoire à la façon des contes de fées. J’aurais aimé dire: «Il était une fois un petit prince qui habitait une planète à peine plus grande que lui et qui avait besoin d’un ami…». Car je n’aime pas qu’on écoute mon récit (lise mon livre) à la légère. J'éprouve tant de chagrin à raconter ces souvenirs. // Il y a six ans déjà que mon ami s’en est allé avec son mouton. Si j’essaie de le décrire, c'est afin de ne pas l’oublier. C'est triste d’oublier un ami. Tout le monde n’a pas eu un ami. Et je peux devenir (puis devenir) comme les grandes personnes qui ne s'intéressent plus qu’aux chiffres. J’essaierai, bien sûr, de faire des portraits le plus ressemblants possible. Je me tromperai enfin sur certains détails plus importants. Mais ça, il faudra me le pardonner. Mon ami ne me donnait jamais d’explications. Il me croyait peut-être semblable à lui. Mais moi, malheureusement, je ne sais pas voir les moutons à travers les caisses. Je suis peut-être un peu comme les grandes personnes. J’ai dû vieillir.
-# SCÈNE V
+# SCÈNE V — Troisième jour — le drame des baobabs
 L'AVIATEUR — Chaque jour j’apprenais quelque chose sur la planète, sur le départ, sur le voyage. C’est ainsi que le troisième jour, je connus le drame des baobabs.
 LE PETIT PRINCE — C’est bien vrai, n’est-ce pas, que les moutons mangent des arbustes?
 L'AVIATEUR — Oui, c’est vrai
@@ -73,9 +73,9 @@ LE PETIT PRINCE — (sagement) Les baobabs avant de grandir, ça commence par ê
 L'AVIATEUR — C’est exact! Mais pourquoi veux-tu que tes moutons mangent les petits baobabs?
 LE PETIT PRINCE — Ben! Voyons! Les graines de baobab sont terribles. Le sol de ma planète en est infesté. Un baobab, si l’on s’y prend trop tard, on ne peut plus jamais s’en débarrasser, il encombre toute la planète. Il la perfore de ses racines. Et si la planète est trop petite, et si les baobabs sont trop nombreux, ils la font éclater!
 L'AVIATEUR — (hoche la tête)
-LE PETIT PRINCE — C’est une question de discipline.Quand on a terminé sa toilette du matin, il faut faire soigneusement la toilette de la planète. C’est un travail très ennuyeux, mais très facile.
+LE PETIT PRINCE — C’est une question de discipline. Quand on a terminé sa toilette du matin, il faut faire soigneusement la toilette de la planète. C’est un travail très ennuyeux, mais très facile.
 L'AVIATEUR — Les enfants! (Faites attention) Prenez garde aux baobabs!
-# SCÈNE VI
+# SCÈNE VI — Les couchers de soleil
 LE PETIT PRINCE — J'aime bien les couchers de soleil. Allons voir un coucher de soleil?
 L'AVIATEUR — Mais il faut attendre.
 LE PETIT PRINCE — (surpris) Attendre quoi?
@@ -84,7 +84,7 @@ LE PETIT PRINCE — (sourire) Je me crois toujours chez moi!
 L'AVIATEUR — Sur sa si petite planète, il lui suffisait de tirer sa chaise de quelques pas. Et il regardait le crépuscule chaque fois qu'il le désirait.
 LE PETIT PRINCE — (s'éloigne et s’assoit mélancolique) Un jour, j'ai vu le soleil se coucher quarante-quatre fois! (pause) Tu sais. quand on est tellement triste, on aime les couchers de soleil
 L'AVIATEUR — Le jour des quarante-quatre fois, tu étais donc tellement triste?
-# SCÈNE VII
+# SCÈNE VII — Le cinquième jour
 L'AVIATEUR — (L’aviateur répare son avion) Le cinquième jour, toujours grâce au mouton, ce secret de la vie du petit prince me fut révélé.
 LE PETIT PRINCE — (brusquement, sans preambule) Un mouton s’il mange les arbustes, il mange aussi les fleurs?
 L'AVIATEUR — Un mouton mange tout ce qu’il rencontre.
@@ -102,7 +102,7 @@ LE PETIT PRINCE — (Stupefait!) Des choses sérieuses! (Puis immédiatement ave
 L'AVIATEUR — Un quoi?
 LE PETIT PRINCE — Un champignon! (tout pâle de colère). Il y a des millions d'années que les fleurs fabriquent des épines. Il y a des millions d'années que les moutons mangent quand même les fleurs. Et ce n'est pas sérieux de chercher à comprendre pourquoi elles se donnent tant de mal pour se fabriquer des épines qui ne servent jamais à rien? Ce n'est pas important la guerre des moutons et des fleurs? Ce n'est pas plus sérieux et plus important que les additions d'un gros Monsieur rouge? Et si je connais, moi, une fleur unique au monde, qui n'existe nulle part, sauf dans ma planète, et qu'un petit mouton peut anéantir d'un seul coup, comme ça, un matin, sans se rendre compte de ce qu'il fait, ce n'est pas important ça. (il Rougit) Si quelqu'un aime une fleur qui n'existe qu'à un exemplaire dans les millions et les millions d'étoiles, ça suffit pour qu'il soit heureux quand il les regarde. Il se dit:"Ma fleur est là quelque part..."Mais si le mouton mange la fleur, c'est pour lui comme si, brusquement, toutes les étoiles s'éteignaient! Et ce n'est pas important ça! (il éclate en sanglots)
 L'AVIATEUR — (il le prend dans ses bras et le console) La fleur que tu aimes n’est pas en danger... Je lui dessinerai une muselière à ton mouton... et une armure pour ta fleur. Je.. (il ne sait pas quoi dire. il se sent mal à l'aise. ne sait pas comment le toucher... comment le protéger...)
-# SCÈNE VIII
+# SCÈNE VIII — La fleur
 L'AVIATEUR — J'appris bien vite à mieux connaître cette fleur. Elle avait surgi un jour, d’une graine qui venait d’on ne sait où... Elle choisissait avec soin ses couleurs. Elle s’habillait lentement, elle ajustait ses pétales un à un. Elle ne voulait pas sortir toute fripée comme les coquelicots. Elle ne voulait apparaître que dans le plein rayonnement de sa beauté. Eh, oui! Elle était très coquette!
 FLEUR — Ah! Je me réveille à peine. Je vous demande pardon... Je suis encore toute décoiffée.
 LE PETIT PRINCE — (avec admiration) Que vous êtes belle!
@@ -119,8 +119,8 @@ L'AVIATEUR — Mais elle s'était interrompue. Elle était venue sous forme de g
 FLEUR — (Elle tousse encore) Ce paravent?
 LE PETIT PRINCE — J'allais le chercher, mais vous me parliez! (Alors elle avait alors force sa toux pour lui infliger quand meme des remords)
 L'AVIATEUR — Ainsi, le Petit Prince, malgré toute la bonne volonté de son amour, avait vite douté d’elle et était devenu très malheureux.
-LE PETIT PRINCE — (au public. à l'aviateur) Je n'aurais pas dû l'écouter. il ne faut jamais écouter les fleurs. Il faut les regarder et les respirer. La mienne embaumait ma planète, mais je ne savais pas m'en réjouir. Cette histoire de griffes, qui m'avait tellement agacé, eût dû m'attendrir..." "Je n'ai alors rien su comprendre J'aurais dû la juger sur les actes et non sur les mots. Elle m'embaumait et m'éclairait. Je n'aurais jamais dû m'enfuir! J'aurais dû deviner sa tendresse derrière ses pauvres ruses. Les fleurs sont si contradictoires! Mais j'étais trop jeune pour savoir l'aimer."
-# SCÈNE IX
+LE PETIT PRINCE — (au public. à l'aviateur) Je n'aurais pas dû l'écouter. il ne faut jamais écouter les fleurs. Il faut les regarder et les respirer. La mienne embaumait ma planète, mais je ne savais pas m'en réjouir. Cette histoire de griffes, qui m'avait tellement agacé, eût dû m'attendrir..." "Je n'ai alors rien su comprendre J'aurais dû la juger sur les actes et non sur les mots. Elle m'embaumait et m'éclairait. Je n'aurais jamais dû m'enfuir! J'aurais dû deviner sa tendresse derrière ses pauvres ruses. Les fleurs sont si contradictoires! Mais j'étais trop jeune pour savoir l'aimer.
+# SCÈNE IX — Le départ
 L'AVIATEUR — Au matin du départ il mit sa planète bien en ordre. Il ramona soigneusement ses volcans en activité. Il possédait deux volcans en activité. Et c'était bien commode pour faire chauffer le petit déjeuner du matin. Il possédait aussi un volcan éteint. Mais comme il disait, “On ne sait jamais!” Il ramona donc également le volcan éteint. Et il arrosa une dernière fois la fleur, se prépara à la mettre à l'abri sous son globe. Il se découvrit l'envie...(l’envie de pleurer… Acting.)
 LE PETIT PRINCE — Adieu!
 FLEUR — (ne répond pas)
@@ -229,18 +229,18 @@ VANITEUX — (à disparaître) Moi je suis le plus élégant, le plus intelligen
 LE PETIT PRINCE — Les grandes personnes sont décidément bien bizarres! (et il s’en va)
 # SCÈNE XII
 L'AVIATEUR — La planète suivante était habitée par un buveur. Cette visite fut très courte mais elle plongea le petit prince dans une grande mélancolie.
-IVROGNE — (il boit, chante, rit et pleure. A des sautes d'humeur soudaines)
+LE BUVEUR — (il boit, chante, rit et pleure. A des sautes d'humeur soudaines)
 LE PETIT PRINCE — (quand il boit) Que fais-tu là?
-IVROGNE — (lugubre) Je bois.
+LE BUVEUR — (lugubre) Je bois.
 LE PETIT PRINCE — Pourquoi bois-tu?
-IVROGNE — Pour oublier.
+LE BUVEUR — Pour oublier.
 LE PETIT PRINCE — Pour oublier quoi?
-IVROGNE — Pour oublier que j'ai honte (en baissant la tête)
+LE BUVEUR — Pour oublier que j'ai honte (en baissant la tête)
 LE PETIT PRINCE — Honte de quoi? (en essayant de l'aider)
-IVROGNE — Honte de boire! (et il s'endort brusquement ronflant)
+LE BUVEUR — Honte de boire! (et il s'endort brusquement ronflant)
 LE PETIT PRINCE — (perplexe) Les grandes personnes sont décidément très très bizarres. (il s’en va)
 # SCÈNE XIII
-L'AVIATEUR — La quatrième planète était celle du businessman. Cet homme était si occupé qu'il ne leva même pas la tête à l'arrivée du petit prince.
+L'AVIATEUR — La quatrième planète était celle de la femme d'affaire. Cette femme était si occupée qu'elle ne leva même pas la tête à l'arrivée du petit prince.
 HOMME D'AFFAIRES — (il est tellement pris par ses calculs qu'il ne lève même pas la tête quand le petit prince arrive il compte).
 LE PETIT PRINCE — Bonjour!
 HOMME D'AFFAIRES — (sans le regarder et agacé) Deux et trois font cinq. Cinq et sept: douze. Douze et trois: quinze.
