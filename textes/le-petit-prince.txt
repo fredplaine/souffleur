@@ -1,23 +1,22 @@
-# SCÈNE I — Introduction
+# SCÈNE I
 L'AVIATEUR — Une fois, lorsque j’avais six ans, j’ai vu une magnifique image, dans un livre sur la forêt vierge qui s’appelait Histoires vécues. (le dessin apparaît à l'écran) On disait dans le livre: Les serpents boas avalent leur proie toute entière, sans la mâcher.
 L'AVIATEUR — J'ai alors beaucoup réfléchi sur les aventures de la jungle et, à mon tour, j'ai réussi, avec un crayon de couleur, à tracer mon premier dessin. Mon dessin numero 1. Il était comme ça: (le dessin apparaît à l'écran)
 L'AVIATEUR — (aux grandes personnes) Mon dessin vous fait peur?
 VOIX — Pourquoi un chapeau ferait-il peur?
 L'AVIATEUR — Mon dessin ne représentait pas un chapeau. Il représentait un serpent boa qui digérait un éléphant. J’ai alors dessiné l’intérieur du serpent boa, afin que les grandes personnes puissent comprendre. Elles ont toujours besoin d’explications. Mon dessin numéro 2 était comme ca: (sur l'écran, il apparaît en fondu sur le dessin précédent)
-VOIX — (Seynete) Laisse de côté tes dessins de serpents boas ouverts ou fermés!
+VOIX — (Seynete) Laisse de côté tes dessins de serpents boas ouverts ou fermes!
 L'AVIATEUR — C’est ainsi que j'ai abandonné, à l'âge de six ans, une magnifique carrière de peintre. J'ai ainsi eu au cours de ma vie, des tas de contacts avec des tas de gens sérieux. J'ai beaucoup vécu chez les grandes personnes. Je les ai vues de très près. Ça n'a pas trop amélioré mon opinion. Quand j’en rencontrais une qui me paraissait un peu lucide, je faisais l'expérience de mon dessin numéro 1 que j'ai toujours conservé. Je voulais savoir si elle était vraiment compréhensive. Mais, toujours elle me répondait:
 VOIX — C'est un chapeau.
-L'AVIATEUR — J'ai donc dû choisir un autre métier et j'ai appris à piloter des avions. J'ai volé un peu partout dans le monde. Et la géographie, c'est exact, m'a beaucoup servi. J'ai ainsi vécu seul, sans personne avec qui parler véritablement, jusqu’à une panne dans le désert du Sahara, il y a six ans. Quelque chose s'était cassé dans mon moteur. Et comme je n’avais avec moi ni mécanicien ni passagers, je me préparai à essayer de reussir, tout seul, une réparation difficile. C'était pour moi une question de vie ou de mort. J'avais à peine de l'eau à boire pour huit jours...
-# SCÈNE II — Premier matin
+L'AVIATEUR — J'ai donc dû choisir un autre métier et j'ai appris à piloter des avions. J'ai volé un peu partout dans le monde. Et la géographie, c'est exact, m'a beaucoup servi. J'ai ainsi vécu seul, sans personne avec qui parler véritablement, jusqu’à une panne dans le désert du Sahara, il y a six ans. Quelque chose s'était cassé dans mon moteur. Et comme je n’avais avec moi ni mécanicien ni passagers, je me préparai à essayer de reussir, tout seul, une réparation difficile. C'était pour moi une question de vie ou de mort. J'avais à peine de l'eau à boire pour huit jours.
+# SCÈNE II
 L'AVIATEUR — Le premier soir je me suis donc endormi sur le sable à milles milles de toute terre habitée. (Il s'allonge sur lee sable)
 LE PETIT PRINCE — S'il vous plaît, dessine-moi un mouton!
 L'AVIATEUR — (Il saute sur ses pieds comme s’il avait été frappé par la foudre. Il se frotte les yeux plusieurs fois en regardant attentivement autour de lui. Il voit une petite personne extraordinaire qui l’examine avec beaucoup de sérieux.) Vous imaginez ma surprise au lever du jour, quand cette drôle de petite voix m'a réveillé. Hein!
-LE PETIT PRINCE — (Il est très sûr de lui. Il ne semble pas perdu au milieu des sables, ni mortifié par la fatigue, ni la faim, ni la soif, ni la peur. Rien à son sujet ne doit donner l'impression d’un enfant perdu dans le désert, à des milliers de kilomètres de toute habitation humaine.) Dessine-moi un mouton..
+LE PETIT PRINCE — (Il est très sûr de lui. Il ne semble pas perdu au milieu des sables, ni mortifié par la fatigue, ni la faim, ni la soif, ni la peur. Rien à son sujet ne doit donner l'impression d’un enfant perdu dans le désert, à des milliers de kilomètres de toute habitation humaine.) Dessine-moi un mouton.
 L'AVIATEUR — Je me trouvais à mille milles de toute région habitée. Or mon petit bonhomme ne me semblait ni égaré, ni mort de fatigue, ni mort de faim, ni mort de soif, ni mort de peur. Mais qu’est ce que tu fais là?
 LE PETIT PRINCE — (Il répète lentement comme si c'était quelque chose de très important) S'il vous plaît, dessine-moi un mouton...
 L'AVIATEUR — Quand le mystère est trop impressionnant, on n’ose pas désobéir. (Prend le carnet et le crayon... Hésite...) Mais je me rappelais alors que j'avais surtout étudié la géographie, l'histoire, le calcul et la grammaire. (Puis répond avec un peu de mauvaise humeur) Je ne sais pas dessiner!
-LE PETIT PRINCE — Ça ne fait rien. Dessine-moi un mouton!
-L'AVIATEUR — (Comme il n’avait jamais dessiné un mouton, il lui refit l’un des deux seuls dessins dont il était capable. Celui du boa fermé.)
+LE PETIT PRINCE — Ça ne fait rien. Dessine-moi un mouton! (Comme il n’avait jamais dessiné un mouton, il lui refit l’un des deux seuls dessins dont il était capable. Celui du boa fermé.)
 LE PETIT PRINCE — Non! Non! Je ne veux pas d’un éléphant dans un boa. Un boa c’est très dangereux, et un éléphant c’est très encombrant. Chez moi c’est tout petit. J’ai besoin d’un mouton. Dessine-moi un mouton.
 L'AVIATEUR — (effectue un dessin qu'il remet au petit prince. Sur l’écran, on voit le dessin du premier mouton)
 LE PETIT PRINCE — (Il le regarde attentivement et puis) Non! Celui-là est très malade. Fais-en un autre!
@@ -40,7 +39,7 @@ L'AVIATEUR — (Modestement) Oui.
 LE PETIT PRINCE — Ah! Ca c'est drôle... (Il éclate de rire). Alors toi aussi tu viens du ciel! De quelle planète es-tu?
 L'AVIATEUR — Tu viens d'une autre planète?
 LE PETIT PRINCE — (Pause... Il secoue doucement la tête tout en regardant l'avion.) C’est vrai que, la-dessus, tu ne peux pas venir de bien loin!
-L'AVIATEUR — (au public) Vous imaginez combien j'avais pu être intrigué par cette demi-confidence sur les “autres planètes”. (au petit prince, en s'asseyant à côté de lui) D'où viens-tu, mon petit bonhomme? Où est-ce “chez toi”? Où veux-tu emporter mon mouton?
+L'AVIATEUR — (au public) Vous imaginez combien j'avais pu être intrigué par cette demi-confidence sur les “autres planètes”. (au petit prince) D'où viens-tu, mon petit bonhomme? Où est-ce “chez toi”? Où veux-tu emporter mon mouton?
 LE PETIT PRINCE — (Silence méditatif) Ce qui est bien, avec la caisse que tu m’as donnée, c’est que, la nuit, ça lui servira de maison.
 L'AVIATEUR — Bien sûr. Et si tu es gentil, je te donnerai aussi une corde pour l’attacher pendant le jour. Et un piquet.
 LE PETIT PRINCE — (contrarié) L'attacher? Quelle drôle d'idée!
@@ -64,7 +63,7 @@ VOIX — (Elles haussent les épaules) Tu es un enfant!
 L'AVIATEUR — Mais si vous leur dites: “La planète d'où il venait est l'astéroïde B 612.»
 VOIX — (Elles sont convaincues) Oui!
 L'AVIATEUR — Elles sont comme ça, il ne faut pas leur en vouloir. Les enfants doivent être très indulgents envers les grandes personnes. (Sortie des grandes personnes) // J'aurais aimé commencer cette histoire à la façon des contes de fées. J’aurais aimé dire: «Il était une fois un petit prince qui habitait une planète à peine plus grande que lui et qui avait besoin d’un ami…». Car je n’aime pas qu’on écoute mon récit (lise mon livre) à la légère. J'éprouve tant de chagrin à raconter ces souvenirs. // Il y a six ans déjà que mon ami s’en est allé avec son mouton. Si j’essaie de le décrire, c'est afin de ne pas l’oublier. C'est triste d’oublier un ami. Tout le monde n’a pas eu un ami. Et je peux devenir (puis devenir) comme les grandes personnes qui ne s'intéressent plus qu’aux chiffres. J’essaierai, bien sûr, de faire des portraits le plus ressemblants possible. Je me tromperai enfin sur certains détails plus importants. Mais ça, il faudra me le pardonner. Mon ami ne me donnait jamais d’explications. Il me croyait peut-être semblable à lui. Mais moi, malheureusement, je ne sais pas voir les moutons à travers les caisses. Je suis peut-être un peu comme les grandes personnes. J’ai dû vieillir.
-# SCÈNE V - Troisième jour - le drame des baobabs 
+# SCÈNE V
 L'AVIATEUR — Chaque jour j’apprenais quelque chose sur la planète, sur le départ, sur le voyage. C’est ainsi que le troisième jour, je connus le drame des baobabs.
 LE PETIT PRINCE — C’est bien vrai, n’est-ce pas, que les moutons mangent des arbustes?
 L'AVIATEUR — Oui, c’est vrai
@@ -74,9 +73,9 @@ LE PETIT PRINCE — (sagement) Les baobabs avant de grandir, ça commence par ê
 L'AVIATEUR — C’est exact! Mais pourquoi veux-tu que tes moutons mangent les petits baobabs?
 LE PETIT PRINCE — Ben! Voyons! Les graines de baobab sont terribles. Le sol de ma planète en est infesté. Un baobab, si l’on s’y prend trop tard, on ne peut plus jamais s’en débarrasser, il encombre toute la planète. Il la perfore de ses racines. Et si la planète est trop petite, et si les baobabs sont trop nombreux, ils la font éclater!
 L'AVIATEUR — (hoche la tête)
-LE PETIT PRINCE — C’est une question de discipline. Quand on a terminé sa toilette du matin, il faut faire soigneusement la toilette de la planète. C’est un travail très ennuyeux, mais très facile.
+LE PETIT PRINCE — C’est une question de discipline.Quand on a terminé sa toilette du matin, il faut faire soigneusement la toilette de la planète. C’est un travail très ennuyeux, mais très facile.
 L'AVIATEUR — Les enfants! (Faites attention) Prenez garde aux baobabs!
-# SCÈNE VI - Les couchers de soleil
+# SCÈNE VI
 LE PETIT PRINCE — J'aime bien les couchers de soleil. Allons voir un coucher de soleil?
 L'AVIATEUR — Mais il faut attendre.
 LE PETIT PRINCE — (surpris) Attendre quoi?
@@ -85,9 +84,8 @@ LE PETIT PRINCE — (sourire) Je me crois toujours chez moi!
 L'AVIATEUR — Sur sa si petite planète, il lui suffisait de tirer sa chaise de quelques pas. Et il regardait le crépuscule chaque fois qu'il le désirait.
 LE PETIT PRINCE — (s'éloigne et s’assoit mélancolique) Un jour, j'ai vu le soleil se coucher quarante-quatre fois! (pause) Tu sais. quand on est tellement triste, on aime les couchers de soleil
 L'AVIATEUR — Le jour des quarante-quatre fois, tu étais donc tellement triste?
-# SCÈNE VII - Le cinquième jour
-(L’aviateur répare son avion)
-L'AVIATEUR — Le cinquième jour, toujours grâce au mouton, ce secret de la vie du petit prince me fut révélé.
+# SCÈNE VII
+L'AVIATEUR — (L’aviateur répare son avion) Le cinquième jour, toujours grâce au mouton, ce secret de la vie du petit prince me fut révélé.
 LE PETIT PRINCE — (brusquement, sans preambule) Un mouton s’il mange les arbustes, il mange aussi les fleurs?
 L'AVIATEUR — Un mouton mange tout ce qu’il rencontre.
 LE PETIT PRINCE — Même les fleurs qui ont des épines?
@@ -99,7 +97,7 @@ LE PETIT PRINCE — Oh! (très déçu et surpris par sa réponse. Pause... puis 
 LE PETIT PRINCE — (il lance, avec une sorte de rancune) Je ne te crois pas! Les fleurs sont faibles. Elles sont naïves. Elles se rassurent comme elles le peuvent. Elles se croient terribles avec leurs épines..
 L'AVIATEUR — (à lui-même) Si ce boulon résiste encore, je le ferai sauter d’un coup de marteau
 LE PETIT PRINCE — (le dérangeant encore) Et tu crois, toi, que les fleurs...
-L'AVIATEUR — (impatienté par les questions continues) Mais non! Mais non! Je ne crois rien! J'ai répondu n'importe quoi. Je m'occupe, moi, de choses sérieuses!
+L'AVIATEUR — (impatienté par les questions continues) Mais non! Mais non! (se leve pour prendre son marteau). Je ne crois rien! J'ai répondu n'importe quoi. Je m'occupe, moi, de choses sérieuses! (il recommence a bosser sur son avion).
 LE PETIT PRINCE — (Stupefait!) Des choses sérieuses! (Puis immédiatement avec reproche) Tu parles comme les grandes personnes! Tu confonds tout... tu mélanges tout! (agacé et irrité) Je connais une planète ou il y a un M. Cramoisi. Il n’a jamais respiré une fleur. Il n’a jamais regardé une étoile. Il n’a jamais aimé personne. Il n'a jamais rien fait d'autre que des additions. Et toute la journée, il répète comme toi: “Je suis un homme sérieux! Je suis un homme sérieux!” et ça le fait gonfler d’orgueil. Mais ce n’est pas un homme, c’est un champignon!
 L'AVIATEUR — Un quoi?
 LE PETIT PRINCE — Un champignon! (tout pâle de colère). Il y a des millions d'années que les fleurs fabriquent des épines. Il y a des millions d'années que les moutons mangent quand même les fleurs. Et ce n'est pas sérieux de chercher à comprendre pourquoi elles se donnent tant de mal pour se fabriquer des épines qui ne servent jamais à rien? Ce n'est pas important la guerre des moutons et des fleurs? Ce n'est pas plus sérieux et plus important que les additions d'un gros Monsieur rouge? Et si je connais, moi, une fleur unique au monde, qui n'existe nulle part, sauf dans ma planète, et qu'un petit mouton peut anéantir d'un seul coup, comme ça, un matin, sans se rendre compte de ce qu'il fait, ce n'est pas important ça. (il Rougit) Si quelqu'un aime une fleur qui n'existe qu'à un exemplaire dans les millions et les millions d'étoiles, ça suffit pour qu'il soit heureux quand il les regarde. Il se dit:"Ma fleur est là quelque part..."Mais si le mouton mange la fleur, c'est pour lui comme si, brusquement, toutes les étoiles s'éteignaient! Et ce n'est pas important ça! (il éclate en sanglots)
@@ -121,7 +119,7 @@ L'AVIATEUR — Mais elle s'était interrompue. Elle était venue sous forme de g
 FLEUR — (Elle tousse encore) Ce paravent?
 LE PETIT PRINCE — J'allais le chercher, mais vous me parliez! (Alors elle avait alors force sa toux pour lui infliger quand meme des remords)
 L'AVIATEUR — Ainsi, le Petit Prince, malgré toute la bonne volonté de son amour, avait vite douté d’elle et était devenu très malheureux.
-LE PETIT PRINCE — (au public. à l'aviateur) Je n'aurais pas dû l'écouter. il ne faut jamais écouter les fleurs. Il faut les regarder et les respirer. La mienne embaumait ma planète, mais je ne savais pas m'en réjouir. Cette histoire de griffes, qui m'avait tellement agacé, eût dû m'attendrir..." "Je n'ai alors rien su comprendre J'aurais dû la juger sur les actes et non sur les mots. Elle m'embaumait et m'éclairait. Je n'aurais jamais dû m'enfuir! J'aurais dû deviner sa tendresse derrière ses pauvres ruses. Les fleurs sont si contradictoires! Mais j'étais trop jeune pour savoir l'aimer.
+LE PETIT PRINCE — (au public. à l'aviateur) Je n'aurais pas dû l'écouter. il ne faut jamais écouter les fleurs. Il faut les regarder et les respirer. La mienne embaumait ma planète, mais je ne savais pas m'en réjouir. Cette histoire de griffes, qui m'avait tellement agacé, eût dû m'attendrir..." "Je n'ai alors rien su comprendre J'aurais dû la juger sur les actes et non sur les mots. Elle m'embaumait et m'éclairait. Je n'aurais jamais dû m'enfuir! J'aurais dû deviner sa tendresse derrière ses pauvres ruses. Les fleurs sont si contradictoires! Mais j'étais trop jeune pour savoir l'aimer."
 # SCÈNE IX
 L'AVIATEUR — Au matin du départ il mit sa planète bien en ordre. Il ramona soigneusement ses volcans en activité. Il possédait deux volcans en activité. Et c'était bien commode pour faire chauffer le petit déjeuner du matin. Il possédait aussi un volcan éteint. Mais comme il disait, “On ne sait jamais!” Il ramona donc également le volcan éteint. Et il arrosa une dernière fois la fleur, se prépara à la mettre à l'abri sous son globe. Il se découvrit l'envie...(l’envie de pleurer… Acting.)
 LE PETIT PRINCE — Adieu!
@@ -182,10 +180,10 @@ LE PETIT PRINCE — Sire… sur quoi régnez-vous?
 ROI — (avec une grande simplicité) Sur tout!
 LE PETIT PRINCE — Sur tout? (Le roi d'un geste discret désigna sa planète, les autres planètes et les étoiles.)
 LE PETIT PRINCE — Sur tout ça?
-ROI — Sur tout ça |
+ROI — Sur tout ça!
 LE PETIT PRINCE — Et les étoiles vous obéissent?
 ROI — Bien sûr! Elles m’obéissent immédiatement. Je ne tolère pas l’indiscipline.
-LE PETIT PRINCE — ( d’abord émerveillé puis triste) J'aimerais beaucoup voir un coucher de soleil. (puis, triste comme s’il demandait une grâce) Faites-moi plaisir. Ordonnez au soleil de se coucher
+LE PETIT PRINCE — (d’abord émerveillé puis triste) J'aimerais beaucoup voir un coucher de soleil. (puis, triste comme s’il demandait une grâce) Faites-moi plaisir. Ordonnez au soleil de se coucher
 ROI — Si j'ordonnais à un général de voler d’une fleur à l’autre comme un papillon, ou d’écrire une tragédie, ou de se changer en oiseau de mer; et si le général n’exécutait pas l’ordre reçu, qui aurait tort, lui ou moi?
 LE PETIT PRINCE — (fermement) Ce serait Vous
 ROI — C’est exact! Il faut exiger de chacun, ce que chacun peut donner. L'autorité repose, avant tout, sur la raison. Si tu ordonnes à ton peuple d’aller se jeter à la mer, il fera la révolution. J'ai le droit d'exiger l’obéissance parce que mes ordres sont raisonnables.
@@ -205,12 +203,12 @@ LE PETIT PRINCE — Moi, je peux me juger moi-même, n’importe ou. Je n’ai p
 ROI — Hem! hem!... (réfléchissant) Je crois que sur ma planète quelque part il y a un vieux rat. Je l'entend pendant la nuit. Tu pourras juger ce vieux rat. De temps en temps, tu le condamneras à mort pour que sa vie dépende de ta justice. Mais tu le gracieras chaque fois pour l’économiser. Il n'y en a qu’un.
 LE PETIT PRINCE — Moi, Je n'aime pas condamner à mort, Je préfère partir.
 ROI — (presque avec douleur) Non! s’il te plaît! Non!
-LE PETIT PRINCE — Si Votre Majesté v desirait être obéie ponctuellement, elle pourrait me donner un ordre raisonnable. Elle pourrait m'ordonner, par exemple, de partir avant une minute. Il me semble que les conditions sont favorables
+LE PETIT PRINCE — Si Votre Majesté desirait être obéie ponctuellement, elle pourrait me donner un ordre raisonnable. Elle pourrait m'ordonner, par exemple, de partir avant une minute. Il me semble que les conditions sont favorables
 ROI — (d’abord étourdi)
 LE PETIT PRINCE — (hésite puis soupire et va)
-ROI — (puis avec l'air d’une grande autorité criant derrière lui pour le convaincre de rester) Je te nomme mon ambassadeur |
+ROI — (puis avec l'air d’une grande autorité criant derrière lui pour le convaincre de rester) Je te nomme mon ambassadeur!
 LE PETIT PRINCE — (à lui-même... se déplaçant. comme s’il pensait à haute voix) Les grandes personnes sont bien étranges!
-# SCÈNE XI
+# SCÈNE XI — La seconde planète — Le vaniteux
 L'AVIATEUR — La seconde planète était habitée par un vaniteux.
 VANITEUX — Moi je suis le plus drôle. Moi je suis le plus beau, Moi je suis le plus élégant, le plus riche. J'aime beaucoup qu’on m'aime! (Apercevant le petit prince) Ah! ah! voici la visite d’un admirateur
 LE PETIT PRINCE — Bonjour. Vous avez un drôle de chapeau!
@@ -227,19 +225,19 @@ VANITEUX — Admirer, c’est reconnaître que je suis l’homme le plus beau, l
 LE PETIT PRINCE — Mais tu es seul sur ta planète!
 VANITEUX — (en le suppliant sous la voix comme pour ne pas se faire entendre) Admire-moi quand même! Je t'en prie! Fais-moi plaisir! Moi seul, je suis admiré
 LE PETIT PRINCE — Je t’admire (haussant les épaules). Mais en quoi cela peut-il bien t’interesser?
-VANITEUX — (à disparaître ) Moi je suis le plus élégant, le plus intelligent de toute la planète, tout le planète m’adore, tout le planète me regarde...
+VANITEUX — (à disparaître) Moi je suis le plus élégant, le plus intelligent de toute la planète, tout le planète m’adore, tout le planète me regarde...
 LE PETIT PRINCE — Les grandes personnes sont décidément bien bizarres! (et il s’en va)
 # SCÈNE XII
 L'AVIATEUR — La planète suivante était habitée par un buveur. Cette visite fut très courte mais elle plongea le petit prince dans une grande mélancolie.
-LE BUVEUR — (il boit, chante, rit et pleure. A des sautes d'humeur soudaines)
+IVROGNE — (il boit, chante, rit et pleure. A des sautes d'humeur soudaines)
 LE PETIT PRINCE — (quand il boit) Que fais-tu là?
-LE BUVEUR — (lugubre) Je bois.
+IVROGNE — (lugubre) Je bois.
 LE PETIT PRINCE — Pourquoi bois-tu?
-LE BUVEUR — Pour oublier.
+IVROGNE — Pour oublier.
 LE PETIT PRINCE — Pour oublier quoi?
-LE BUVEUR — Pour oublier que j'ai honte (en baissant la tête)
+IVROGNE — Pour oublier que j'ai honte (en baissant la tête)
 LE PETIT PRINCE — Honte de quoi? (en essayant de l'aider)
-LE BUVEUR — Honte de boire! (et il s'endort brusquement ronflant)
+IVROGNE — Honte de boire! (et il s'endort brusquement ronflant)
 LE PETIT PRINCE — (perplexe) Les grandes personnes sont décidément très très bizarres. (il s’en va)
 # SCÈNE XIII
 L'AVIATEUR — La quatrième planète était celle du businessman. Cet homme était si occupé qu'il ne leva même pas la tête à l'arrivée du petit prince.
@@ -251,7 +249,7 @@ HOMME D'AFFAIRES — Salut! Quinze plus sept, ça fait vingt-deux. Je n’ai pas
 LE PETIT PRINCE — Cinq cents et un million de quoi?
 HOMME D'AFFAIRES — Hein! Tu es toujours là? Cinq cents et un million de… je ne sais plus. J'ai tellement de travail! Je suis un homme sérieux, moi! Je ne m'amuse pas avec des balivernes! Deux plus cinq: sept...
 LE PETIT PRINCE — Cinq cents et un million de quoi?
-HOMME D'AFFAIRES — (lève la tête pour la première fois) Depuis cinquante-quatre quatre ans que j'habite sur cette planète-ci, je n’ai été dérangé que trois fois. La première fois, ça a été il y a 22 ans, par un hanneton qui était tombé de quelque part. Il faisait un bruit épouvantable et j'ai fait un, deux, trois. quatre erreurs dans une addition. La seconde fois, c'était il y a onze ans pour une crise de rhumatisme. Je manque d’exercice, je n’ai pas le temps de flâner. Je suis sérieux, moi. La troisième fois… la voici! Donc, Je disais donc cinq cents et un million.
+HOMME D'AFFAIRES — (lève la tête pour la première fois) Depuis cinquante-quatre ans que j'habite sur cette planète-ci, je n’ai été dérangé que trois fois. La première fois, ça a été il y a 22 ans, par un hanneton qui était tombé de quelque part. Il faisait un bruit épouvantable et j'ai fait un, deux, trois. quatre erreurs dans une addition. La seconde fois, c'était il y a onze ans pour une crise de rhumatisme. Je manque d’exercice, je n’ai pas le temps de flâner. Je suis sérieux, moi. La troisième fois… la voici! Donc, Je disais donc cinq cents et un million.
 LE PETIT PRINCE — Des millions de quoi?
 HOMME D'AFFAIRES — (bouffant résigné à son insistance) Ufffff!! Des millions de ces petites choses que l'on voit parfois dans le ciel.
 LE PETIT PRINCE — Des mouches?
@@ -270,14 +268,14 @@ LE PETIT PRINCE — Tu possèdes les étoiles?
 HOMME D'AFFAIRES — Oui! Bien sûr! Je les possède
 LE PETIT PRINCE — Mais j'ai déjà vu un roi qui...
 HOMME D'AFFAIRES — (en l’interrompant) Les rois ne possèdent pas. Ils règnent sur... C'est très différent.
-LE PETIT PRINCE — de posséder les étoiles?
+LE PETIT PRINCE — Et à quoi cela te sert-il de posséder les étoiles?
 HOMME D'AFFAIRES — ça me sert à être riche!
 LE PETIT PRINCE — Et à quoi cela te sert-il d’être riche?
 HOMME D'AFFAIRES — A acheter d’autres étoiles, si quelqu'un en trouve.
 LE PETIT PRINCE — (à part) Celui-ci raisonne un peu comme mon ivrogne. comment peut-on posséder les étoiles?
 HOMME D'AFFAIRES — A qui les étoiles appartiennent-elles?
 LE PETIT PRINCE — Je ne sais pas, à personne.
-HOMME D'AFFAIRES — Alors elles sont à moi que j'ai pensé en premier
+HOMME D'AFFAIRES — Alors elles sont à moi car j'y ai pensé le premier.
 LE PETIT PRINCE — Ça suffit?
 HOMME D'AFFAIRES — Bien sûr. Quand tu trouves un diamant qui n’est à personne, il est à toi. Quand tu trouves une île qui n’est à personne, elle est à toi. Quand tu as une idée le premier, tu la fais breveter, et c’est à toi. Et moi, je possède les étoiles, parce que personne avant moi n’a jamais songé à les posséder.
 LE PETIT PRINCE — C’est vrai, mais qu’en fais-tu?
@@ -288,12 +286,12 @@ LE PETIT PRINCE — Qu'est-ce que ça veut dire?
 HOMME D'AFFAIRES — Ça veut dire que je peux écrire sur un bout de papier le nombre de mes étoiles et que je peux les enfermer à clé dans un tiroir.
 LE PETIT PRINCE — Et c’est tout?
 HOMME D'AFFAIRES — ça suffit!
-LE PETIT PRINCE — C’est amusant et assez poétique, mais ça n’est pas très sérieux! Moi, sur ma planète, je possède une fleur que j’arrose tous les jours. Je possède trois volcans, deux allumés et un éteint, que je ramone toutes les semaines. Car je ramone aussi celui qyui est eteint. On ne sait jamais. C'est utile à mes volcans, et c’est utile à ma fleur que je les possède. Mais toi, tu n’es pas utile aux étoiles..(il s’en va)
-HOMME D'AFFAIRES — (reste bouche bée sans trouver un mot pour répondre, il ne produit que des vers étranges)
-LE PETIT PRINCE — (s’en allant) Décidément les grandes personnes sont decidement tout a fait extraordinaires.
-# SCÈNE XIV
+LE PETIT PRINCE — C’est amusant et assez poétique, mais ça n’est pas très sérieux! Moi, sur ma planète, je possède une fleur que j’arrose tous les jours. Je possède trois volcans, deux allumés et un éteint, que je ramone toutes les semaines. Car je ramone aussi celui qui est éteint. On ne sait jamais. C'est utile à mes volcans, et c’est utile à ma fleur que je les possède. Mais toi, tu n’es pas utile aux étoiles..(il s’en va)
+HOMME D'AFFAIRES — (reste bouche bée sans trouver un mot pour répondre)
+LE PETIT PRINCE — (s’en allant) Décidément les grandes personnes sont tout à fait extraordinaires.
+# SCÈNE XIV — La cinquieme planete — Le reverbere
 L'AVIATEUR — La cinquième planète était très curieuse. C'était la plus petite de toutes. Il y avait là juste assez de place pour loger un réverbère et un allumeur de réverbères. Le petit prince ne parvenait pas à s'expliquer à quoi pouvaient servir, quelque part dans le ciel, sur une planète sans maison, ni population, un réverbère et un allumeur de réverbères.
-LE PETIT PRINCE — Peut-être bien que cet homme est absurde. Cependant il est moins absurde que le roi, que le vaniteux, que le businessman et que le buveur. Au moins son travail a-t-il un sens. Quand il allume son réverbère, c'est comme s'il faisait naître une étoile de plus, ou une fleur. Quand il éteint son réverbère ça endort la fleur ou l'étoile. C'est une occupation très jolie. C'est véritablement utile puisque c'est joli.
+LE PETIT PRINCE — Peut-être bien que cet homme est absurde. Cependant il est moins absurde que le roi, que le vaniteux, que la femme d'affaire et que le buveur. Au moins son travail a-t-il un sens. Quand il allume son réverbère, c'est comme s'il faisait naître une étoile de plus, ou une fleur. Quand il éteint son réverbère ça endort la fleur ou l'étoile. C'est une occupation très jolie. C'est véritablement utile puisque c'est joli.
 LE PETIT PRINCE — (un réverbère allumé) Bonjour! Pourquoi viens-tu d’éteindre ton réverbère?
 L’ALLUMEUR DE RÉVERBÈRES — C’est la consigne. Bonjour! (L'allumeur de réverbères monte et descend de l'échelle pour allumer son réverbère.)
 LE PETIT PRINCE — Qu'est-ce que la consigne?
@@ -310,7 +308,7 @@ L’ALLUMEUR DE RÉVERBÈRES — Alors, maintenant qu’elle fait un tour par mi
 LE PETIT PRINCE — C’est drôle! Les journées chez toi durent une minute!
 L’ALLUMEUR DE RÉVERBÈRES — Ce n’est pas drôle du tout. Ça fait déjà un mois que nous parlons ensemble.
 LE PETIT PRINCE — Un mois?
-L’ALLUMEUR DE RÉVERBÈRES — Oui. Trente minutes: trente jours! Bonsoir (il rallume et repart) (Le Petit Prince regarde cet homme avec une profonde admiration et amour pour la fidélité à son ordre...)
+L’ALLUMEUR DE RÉVERBÈRES — Oui. Trente minutes: trente jours! Bonsoir (il rallume et repart)
 LE PETIT PRINCE — (pour le secourir) Tu sais. Je connais un moyen de te reposer quand tu voudras.
 L’ALLUMEUR DE RÉVERBÈRES — Je veux toujours.
 LE PETIT PRINCE — Ta planète est tellement petite que tu en fais le tour en trois enjambées. Tu n'as qu'à marcher assez lentement pour rester toujours au soleil. Quand tu voudras te reposer tu marcheras... et le jour durera aussi longtemps que tu voudras.
@@ -318,27 +316,27 @@ L’ALLUMEUR DE RÉVERBÈRES — ça ne m’avance pas a grand-chose. Ce que j'a
 LE PETIT PRINCE — Ce n’est pas de chance.
 L’ALLUMEUR DE RÉVERBÈRES — Ce n’est pas de chance.... Bonjour! (et il l’éteint).
 LE PETIT PRINCE — Celui-là… Celui-là serait méprisé par tous les autres, par le roi, par le vaniteux, par le buveur, par le businessman. Cependant c'est le seul qui ne me paraisse pas ridicule. C'est, peut-être, parce qu'il s'occupe d'autre chose que de soi-même.
-L’ALLUMEUR DE RÉVERBÈRES — (A conserver ou non?) Bonsoir (le rallume)
+L’ALLUMEUR DE RÉVERBÈRES — (A conserver ou non?)
 LE PETIT PRINCE — (Soupir de regret) Celui-la est le seul dont j’eusse pu faire mon ami. Mais sa planète est vraiment trop petite. Il n'y a pas de place pour deux.
 L'AVIATEUR — Ce que le petit prince n'osait pas s’avouer, c’est qu’il regrettait cette planète bénie, à cause, surtout, des mille quatre cent quarante couchers de soleil par vingt-quatre heures.
-L’ALLUMEUR DE RÉVERBÈRES — Bonjour (et l’éteint définitivement) (Pendant que l’ aviateur parle, l' allumeur de réverbère continue son travail. Le petit prince le regarde avec admiration. Sur la dernière réplique de l’ aviateur, le réverbère sera éteint et ainsi la scène).
-# SCÈNE XV
+L’ALLUMEUR DE RÉVERBÈRES — Bonjour (et l’éteint définitivement) (Pendant que l’aviateur parle, l'allumeur de réverbère continue son travail. Le petit prince le regarde avec admiration. Sur la dernière réplique de l’aviateur, le réverbère sera éteint et ainsi la scène).
+# SCÈNE XV — La sixième planète — Le géographe
 L'AVIATEUR — La sixième planète était une planète dix fois plus vaste. Elle était habitée par un vieux monsieur qui écrivait d'énormes livres.
 GÉOGRAPHE — Tiens! Voilà un explorateur!
 LE PETIT PRINCE — (Le petit prince s’assied sur la table en haletant un peu. Il est fatigué).
 GÉOGRAPHE — D'où viens-tu?
-LE PETIT PRINCE — Quel est ce gros livre? (Il observe les objets tandis que le géographe observe qu'il sent le petit prince comme sujet de découverte) Qu'est-ce que vous faites ici?
+LE PETIT PRINCE — Quel est ce gros livre? (Il observe les objets tandis que le géographe observe le petit prince comme sujet de découverte) Qu'est-ce que vous faites ici?
 GÉOGRAPHE — Je suis géographe
 LE PETIT PRINCE — Qu'est-ce qu’un géographe?
 GÉOGRAPHE — C'est un savant qui connaît où se trouvent les mers, les fleuves, les villes, les montagnes et les déserts.
 LE PETIT PRINCE — ça c’est bien intéressant. Ca, c’est enfin un véritable métier! (Il observe avec étonnement la majestueuse planète du géographe) Elle est bien belle votre planète. Est-ce qu’il y a des océans?
-GÉOGRAPHE — Je ne puis peux pas le savoir
+GÉOGRAPHE — Je ne puis pas le savoir
 LE PETIT PRINCE — Ah! (déçu) et des montagnes?
-GÉOGRAPHE — Je ne puis peux pas le savoir
+GÉOGRAPHE — Je ne puis pas le savoir
 LE PETIT PRINCE — Et des villes, des fleuves et des déserts?
 GÉOGRAPHE — Je ne puis pas le savoir non plus.
 LE PETIT PRINCE — Mais vous êtes géographe!
-GÉOGRAPHE — C'est exact, mais je ne suis pas un explorateur. Il n’y a pas un seul explorateur sur ma planète. Ce n’est pas le géographe qui va faire le compte des villes, des fleuves, des montagnes, des mers, des océans et des déserts. Le géographe est trop important pour flâner. Il ne quitte pas jamais son bureau, mais il y reçoit les explorateurs, il les interroge et il prend en notes leurs souvenirs. Et si les souvenirs de l’un d’eux lui paraissent intéressants, le géographe fait faire une enquête sur la moralité de l’explorateur.
+GÉOGRAPHE — C'est exact, mais je ne suis pas un explorateur. Il n’y a pas un seul explorateur sur ma planète. Ce n’est pas le géographe qui va faire le compte des villes, des fleuves, des montagnes, des mers, des océans et des déserts. Le géographe est trop important pour flâner. Il ne quitte jamais son bureau, mais il y reçoit les explorateurs, il les interroge et il prend en notes leurs souvenirs. Et si les souvenirs de l’un d’eux lui paraissent intéressants, le géographe fait faire une enquête sur la moralité de l’explorateur.
 LE PETIT PRINCE — Pourquoi ça?
 GÉOGRAPHE — Parce que si l'explorateur mentait ou était ivre, il apporterait une catastrophe dans les livres de géographie. Et aussi, un explorateur qui boirait trop
 LE PETIT PRINCE — Pourquoi ça?
@@ -346,24 +344,24 @@ GÉOGRAPHE — Parce que les ivrognes voient double et alors le géographe noter
 LE PETIT PRINCE — Je connais quelqu’un qui serait mauvais explorateur
 GÉOGRAPHE — C'est possible. Donc, quand la moralité de l’explorateur paraît bonne, on fait une enquête sur sa découverte.
 LE PETIT PRINCE — On va voir?
-GÉOGRAPHE — Non, c’est trop compliqué. Mais l'explorateur doit fournir des preuves. Par exemple, s’il s’agit d’une grosse montagne, vous devez rapporter de grosses pierres. (excité) Mais toi, tu viens de loin! Tu es un explorateur! Tu vas me décrire ta planète! (Il ouvre son registre pour prendre des notes, il taille son crayon, il est prêt pour écrire l’histoire. Pause.) Alors?
+GÉOGRAPHE — Non, c’est trop compliqué. Mais l'explorateur doit fournir des preuves. Par exemple, s’il s’agit d’une grosse montagne, vous devez rapporter de grosses pierres. (excité) Mais toi, tu viens de loin! Tu es un explorateur! Tu vas me décrire ta planète! (Il ouvre son registre pour prendre des notes, il taille son crayon, il est prêt pour écrire l’histoire. Pause). Alors?
 LE PETIT PRINCE — Oh! chez moi, ce n’est pas très intéressant, c’est tout petit. J'ai trois volcans, deux en activité et un éteint. Mais on ne sait jamais.
 GÉOGRAPHE — On ne sait jamais.
 LE PETIT PRINCE — J'ai aussi une fleur.
 GÉOGRAPHE — Non, non, non, non, non! Nous ne notons pas les fleurs.
 LE PETIT PRINCE — Pourquoi ça? C’est le plus joli.
 GÉOGRAPHE — Parce que les fleurs sont éphémères.
-LE PETIT PRINCE — Que signifie <éphémère>?
+LE PETIT PRINCE — Que signifie «éphémère»?
 GÉOGRAPHE — Les livres de géographie sont les livres les plus sérieux de tous les livres. Ils ne se démodent jamais. Il est très rare qu’une montagne change de place. Il est très rare qu’un océan s’assèche. Nous écrivons des choses éternelles.
-LE PETIT PRINCE — Mais les volcans éteints peuvent se réveiller! Qu'est-ce que signifie <éphémère>?
-GÉOGRAPHE — Que les volcans soient éteints ou en action,ca revient au meme pour nous autres.. Ce qui compte pour nous, c’est la montagne. Elle ne change pas.
-LE PETIT PRINCE — Mais qu'est-ce que signifie <éphémère>?(insistant et tenace comme toujours )
-GÉOGRAPHE — ça signifie <qu’il est menacé de disparition prochaine >.
+LE PETIT PRINCE — Mais les volcans éteints peuvent se réveiller! Qu'est-ce que signifie «éphémère»?
+GÉOGRAPHE — Que les volcans soient éteints ou en action, ça revient au même pour nous autres.. Ce qui compte pour nous, c’est la montagne. Elle ne change pas.
+LE PETIT PRINCE — Mais qu'est-ce que signifie «éphémère»? (insistant et tenace comme toujours)
+GÉOGRAPHE — ça signifie «qu’il est menacé de disparition prochaine».
 LE PETIT PRINCE — Ma fleur est menacée de disparition prochaine?
 GÉOGRAPHE — Bien sûr!
 LE PETIT PRINCE — (à part. Avec angoisse) Ma fleur est éphémère et elle n’a que quatre épines pour se défendre contre le monde! Et je l’ai laissée toute seule chez moi! (Pause. Puis au géographe) Que me conseillez-vous d’aller visiter?
-GÉOGRAPHE — La planète Terre. Elle a une bonne réputation (Obscurité.…..Sur l’écran de la Planète Terre en orbite qui se rapproche, puis la planète aujourd’hui, les villes, des hommes, et beaucoup de chaos)
-# SCÈNE XVI
+GÉOGRAPHE — La planète Terre. Elle a une bonne réputation (Obscurité. Sur l’écran de la Planète Terre en orbite qui se rapproche, puis la planète aujourd’hui, les villes, des hommes, et beaucoup de chaos)
+# SCÈNE XVI — La septième planète — La Terre
 L'AVIATEUR — La septième planète fut donc la Terre. La Terre n’est pas une planète quelconque. On y compte cent-onze rois, sept milles géographes neuf cent mille businessmen, sept million et demi d’ivrognes et trois cent onze millions de vaniteux. C'est-à-dire environ deux milliards de grandes personnes! Les hommes occupent très peu de place sur la Terre. Ils logeraient aisément sur une place publique de vingt milles de long sur vingt milles de large. On pourrait entasser l'humanité sur le moindre petit îlot du Pacifique. Les grandes personnes, bien sûr, ne vous croiront pas. Elles s'imaginent tenir beaucoup de place. Elles se voient importantes comme des baobabs.
 # SCÈNE XVII
 L'AVIATEUR — Le Petit Prince une fois sur Terre, fut donc bien surpris de ne voir personne. Il avait déjà peur de s'être trompé de planète, quand un anneau couleur de lune remua dans le sable. (Nuit)
@@ -374,8 +372,8 @@ SERPENT — Sur la Terre, en Afrique
 LE PETIT PRINCE — Oh, Il n’y a donc personne sur la planète Terre?
 SERPENT — Ici, c'est le désert. Il n’y a personne dans les déserts. La Terre est grande!
 LE PETIT PRINCE — (il s’assied alors en regardant le ciel) Je me demande si les étoiles sont éclairées afin que chacun puisse un jour trouver la sienne. Regarde ma planète, elle est juste au-dessus de nous. Mais comme elle est loin!
-SERPENT — Comme elle est belle! Mais que viens- tu faire ici?
-LE PETIT PRINCE — J'ai eu d des difficultes avec une fleur
+SERPENT — Comme elle est belle! Mais que viens-tu faire ici?
+LE PETIT PRINCE — J'ai eu des difficultés avec une fleur
 SERPENT — Ah! (pause)
 LE PETIT PRINCE — Où sont les hommes? On est un peu seul dans le désert
 SERPENT — On est seul aussi chez les hommes
@@ -386,7 +384,7 @@ SERPENT — Je peux t'emporter plus loin qu’un navire (Il s’enroule autour d
 LE PETIT PRINCE — (le regarde sans rien dire)
 SERPENT — Tu me fais pitié, toi si faible, sur cette Terre de granit. Je pourrais t'aider un jour si tu regrettes trop ta planète. Je peux...
 LE PETIT PRINCE — (L’interrompt impatient) Oh! j'ai très bien compris, mais pourquoi parles-tu toujours par énigmes?
-SERPENT — Je les résous toutes. (pause. Puis il se déplace )
+SERPENT — Je les résous toutes. (pause. Puis il se déplace)
 # SCÈNE XVIII
 L'AVIATEUR — Le petit prince traversa le désert et fit l’ascension d’une haute montagne. Les seules montagnes qu'il eut vraiment connues etaient les trois volcans qui lui arrivaient au genou. (espérant voir d’un coup toute la planète et tous les hommes. Mais il n'aperçut rien que des aiguilles de roc bien aiguisées.)
 LE PETIT PRINCE — Bonjour
@@ -404,8 +402,8 @@ ROSES — (toutes les roses) Bonjour
 LE PETIT PRINCE — (Le Petit Prince observe les roses. Elles ressemblent à sa fleur) Qui êtes-vous? (stupéfait)
 ROSES — Nous sommes les roses
 LE PETIT PRINCE — Ah. (plus déçu et se sentant trahi)
-L'AVIATEUR — Sa fleur lui avait raconté qu'elle était seule de son espèce dans l' univers et voici qu' il en était cinq mille, toutes semblables, dans un seul jardin.
-LE PETIT PRINCE — Elle serait bien vexée, se dit-il, si elle voyait ça...elle tousserait énormément et ferait semblant de mourir pour échapper au ridicule. Et je serais bien obligé de faire semblant de la soigner, car, sinon, pour m'humilier moi aussi, elle se laisserait vraiment mourir..." (Pause) Je me croyais riche d'une fleur unique, et je ne possède qu'une rose ordinaire. Ça et mes trois volcans qui m'arrivent au genou, et dont l'un, peut-être, est éteint pour toujours, ça ne fait pas de moi un bien grand prince..." (Et, couché dans l'herbe, il pleura.)
+L'AVIATEUR — Sa fleur lui avait raconté qu'elle était seule de son espèce dans l'univers et voici qu'il en était cinq mille, toutes semblables, dans un seul jardin.
+LE PETIT PRINCE — Elle serait bien vexée, se dit-il, si elle voyait ça...elle tousserait énormément et ferait semblant de mourir pour échapper au ridicule. Et je serais bien obligé de faire semblant de la soigner, car, sinon, pour m'humilier moi aussi, elle se laisserait vraiment mourir... (Pause) Je me croyais riche d'une fleur unique, et je ne possède qu'une rose ordinaire. Ça et mes trois volcans qui m'arrivent au genou, et dont l'un, peut-être, est éteint pour toujours, ça ne fait pas de moi un bien grand prince... (Et, couché dans l'herbe, il pleura.)
 # SCÈNE XX
 RENARD — Bonjour
 LE PETIT PRINCE — (Il ne voit personne) Bonjour. Mais où es-tu?
@@ -418,8 +416,8 @@ LE PETIT PRINCE — Ah Pardon Qu'est-ce que signifie: apprivoisé?
 RENARD — Tu n'es pas d'ici, toi: Que cherches-tu?
 LE PETIT PRINCE — Je cherche les hommes. Qu'est-ce que signifie «apprivoisé?»
 RENARD — Les hommes, ils ont des fusils et chassent. C’est bien gênant! Ils élèvent aussi des poules. C'est là leur seul intérêt. Tu cherches des poules?
-LE PETIT PRINCE — Non, je cherche des amis. Que signifie "<apprivoisé>?"
-RENARD — C’est quelque chose que l’on néglige très souvent. Cela veut dire <créer des liens>
+LE PETIT PRINCE — Non, je cherche des amis. Que signifie «apprivoisé»?
+RENARD — C’est quelque chose que l’on néglige très souvent. Cela veut dire «créer des liens»
 LE PETIT PRINCE — Créer des liens?
 RENARD — Bien sûr. Jusqu'à maintenant, pour moi, tu n’es qu’un enfant comme les autres. Et je n’ai pas besoin de toi. Et toi non plus, tu n’as pas besoin de moi. Je ne suis pour toi qu’un renard comme tant d’autres renards. Mais si tu m’apprivoises, nous aurons besoin l’un de l’autre. Tu seras pour moi unique au monde, et je serai pour toi unique au monde
 LE PETIT PRINCE — Je commence à comprendre. Il y a une fleur... Je crois qu’elle m'a apprivoisé.
@@ -431,14 +429,14 @@ RENARD — Il y a des chasseurs sur cette planète?
 LE PETIT PRINCE — Non
 RENARD — Ah... ça c’est intéressant. Et des poules?
 LE PETIT PRINCE — Non
-RENARD — Rien n'est parfait (soupirant) Ma vie est monotone. Je chasse les poules, et les hommes me chassent. Toutes les poules se ressemblent et tous les hommes se ressemblent. Je m'ennuie donc un peu. Mais si tu m’apprivoises, ma vie sera comme ensoleillée. Je reconnaîtrai un bruit de pas qui sera différent de tous les autres. Les autres pas me font rentrer sous terre. Le tien me fera sortir du terrier, comme une musique. Et puis, regarde! Tu vois, là-bas, ces champs de blé? Je ne mange pas le pain et le blé, pour moi c’est inutile. Les champs de blé ne me rappellent rien. Et ça, c'est triste! Mais tu as des cheveux comme l'or. Alors ce sera merveilleux quand tu m’auras apprivoisé. Le blé, qui est doré, me fera penser à toi. Et jaimerai le bruit du vent dans le grain (il le regarde longuement puis, le suppliant) S'il te plaît. apprivoise-moi
+RENARD — Rien n'est parfait (soupirant) Ma vie est monotone. Je chasse les poules, et les hommes me chassent. Toutes les poules se ressemblent et tous les hommes se ressemblent. Je m'ennuie donc un peu. Mais si tu m’apprivoises, ma vie sera comme ensoleillée. Je reconnaîtrai un bruit de pas qui sera différent de tous les autres. Les autres pas me font rentrer sous terre. Le tien me fera sortir du terrier, comme une musique. Et puis, regarde! Tu vois, là-bas, ces champs de blé? Je ne mange pas le pain et le blé, pour moi c’est inutile. Les champs de blé ne me rappellent rien. Et ça, c'est triste! Mais tu as des cheveux comme l'or. Alors ce sera merveilleux quand tu m’auras apprivoisé. Le blé, qui est doré, me fera penser à toi. Et j'aimerai le bruit du vent dans le grain (il le regarde longuement puis, le suppliant) S'il te plaît. apprivoise-moi
 LE PETIT PRINCE — Je veux bien, mais je n’ai pas beaucoup de temps. J'ai des amis à découvrir, et beaucoup de choses à connaître.
 RENARD — On ne connaît que les choses que l’on apprivoise. Les hommes n’ont plus le temps de rien connaître. Ils achètent des choses toutes faites dans les magasins. Mais comme il n'existe pas de magasins d'amis, les hommes n’ont plus d'amis. Si tu veux un ami, apprivoise-moi.
 LE PETIT PRINCE — Que faut-il faire?
-RENARD — Il faut être patient. Au début, tu t’assiéras un peu loin de moi, comme ça, dans l'herbe. Je te regarderai du coin de l'œil et tu ne diras rien. Le langage est source de malentendus, Mais chaque jour tu pourras t’asseoir un peu plus près.
+RENARD — Il faut être patient. Au début, tu t’assiéras un peu loin de moi, comme ça, dans l'herbe. Je te regarderai du coin de l'œil et tu ne diras rien. Le langage est source de malentendus. Mais chaque jour tu pourras t’asseoir un peu plus près.
 RENARD — Tu reviendras toujours à la même heure. Un peu plus tôt, je commencerai déjà à être heureux. Mais si tu viens n’importe quand, je ne saurai jamais à quelle heure me préparer le cœur. Il faut des rites.
 LE PETIT PRINCE — Qu'est-ce qu’un rite?
-RENARD — C'est aussi une chose oubliée depuis longtemps. C'est ce qu’il fait un jour différent des autres jours, une heure des autres heures. (Pendant qu'il parle, l’action continue lentement sur la musique. Ils jouent. Nuit. Jour)
+RENARD — C'est aussi une chose oubliée depuis longtemps. C'est ce qui fait qu'un jour est différent des autres jours, une heure des autres heures. (Pendant qu'il parle, l’action continue lentement sur la musique. Ils jouent. Nuit. Jour)
 L'AVIATEUR — Ainsi le petit prince apprivoisa le renard. Et quand l’heure du départ fut proche..
 RENARD — Ah... Je vais pleurer.
 LE PETIT PRINCE — C’est ta faute, je ne te souhaitais point de mal, mais tu as voulu que je t’apprivoise.
@@ -446,8 +444,8 @@ RENARD — Bien sûr!
 LE PETIT PRINCE — Mais, tu vas pleurer!
 RENARD — Oui! Bien sûr
 LE PETIT PRINCE — Alors tu n’y gagnes rien!
-RENARD — J'y gagne la couleur du blé. Retourne-voir ta rose. Tu comprendras que la tienne es unique au monde. Tu reviendras me dire adieu et je te ferai cadeau d’un secret. (Le Petit Prince revient vers les roses qui avancent par derrière)
-LE PETIT PRINCE — (avec sarcasme) Vous n'êtes pas du tout semblable à ma rose, vous n’êtes rien encore. Personne ne vous a apprivoisées, et vous n’avez apprivoisé personne. Vous êtes comme était mon renard. Ce n’était qu’un renard semblable à cent mille autres. Mais j'en ai fait mon ami et il est maintenant unique au monde (réaction de malaise des roses) Vous êtes belles, mais vous êtes vides. On ne peut pas mourir pour vous. Bien sûr, ma rose à moi, un passant ordinaire croirait qu'elle vous ressemble. Mais à elle seule elle est plus importante que vous toutes, puisque c'est elle que j'ai arrosée. Puisque c'est elle que j'ai mise sous globe. Puisque c'est elle que j'ai abritée par le paravent. Puisque c'est elle dont j'ai tué les chenilles (sauf les deux ou trois pour les papillons). Puisque c'est elle que j'ai écoutée se plaindre, ou se vanter, ou même quelquefois se taire. Puisque c'est ma rose.
+RENARD — J'y gagne la couleur du blé. Retourne voir ta rose. Tu comprendras que la tienne est unique au monde. Tu reviendras me dire adieu et je te ferai cadeau d’un secret. (Le Petit Prince revient vers les roses qui avancent par derrière)
+LE PETIT PRINCE — (avec sarcasme) Vous n'êtes pas du tout semblables à ma rose, vous n’êtes rien encore. Personne ne vous a apprivoisées, et vous n’avez apprivoisé personne. Vous êtes comme était mon renard. Ce n’était qu’un renard semblable à cent mille autres. Mais j'en ai fait mon ami et il est maintenant unique au monde. (réaction de malaise des roses) Vous êtes belles, mais vous êtes vides. On ne peut pas mourir pour vous. Bien sûr, ma rose à moi, un passant ordinaire croirait qu'elle vous ressemble. Mais à elle seule elle est plus importante que vous toutes, puisque c'est elle que j'ai arrosée. Puisque c'est elle que j'ai mise sous globe. Puisque c'est elle que j'ai abritée par le paravent. Puisque c'est elle dont j'ai tué les chenilles (sauf les deux ou trois pour les papillons). Puisque c'est elle que j'ai écoutée se plaindre, ou se vanter, ou même quelquefois se taire. Puisque c'est ma rose.
 LE PETIT PRINCE — Adieu
 RENARD — Adieu. Voilà mon secret. C’est très simple: on ne voit bien qu'avec le cœur. L'essentiel est invisible pour les yeux.
 LE PETIT PRINCE — (répète comme pour le rappeler) L'essentiel est invisible pour les yeux.
@@ -467,7 +465,7 @@ AIGUILLEUR — Ce ne sont pas les mêmes. C’est un échange
 LE PETIT PRINCE — Ils n'étaient pas contents là où ils étaient?
 AIGUILLEUR — On n’est jamais content de l’endroit où on est! (Vrombissement. Un quatrième train arrive.)
 LE PETIT PRINCE — Ils poursuivent les premiers voyageurs?
-AIGUILLEUR — Ils ne poursuivent rien du tout. Ils dorment la-dedans, ou bien ils bâillent. les enfants Seuls écrasent leur nez contre les vitres.
+AIGUILLEUR — Ils ne poursuivent rien du tout. Ils dorment là-dedans, ou bien ils bâillent. Les enfants seuls écrasent leur nez contre les vitres.
 LE PETIT PRINCE — Les enfants seuls savent ce qu’ils cherchent. Ils perdent du temps pour une poupée de chiffons, et elle devient très importante, et si on la leur enlève, ils pleurent...
 AIGUILLEUR — Ils ont de la chance (Vrombissement. Cinquième illumination rapide.)
 # SCÈNE XXII
@@ -487,7 +485,7 @@ MARCHAND 2 — Mais dormir n’est pas un remède!
 LE PETIT PRINCE — (perplexe) Non?
 MARCHAND 2 — Il est évident que non!
 MARCHAND 1 — Dormir n’est pas un remède pour le sommeil et boire n’est pas un remède contre la soif!
-MARCHAND 2 — C'est seulement ce que le tout monde fait car il n’y a pas d’autre solution |
+MARCHAND 2 — C'est seulement ce que tout le monde fait car il n’y a pas d’autre solution!
 LE PETIT PRINCE — Qu'est-ce qu’un remède?
 MARCHAND 1 — C’est la solution à un problème!
 MARCHAND 2 — La solution d’un problème!
@@ -511,7 +509,7 @@ LE PETIT PRINCE — Que fait-on de ces 53 minutes?
 MARCHAND 2 — Mon garçon! On en fait ce qu’on veut!
 LE PETIT PRINCE — Moi, si j'avais cinquante-trois minutes à dépenser, je marcherais lentement vers une fontaine.
 # SCÈNE XXIII
-L'AVIATEUR — Nous en étions au huitième jour de ma panne dans le désert, et j'avais écouté l’histoire du marchand en buvant la dernière goutte de ma provision d’ eau.
+L'AVIATEUR — Nous en étions au huitième jour de ma panne dans le désert, et j'avais écouté l’histoire du marchand en buvant la dernière goutte de ma provision d’eau.
 L'AVIATEUR — Tes souvenirs sont très intéressants, mais je n’ai pas encore réparé mon avion et je n’ai plus rien à boire. Je serais heureux aussi si je pouvais marcher tout doucement vers une fontaine.
 LE PETIT PRINCE — Mon ami le renard m'a dit...
 L'AVIATEUR — Mon petit bonhomme... il ne s’agit plus de ce qu’a dit le renard
@@ -520,15 +518,15 @@ L'AVIATEUR — Parce qu’on va mourir de soif (Ils se regardent)
 LE PETIT PRINCE — C'est bien d'avoir eu un ami, même si l'on va mourir. Moi, je suis bien content d'avoir eu un ami renard...
 LE PETIT PRINCE — (comme par intuition) J'ai soif aussi. cherchons un puits...
 L'AVIATEUR — Quoi? Un... un puits? (Il le regarde... il ne comprend pas, il est perplexe...) Tu as donc soif, toi aussi?
-LE PETIT PRINCE — L’eau peut aussi être bonne pour le cœur. (SILENCE). (Petit Prince fatigué, Il s’assied. L’aviateur s’assied près de lui.)
+LE PETIT PRINCE — L’eau peut aussi être bonne pour le cœur. (SILENCE. Petit Prince fatigué, Il s’assied. L’aviateur s’assied près de lui.)
 LE PETIT PRINCE — Les étoiles sont belles à cause d’une fleur qu’on ne voit pas.
 L'AVIATEUR — Oui, bien sûr (La lune illumine le désert qui crée une étrange lueur)
 LE PETIT PRINCE — Le désert est beau... ce qui embellit le désert, c’est qu’il cache un puits quelque part
 L'AVIATEUR — Oui, qu’il s’agisse de la maison, des étoiles ou du désert, ce qui fait leur beauté est invisible
 LE PETIT PRINCE — Je suis content que tu sois d'accord avec mon renard. (L'Aviateur embrasse le Petit Prince qui s’endormira ensuite. Puis il le guidera par la main vers le puits.)
-L'AVIATEUR — J'avais l’impression de tenir dans mes bras un trésor fragile. Il me semblait aussi qu’il n’y eu rien de plus fragile sur Terre. Ce que je voyais n’était que l'écorce. Le plus important était invisible. Ce qui m'émouvait le plus chez ce petit prince, c'était sa fidélité pour une fleur et l'image d'une rose qui resplendissait en lui comme la flamme d’une lampe, même quand il dormait. Et je le devinais plus fragile encore. Il faut bien protéger les lampes: un coup de vent peut les éteindre.
+L'AVIATEUR — J'avais l’impression de tenir dans mes bras un trésor fragile. Il me semblait aussi qu’il n’y eut rien de plus fragile sur Terre. Ce que je voyais n’était que l'écorce. Le plus important était invisible. Ce qui m'émouvait le plus chez ce petit prince, c'était sa fidélité pour une fleur et l'image d'une rose qui resplendissait en lui comme la flamme d’une lampe, même quand il dormait. Et je le devinais plus fragile encore. Il faut bien protéger les lampes: un coup de vent peut les éteindre.
 # SCÈNE XXIV
-L'AVIATEUR — C'est étrange: Tout est prêt: la poulie, le seau et la corde (Il ne veut pas que l'enfant fasse des efforts) Non, laisse-moi faire, c’ est trop lourd pour toi (Il prend le seau doucement, il le soulève jusqu'à ses lèvres. Le Petit Prince boit les yeux fermés avec un grand délice).
+L'AVIATEUR — C'est étrange: Tout est prêt: la poulie, le seau et la corde (Il ne veut pas que l'enfant fasse des efforts) Non, laisse-moi faire, c’est trop lourd pour toi (Il prend le seau doucement, il le soulève jusqu'à ses lèvres. Le Petit Prince boit les yeux fermés avec un grand délice).
 LE PETIT PRINCE — Les hommes de chez toi cultivent 5000 roses dans le même jardin et ils n’y trouvent pas ce qu'ils cherchent.
 L'AVIATEUR — Non, ils ne le trouvent pas.
 LE PETIT PRINCE — Et pourtant, ce qu’ils recherchent peut être trouvé dans une seule rose ou dans un peu d’eau.
@@ -543,15 +541,14 @@ LE PETIT PRINCE — Tu sais, demain sera l'anniversaire de ma chute sur Terre...
 L'AVIATEUR — (sans comprendre avec regret puis...) Alors, quand je t'ai rencontré, tu retournais vers ton point de chute? Ah... J'ai peur...
 LE PETIT PRINCE — (en l’interrompant) Tu dois maintenant travailler. Tu dois repartir vers ta machine. Je t'attends ici, reviens demain soir. (OBSCURITÉ)
 # SCÈNE XXV
-(Effet jour. À côté du puits, un vieux mur de pierre en ruine, le Petit Prince assis jambes pendantes au-dessus du mur parle à l'ombre du serpent.)
-LE PETIT PRINCE — Tu ne t'en souviens donc pas?... Ce n'est pas tout à fait ici. (comme pour réponse) Si Si! C’est bien le jour, mais ce n’est pas ici l’endroit. (L'aviateur s'approche du puits.)
+LE PETIT PRINCE — (Effet jour. À côté du puits, un vieux mur de pierre en ruine, le Petit Prince assis jambes pendantes au-dessus du mur parle à l'ombre du serpent.) Tu ne t'en souviens donc pas?... Ce n'est pas tout à fait ici. (comme pour réponse) Si Si! C’est bien le jour, mais ce n’est pas ici l’endroit. (L'aviateur s'approche du puits.)
 LE PETIT PRINCE — (comme ci-dessus) Bien sûr. Tu viendras où commence ma trace dans le sable. Tu n'auras qu’à m'y attendre. J’y serai cette nuit. (pause)
 LE PETIT PRINCE — Tu as du bon venin? Je ne voudrais pas souffrir longtemps. Maintenant va t’en. Je veux redescendre. (L'aviateur très prudent essaie de capter le dialogue. Il s'approche, l'ombre disparaît. Le Petit Prince tombe évanoui dans les bras de l’Aviateur. Il est pâle comme la neige, en sueur, il a peur. L’aviateur défait son écharpe et avec celle-ci mouille ses tempes, le fait boire)
-L'AVIATEUR — (très attentionné) Mais quelle est cette histoire-la? Tu parles maintenant avec les serpents? (Le Petit Prince se reprend et regarde sévèrement l’Aviateur puis lui serre les bras autour du cou. Il est très fatigué. Son cœur bat comme celui d’un oiseau touché par une carabine.)
+L'AVIATEUR — (très attentionné) Mais quelle est cette histoire-là? Tu parles maintenant avec les serpents? (Le Petit Prince se reprend et regarde sévèrement l’Aviateur puis lui serre les bras autour du cou. Il est très fatigué. Son cœur bat comme celui d’un oiseau touché par une carabine.)
 LE PETIT PRINCE — Je suis content que tu aies trouvé ce qui manquait à ta machine, tu vas pouvoir rentrer chez toi
 L'AVIATEUR — Comment le sais-tu?
 LE PETIT PRINCE — Moi aussi, aujourd’hui, je rentre chez moi (avec mélancolie) C’est bien plus loin. c’est bien plus difficile (L’Aviateur continue de le serrer dans ses bras)
-LE PETIT PRINCE — (avec le regard sérieux, perdu loin) J'ai un mouton. Et jai la cassette pour le mouton. Et j'ai la muselière (il sourit avec mélancolie) (pause)
+LE PETIT PRINCE — (avec le regard sérieux, perdu loin) J'ai un mouton. Et j'ai la cassette pour le mouton. Et j'ai la muselière (il sourit avec mélancolie) (pause)
 L'AVIATEUR — Petit bonhomme, tu as eu peur?
 LE PETIT PRINCE — (rires avec douceur) J'aurai bien plus peur ce soir
 L'AVIATEUR — (avec un étrange sentiment d'abandon) Je veux... je veux encore t’entendre rire
@@ -571,10 +568,13 @@ LE PETIT PRINCE — J’aurai l’air d’avoir mal. j'aurai un peu l'air de mou
 L'AVIATEUR — Je ne te quitterai pas
 LE PETIT PRINCE — (inquiet) Je te dis ça. C’est à cause aussi du serpent. Il ne faut pas qu’il te morde... Les serpents c’est méchant. Ça peut vous mordre pour le plaisir...
 L'AVIATEUR — Je ne te quitterai pas
-LE PETIT PRINCE — C’est vrai qu ils n’ont plus de venin pour la seconde morsure. (Il s'éloigne, puis l’Aviateur le rattrape) (PLUS TARD, LA NUIT)
-LE PETIT PRINCE — Ah! Tu es la… (il prend la main de l’aviateur, puis toumente:) Tu as eu tort. Tu auras de la peine. J’aurai l’air d’etre mort et ce ne sera pas vrai.
-LE PETIT PRINCE — (prend la main de l'aviateur) Tu comprends? C'est trop loin. Je ne peux pas emporter ce corps-la. C’est trop lourd. (découragé, puis avec effort) Ce sera gentil, tu sais. Moi aussi, je regarderai les étoiles. Toutes les étoiles seront des puits avec une poulie rouillée. Toutes les étoiles me verseront à boire... Ce sera tellement amusant! Tu auras cinq cents millions de grelots, j'aurai cinq cents millions de fontaines... (il pleure ce qui le rend muet) C’est là. Laisse-moi faire un pas tout seul. (Il s'assoit parce qu'il a peur).
+LE PETIT PRINCE — C’est vrai qu'ils n’ont plus de venin pour la seconde morsure. (Il s'éloigne, puis l’Aviateur le rattrape) (PLUS TARD, LA NUIT)
+LE PETIT PRINCE — Ah! Tu es là… (il prend la main de l’aviateur, puis tourmenté:) Tu as eu tort. Tu auras de la peine. J’aurai l’air d’être mort et ce ne sera pas vrai.
+LE PETIT PRINCE — (prend la main de l'aviateur) Tu comprends? C'est trop loin. Je ne peux pas emporter ce corps-là. C’est trop lourd. (découragé, puis avec effort) Ce sera gentil, tu sais. Moi aussi, je regarderai les étoiles. Toutes les étoiles seront des puits avec une poulie rouillée. Toutes les étoiles me verseront à boire... Ce sera tellement amusant! Tu auras cinq cents millions de grelots, j'aurai cinq cents millions de fontaines... (il pleure ce qui le rend muet) C’est là. Laisse-moi faire un pas tout seul. (Il s'assoit parce qu'il a peur).
 LE PETIT PRINCE — Tu sais.. Ma fleur... j'en suis responsable! Et elle est tellement faible! Elle est tellement naïve. Elle a quatre épines de rien du tout pour la protéger contre le monde... (L’Aviateur, pendant tout le monologue au-dessus du Petit Prince, l’aura écouté avec un silence et une attention stupéfaite et bouleversante)
 LE PETIT PRINCE — Voilà... c’est tout... (Il hésite.. puis il se lève. Il fait un pas. L’Aviateur reste comme immobile. On verra l'ombre du serpent. Il reste immobile un instant puis le Petit Prince tombe doucement sur les bras des figures qui l’emporteront comme les oiseaux lors de son arrivée) (L'Aviateur qui a vu la scène immobile retournera à son avion et prend la parole)
 # SCÈNE XXVI
-L'AVIATEUR — Et maintenant bien sûr ça fait six ans déjà... Je n'ai jamais encore raconté cette histoire. Maintenant, je suis un peu consolé. C'est-à-dire… pas tout à fait. Mais je sais bien qu’il est revenu sur sa planète, car au lever du jour, je n’ai pas retrouvé son corps. Mais voilà qu'il se passe quelque chose d'extraordinaire. La muselière que j'ai dessinée pour le petit prince, j'ai oublié d'y ajouter la courroie de cuir! II n'aura jamais pu l’attacher au mouton. Alors je me demande: “ Que s’est-il passé sur sa planète? Peut-être bien que le mouton a mangé la fleur.….? C'est là un bien grand mystère. Pour vous qui aimez aussi le petit prince, comme pour moi, rien de l'univers n'est semblable si quelque part, on ne sait où, un mouton que nous ne connaissons pas a, oui ou non, mangé une rose... Regardez le ciel. Demandez-vous: le mouton oui ou non a-t-il mangé la fleur? Et vous verrez comme tout change... Et aucune grande personne ne comprendra jamais que ça a tellement d’importance. (Sur l’écran apparaît le dessin) Ça, c'est pour moi le plus beau et le plus triste paysage du monde. Je l’ai dessiné pour bien vous le montrer. C’est ici que le petit prince est apparu sur Terre et puis a disparu. Regardez attentivement ce paysage afin d'être sûrs de le reconnaître, si vous voyagez un jour en Afrique, dans le désert. Et, s'il vous arrive de passer par là, je vous en supplie, ne vous pressez pas, attendez un peu juste sous l'étoile! Si alors un enfant vient à vous, s'il rit, s'il a des cheveux d'or, s'il ne répond pas quand on l'interroge, vous devinerez bien qui il est. Alors soyez gentils! Ne me laissez pas tellement triste: écrivez-moi vite qu'il est revenu… (L’Aviateur se prépare pour le départ pendant le monologue du aviateur, il allume les lumières de son avion et décolle.) (OBSCURITE.)
+L'AVIATEUR — Et maintenant bien sûr ça fait six ans déjà... Je n'ai jamais encore raconté cette histoire. Maintenant, je suis un peu consolé. C'est-à-dire… pas tout à fait. Mais je sais bien qu’il est revenu sur sa planète, car au lever du jour, je n’ai pas retrouvé son corps. Mais voilà qu'il se passe quelque chose d'extraordinaire. La muselière que j'ai dessinée pour le petit prince, j'ai oublié d'y ajouter la courroie de cuir! Il n'aura jamais pu l’attacher au mouton. Alors je me demande: “Que s’est-il passé sur sa planète? Peut-être bien que le mouton a mangé la fleur.….?”
+L'AVIATEUR — C'est là un bien grand mystère. Pour vous qui aimez aussi le petit prince, comme pour moi, rien de l'univers n'est semblable si quelque part, on ne sait où, un mouton que nous ne connaissons pas a, oui ou non, mangé une rose...
+L'AVIATEUR — Regardez le ciel. Demandez-vous: le mouton oui ou non a-t-il mangé la fleur? Et vous verrez comme tout change... Et aucune grande personne ne comprendra jamais que ça a tellement d’importance. (Sur l’écran apparaît le dessin)
+L'AVIATEUR — Ça, c'est pour moi le plus beau et le plus triste paysage du monde. Je l’ai dessiné pour bien vous le montrer. C’est ici que le petit prince est apparu sur Terre et puis a disparu. Regardez attentivement ce paysage afin d'être sûrs de le reconnaître, si vous voyagez un jour en Afrique, dans le désert. Et, s'il vous arrive de passer par là, je vous en supplie, ne vous pressez pas, attendez un peu juste sous l'étoile! Si alors un enfant vient à vous, s'il rit, s'il a des cheveux d'or, s'il ne répond pas quand on l'interroge, vous devinerez bien qui il est. Alors soyez gentils! Ne me laissez pas tellement triste: écrivez-moi vite qu'il est revenu… (L’Aviateur se prépare pour le départ pendant le monologue de l'aviateur, il allume les lumières de son avion et décolle. OBSCURITÉ.)
