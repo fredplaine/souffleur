@@ -97,16 +97,22 @@ body[data-view="study"] .modes{display:flex;flex:none}
 body[data-view="study"] .head-right{margin-left:0;flex:none}
 body[data-view="study"] #soundBtn{width:36px;height:36px}
 @media(max-width:760px){
-  body[data-view="study"] header{gap:6px;padding:6px 10px}
-  body[data-view="study"] .home-btn{width:34px;height:34px;padding:0;border-radius:50%;justify-content:center}
+  body[data-view="study"] header{gap:4px;padding:5px 7px}
+  body[data-view="study"] .home-btn{width:30px;height:30px;padding:0;border-radius:50%;justify-content:center}
   body[data-view="study"] .home-btn span{display:none}
-  body[data-view="study"] .head-title{font-size:18px;flex:1 1 40px}
+  body[data-view="study"] .head-title{font-size:15px;letter-spacing:1px;flex:1 1 28px}
   body[data-view="study"] .chip-word{display:none}
-  body[data-view="study"] .chip{padding:6px 8px;font-size:11px}
-  body[data-view="study"] .role-wrap{padding:2px 7px}
-  body[data-view="study"] .role-select{max-width:115px;font-size:11.5px!important}
-  body[data-view="study"] .scene-select{max-width:98px}
-  body[data-view="study"] #soundBtn{width:34px;height:34px}
+  body[data-view="study"] .chip{padding:4px 6px;font-size:10.5px;gap:3px}
+  body[data-view="study"] .chip .n{font-size:9px;padding:1px 4px}
+  body[data-view="study"] .role-wrap{padding:1px 5px}
+  body[data-view="study"] .role-select{max-width:84px;font-size:10.5px!important;padding:3px 1px!important}
+  body[data-view="study"] .scene-select{max-width:72px}
+  body[data-view="study"] #soundBtn{width:30px;height:30px}
+}
+@media(max-width:420px){
+  body[data-view="study"] .head-title{display:none}
+  body[data-view="study"] .role-select{max-width:86px}
+  body[data-view="study"] .scene-select{max-width:74px}
 }
 
 .scene-divider{
@@ -459,7 +465,7 @@ body[data-view=study] .transport{display:block}
   <div class="role-wrap"><select id="roleSelect" class="role-select" aria-label="Personnage à réviser" title="Personnage"></select></div>
   <div class="role-wrap scene-wrap" id="sceneWrap"><select id="sceneSelect" class="role-select scene-select" aria-label="Sélectionner une scène" title="Scène (point de départ)"></select></div>
   <div class="modes" role="group" aria-label="Mode de travail">
-    <button class="chip active" id="modeFull" aria-pressed="true">Complet</button>
+    <button class="chip active" id="modeFull" aria-pressed="true">Tout</button>
     <button class="chip" id="modeReview" aria-pressed="false" aria-label="Mode révision">🎯 <span class="chip-word">Révision</span> <span class="n" id="reviewCount">0</span></button>
     <button class="chip" id="modeFav" aria-pressed="false" aria-label="Mode favoris">⭐ <span class="chip-word">Favoris</span> <span class="n" id="favCount" style="background:var(--amber)">0</span></button>
   </div>
