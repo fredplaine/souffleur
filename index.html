@@ -72,7 +72,7 @@ header{
 .icon-btn svg{width:19px;height:19px}
 .icon-btn.muted{color:var(--red);border-color:rgba(255,77,94,.55)}
 
-.home-btn,.head-title,.role-wrap,.scene-wrap,.modes,.study-break,.regie-toggle-btn{display:none}
+.home-btn,.head-title,.role-wrap,.scene-wrap,.modes,.study-break{display:none}
 .home-btn{align-items:center;gap:7px;border:1px solid var(--line2);background:rgba(17,26,41,.86);color:var(--dim);border-radius:999px;padding:7px 12px;font-size:12px;font-weight:700;transition:.22s;flex:none}
 .home-btn:hover{color:var(--ink);border-color:var(--cyan)}
 .home-btn svg{width:14px;height:14px}
@@ -90,8 +90,6 @@ header{
 .chip:hover{color:var(--ink)}
 .chip.active{background:linear-gradient(90deg,rgba(65,196,255,.22),rgba(47,123,255,.22));color:var(--cyan)}
 .chip .n{background:var(--orange);color:#190d02;font-size:10px;border-radius:999px;padding:1px 6px}
-.regie-toggle-btn{align-items:center;justify-content:center;gap:5px;border:1px solid rgba(65,196,255,.5);background:rgba(17,26,41,.86);color:var(--cyan);border-radius:999px;padding:5px 10px;font-size:11.5px;font-weight:700;transition:.22s;flex:none}
-.regie-toggle-btn:hover,.regie-toggle-btn.active{background:rgba(65,196,255,.16);border-color:var(--cyan);color:var(--ink)}
 body[data-view="study"] header{padding:7px 12px;gap:8px;flex-wrap:nowrap}
 body[data-view="study"] .brand,body[data-view="study"] #navLibrary,body[data-view="study"] #navNew,body[data-view="study"] .study-break{display:none!important}
 body[data-view="study"] .home-btn{display:inline-flex;padding:5px 10px;font-size:11.5px}
@@ -99,31 +97,29 @@ body[data-view="study"] .head-title{display:block;font-size:18px;letter-spacing:
 body[data-view="study"] .role-wrap{display:flex;flex:none;padding:3px 7px 3px 9px}
 body[data-view="study"] .scene-wrap.has-scenes{display:flex;flex:none;padding:3px 7px 3px 9px}
 body[data-view="study"] .modes{display:flex;flex:none}
-@media(max-width:1040px){body[data-view="study"] .regie-toggle-btn{display:inline-flex}}
 body[data-view="study"] .head-right{margin-left:0;flex:none;gap:5px}
 body[data-view="study"] #soundBtn{width:34px;height:34px}
 @media(max-width:760px){
   body[data-view="study"] header{gap:4px;padding:5px 6px}
   body[data-view="study"] .home-btn{width:28px;height:28px;padding:0;border-radius:50%;justify-content:center}
-  body[data-view="study"] .home-btn span,.regie-toggle-btn span{display:none}
-  body[data-view="study"] .regie-toggle-btn{width:28px;height:28px;padding:0;border-radius:50%}
+  body[data-view="study"] .home-btn span{display:none}
   body[data-view="study"] .head-title{font-size:14px;letter-spacing:.8px;flex:1 1 24px}
   body[data-view="study"] .chip-word{display:none}
   body[data-view="study"] .role-wrap span,body[data-view="study"] .scene-wrap span{display:none}
   body[data-view="study"] .role-wrap{padding:2px 5px}
   body[data-view="study"] .scene-wrap.has-scenes{padding:2px 5px}
-  body[data-view="study"] .role-wrap select{max-width:74px;font-size:11px}
-  body[data-view="study"] .scene-wrap select{max-width:64px;font-size:11px}
+  body[data-view="study"] .role-wrap select{max-width:78px;font-size:11px}
+  body[data-view="study"] .scene-wrap select{max-width:66px;font-size:11px}
   body[data-view="study"] .modes{padding:2px;gap:1px}
-  body[data-view="study"] .chip{padding:4px 6px;font-size:10.5px;gap:3px}
+  body[data-view="study"] .chip{padding:4px 7px;font-size:10.5px;gap:3px}
   body[data-view="study"] .chip .n{font-size:9px;padding:0 4px}
   body[data-view="study"] #soundBtn{width:28px;height:28px}
   body[data-view="study"] #soundBtn svg{width:15px;height:15px}
 }
-@media(max-width:440px){
+@media(max-width:420px){
   body[data-view="study"] .head-title{display:none}
-  body[data-view="study"] .role-wrap select{max-width:80px}
-  body[data-view="study"] .scene-wrap select{max-width:68px}
+  body[data-view="study"] .role-wrap select{max-width:86px}
+  body[data-view="study"] .scene-wrap select{max-width:74px}
 }
 body[data-view="study"] #transport,body[data-view="study"] .banner{display:flex}
 body[data-view="study"] #transport{display:block}
@@ -331,17 +327,7 @@ body[data-view="study"] main{padding:22px 20px calc(var(--transport-h) + 74px)}
 .bilan-actions{display:flex;gap:10px;flex-wrap:wrap}
 
 .regie{position:sticky;top:calc(var(--header-h) + 16px);max-height:calc(100vh - var(--header-h) - var(--transport-h) - 30px);overflow-y:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface);backdrop-filter:blur(10px);padding:16px 16px 18px}
-.regie-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.regie-close{display:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--line2);background:rgba(12,18,30,.8);color:var(--dim);place-items:center}
-.regie-close:hover{color:var(--ink);border-color:var(--cyan)}
-.regie-scrim{display:none}
-@media(max-width:1040px){
-  .regie-scrim{position:fixed;inset:0;z-index:74;background:rgba(4,7,12,.65);backdrop-filter:blur(3px)}
-  .regie-scrim.show{display:block}
-  .regie{position:fixed;top:0;right:0;bottom:0;width:min(380px,92vw);max-height:100vh;z-index:75;border-radius:16px 0 0 16px;background:#0e1726;border-left:1px solid var(--line2);transform:translateX(104%);transition:transform .3s cubic-bezier(.2,.8,.2,1);box-shadow:-18px 0 48px rgba(0,0,0,.75)}
-  .regie.open{transform:none}
-  .regie-close{display:grid}
-}
+@media(max-width:1040px){.regie{position:static;max-height:none}}
 .regie h2{font-family:var(--fd);font-size:22px;letter-spacing:3px;display:flex;align-items:center;gap:9px;color:var(--cyan)}
 .regie h2 svg{width:19px;height:19px}
 .regie .sub{font-size:11.5px;color:var(--faint);margin:2px 0 14px}
@@ -471,7 +457,6 @@ body:not([data-view="study"]) .toasts{bottom:18px}
     <button class="chip" data-mode="fav" id="modeFav">⭐ <span class="chip-word">Favoris</span> <span class="n" id="favCount">0</span></button>
   </div>
   <div class="head-right">
-    <button class="regie-toggle-btn" id="btnRegieToggle" aria-label="Ouvrir la Régie" aria-expanded="false" title="Régie (G)">🎛️ <span>Régie</span></button>
     <button class="nav-btn" id="navLibrary">📚 Bibliothèque</button>
     <button class="nav-btn primary" id="navNew">＋ Nouveau texte</button>
     <button class="icon-btn" id="soundBtn" aria-label="Couper le son" aria-pressed="false" title="Son (M)">
@@ -582,9 +567,8 @@ body:not([data-view="study"]) .toasts{bottom:18px}
         <div class="bilan-actions"><button class="btn primary" id="btnRun">▶ Nouveau filage complet</button><button class="btn ghost" id="btnReview">🎯 Réviser les difficiles (<span id="reviewCount2">0</span>)</button><button class="btn ghost" id="btnFavRun">⭐ Réviser les favoris (<span id="favCount2">0</span>)</button></div>
       </div>
     </div>
-    <div class="regie-scrim" id="regieScrim"></div>
     <aside class="regie" id="regie">
-      <div class="regie-head"><h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="7" x2="20" y2="7"/><circle cx="9" cy="7" r="2.4"/><line x1="4" y1="12" x2="20" y2="12"/><circle cx="15" cy="12" r="2.4"/><line x1="4" y1="17" x2="20" y2="17"/><circle cx="7" cy="17" r="2.4"/></svg>RÉGIE</h2><button class="regie-close" id="btnRegieClose" aria-label="Fermer la Régie">✕</button></div>
+      <h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="7" x2="20" y2="7"/><circle cx="9" cy="7" r="2.4"/><line x1="4" y1="12" x2="20" y2="12"/><circle cx="15" cy="12" r="2.4"/><line x1="4" y1="17" x2="20" y2="17"/><circle cx="7" cy="17" r="2.4"/></svg>RÉGIE</h2>
       <div class="sub">Réglages mémorisés pour cette pièce</div>
       <div class="rg"><div class="rg-title">Distribution des voix</div><div id="voicePanel"></div><div class="voice-note" id="voiceNote">Chargement des voix…</div></div>
       <div class="rg"><div class="rg-title">Lecture</div>
@@ -1101,7 +1085,7 @@ function syncExternalCatalog(){
 }
 
 function showView(v){
-  if(v!=='study'){pause();closeInlineEditor(false);closeRegieDrawer();}
+  if(v!=='study'){pause();closeInlineEditor(false);}
   document.body.dataset.view=v;
   ['library','import','study'].forEach(function(x){$('view-'+x).classList.toggle('active',x===v);});
   $('navLibrary').classList.toggle('active',v==='library');
@@ -1879,12 +1863,7 @@ $('btnRevealAll').onclick=function(){active.lines.forEach(function(_,i){els[i].c
 $('btnMaskAll').onclick=resetMasks;
 $('btnPrint').onclick=function(){printing=true;resetMasks();window.print();};
 window.addEventListener('afterprint',function(){printing=false;resetMasks();});
-$('btnEditText').onclick=function(){if(active){closeRegieDrawer();openImport(active.id);}};
-function openRegieDrawer(){$('regie').classList.add('open');$('regieScrim').classList.add('show');$('btnRegieToggle').classList.add('active');$('btnRegieToggle').setAttribute('aria-expanded','true');}
-function closeRegieDrawer(){$('regie').classList.remove('open');$('regieScrim').classList.remove('show');$('btnRegieToggle').classList.remove('active');$('btnRegieToggle').setAttribute('aria-expanded','false');}
-$('btnRegieToggle').onclick=function(){if($('regie').classList.contains('open'))closeRegieDrawer();else openRegieDrawer();};
-$('btnRegieClose').onclick=closeRegieDrawer;
-$('regieScrim').onclick=closeRegieDrawer;
+$('btnEditText').onclick=function(){if(active)openImport(active.id);};
 $('btnReset').onclick=function(){
   pause();active.st.forEach(function(s){s.peeks=0;s.reads=0;s.lastVisit=null;});
   S.mode='full';buildQueue(false);resetMasks();renderStudy(true);persist();toast('Progression remise à zéro (favoris ⭐ conservés).');
@@ -2023,9 +2002,8 @@ document.addEventListener('keydown',function(e){
   else if(e.key.toLowerCase()==='b'){e.preventDefault();if(cur()!=null)toggleBookmark(cur());}
   else if(e.key.toLowerCase()==='e'){e.preventDefault();if(active&&cur()!=null)openInlineEditor(cur());}
   else if(e.key.toLowerCase()==='t'){e.preventDefault();toggleTurbo();}
-  else if(e.key.toLowerCase()==='g'){if(window.innerWidth<=1040){e.preventDefault();if($('regie').classList.contains('open'))closeRegieDrawer();else openRegieDrawer();}}
   else if(e.key.toLowerCase()==='m')$('soundBtn').click();
-  else if(e.key==='Escape'){if($('regie').classList.contains('open'))closeRegieDrawer();else if(inlineEditIdx>=0)closeInlineEditor(true);else pause();}
+  else if(e.key==='Escape'){if(inlineEditIdx>=0)closeInlineEditor(true);else pause();}
 });
 window.addEventListener('beforeunload',function(){stopSpeech();persist();});
 document.addEventListener('visibilitychange',function(){if(document.hidden&&S.playing)pause();});
