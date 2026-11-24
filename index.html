@@ -601,7 +601,7 @@ body:not([data-view="study"]) .toasts{bottom:18px}
 <div class="banner" id="banner" role="status" aria-live="polite">
   <span class="pulse"></span><div class="bt"><b id="bTitle">À TOI</b><small id="bSub"></small></div>
   <div class="cd" id="cdWrap"><svg viewBox="0 0 36 36"><circle class="t" cx="18" cy="18" r="15.5"/><circle class="f" id="cdRing" cx="18" cy="18" r="15.5"/></svg><b id="cdTxt">8</b></div>
-  <button class="btn go" id="btnDone">✓ Dite !</button><button class="btn ghost" id="btnSouffle">👁 Souffler</button><button class="btn ghost" id="btnBannerFav" title="Marquer en favori (B)">☆ Favori</button><button class="btn ghost" id="btnBannerEdit" title="Modifier cette réplique (E)">✎ Éditer</button>
+  <button class="btn go" id="btnDone">✓ Dite !</button><button class="btn ghost" id="btnSouffle">👁 Souffler</button><button class="btn ghost" id="btnBannerFav" style="padding:10px 11px" title="Marquer en favori (B)" aria-label="Marquer en favori">☆</button>
 </div>
 
 <footer class="transport" id="transport">
@@ -1618,7 +1618,11 @@ function updateBanner(){
     :'Récite ta réplique puis clique « Dite ! » ou appuie sur Espace.';
   $('cdWrap').classList.toggle('on',!!cfg.autoPrompt);
   var bf=$('btnBannerFav');
-  if(bf&&R[idx])bf.textContent=R[idx].bookmarked?'⭐ Favori':'☆ Favori';
+  if(bf&&R[idx]){
+    bf.textContent=R[idx].bookmarked?'⭐':'☆';
+    bf.style.borderColor=R[idx].bookmarked?'var(--amber)':'';
+    bf.style.color=R[idx].bookmarked?'var(--amber)':'';
+  }
 }
 
 var synth=window.speechSynthesis||null,voices=[],frVoices=[],utter=null;
@@ -1842,7 +1846,6 @@ $('btnBack').onclick=function(){pause();S.finished=false;S.qpos=Math.max(0,S.qpo
 $('btnFwd').onclick=function(){pause();S.qpos=Math.min(S.queue.length-1,S.qpos+1);renderStudy(true);};
 $('btnDone').onclick=markDone;$('btnSouffle').onclick=souffler;
 $('btnBannerFav').onclick=function(){if(cur()!=null)toggleBookmark(cur());};
-$('btnBannerEdit').onclick=function(){if(cur()!=null)openInlineEditor(cur());};
 $('btnRun').onclick=function(){S.mode='full';buildQueue(false);resetMasks();play();};
 $('btnReview').onclick=function(){S.mode='review';buildQueue(false);resetMasks();play();};
 $('btnFavRun').onclick=function(){S.mode='fav';buildQueue(false);resetMasks();play();};
