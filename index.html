@@ -962,7 +962,7 @@ function loadAll(){
         if(!Array.isArray(t.scenes)||(reparsed.scenes.length&&t.scenes.length!==reparsed.scenes.length)){
           var oldSt=Array.isArray(t.st)?t.st:[];
           t.lines=reparsed.lines;t.roles=reparsed.roles;t.scenes=reparsed.scenes;
-          t.st=t.lines.map(function(_,i){var o=oldSt[i];return o?{peeks:o.peeks|0,reads:o.reads|0,lastVisit:o.lastVisit||null,bookmarked:!!o.bookmarked}:{peeks:0,reads:0,lastVisit:null,bookmarked:false};});
+          t.st=t.lines.map(function(_,i){var o=oldSt[i]||{};return {peeks:o.peeks||0,reads:o.reads||0,lastVisit:o.lastVisit||null,bookmarked:!!o.bookmarked};});
         }
         t.scenes=Array.isArray(t.scenes)?t.scenes:[];
         t.regie=Object.assign(defaultRegieForTitle(t.title),t.regie||{});
@@ -1175,7 +1175,7 @@ $('sortSelect').onchange=function(e){prefs.sort=e.target.value;persist();renderL
 $('filters').onclick=function(e){var b=e.target.closest('.fchip');if(!b)return;prefs.filter=b.dataset.f;persist();renderLibrary();};
 $('bulkClear').onclick=function(){selected.clear();renderLibrary();};
 $('bulkDelete').onclick=function(){deleteTexts(Array.from(selected));};
-function duplicateText(id){var i=lib.findIndex(function(t){return t.id===id;});if(i<0)return;var t=lib[i],c=JSON.parse(JSON.stringify(t));c.id=uid();c.title=t.title+' (copie)';c.createdAt=c.updatedAt=Date.now();c.lastStudyAt=null;c.st=t.lines.map(function(_,idx){return {peeks:0,reads:0,lastVisit:null,bookmarked:!!(t.st[idx]&&t.st[idx].bookmarked)};});c.study.idx=0;lib.splice(i+1,0,c);persist();renderLibrary();toast('Texte dupliqué.',null,2500);}
+function duplicateText(id){var i=lib.findIndex(function(t){return t.id===id;});if(i<0)return;var t=lib[i],c=JSON.parse(JSON.stringify(t));c.id=uid();c.title=t.title+' (copie)';c.createdAt=c.updatedAt=Date.now();c.lastStudyAt=null;c.st=t.lines.map(function(_,idx){var o=(Array.isArray(t.st)&&t.st[idx])||{};return {peeks:o.peeks||0,reads:o.reads||0,lastVisit:o.lastVisit||null,bookmarked:!!o.bookmarked};});c.study.idx=0;lib.splice(i+1,0,c);persist();renderLibrary();toast('Texte dupliqué.',null,2500);}
 function exportText(id){
   var t=lib.find(function(x){return x.id===id;});
   if(!t)return;
